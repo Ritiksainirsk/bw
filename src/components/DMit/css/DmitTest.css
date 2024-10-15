@@ -1,0 +1,59 @@
+.topSpaceDiv{
+    height: 0;   
+}
+
+@media only screen and (max-width: 542px) {
+    .topSpaceDiv{
+        height: 250px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 542px) {
+    .topSpaceDiv{
+        height: 190px;
+    }
+    
+}
+@media only screen and (max-width: 560px) {
+    .topSpaceDiv{
+        height: 100px;
+    }
+    
+}
+
+@media only screen and (min-width: 560px) and (max-width: 950px) {
+    .topSpaceDiv {
+      height: 90px;
+    }
+  }
+
+  
+@media only screen and (min-width: 950px) and (max-width: 1420px) {
+    .topSpaceDiv {
+      height: 175px;
+    }
+  }
+
+  @media only screen and (min-width: 1420px) and (max-width: 7770px) {
+    .topSpaceDiv {
+      height: 80px;
+    }
+  }
+
+
+
+
+  /* card css */
+  .card {
+    position: relative;
+    width: 300px; /* Initial width */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover {
+    width: 405px; /* Adjust width on hover */
+    background-color: #9BC9FF;
+  }
+  /*  */
