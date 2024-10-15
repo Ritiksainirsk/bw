@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Image from "next/image";
 
 export default function InteresrTestMiddleSection() {
   useEffect(() => {
@@ -38,7 +38,7 @@ const First = () => {
       <div className="grid md:grid-cols-3 gap-8">
         {/* School & Board Selection */}
         <div className="text-center">
-          <img
+          <Image
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5X9d50XxoR8NQtNUrEyFsDV_0W_JuPsc55M7NCbTHrF0kA_8m"
             alt="School & Board Selection"
             className="mx-auto mb-4 w-24 h-20"
@@ -55,7 +55,7 @@ const First = () => {
 
         {/* Academic Development */}
         <div className="text-center">
-          <img
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL1oXj19Ja25kHWLbEs3a323u7vYyEI-qKHvVPMUtB4ek45mnL"
             alt="Academic Development"
             className="mx-auto mb-4 w-24 h-20"
@@ -72,7 +72,7 @@ const First = () => {
 
         {/* Extracurricular Growth */}
         <div className="text-center">
-          <img
+          <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxmB2k59UmDGLs7Bh9aVPkHfiRQ4TC7QmxKYxvHiwj97oRVqL"
             alt="Extracurricular Growth"
             className="mx-auto mb-4 w-24 h-20"
@@ -88,7 +88,7 @@ const First = () => {
 
         {/* Multidimensional Profile */}
         <div className="text-center">
-          <img
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRndLtsr35q1fXXx_zATvNeUQjp6HYjvUDkzXQCvM2e-B5d6pRS"
             alt="Multidimensional Profile"
             className="mx-auto mb-4 w-24 h-20"
@@ -106,7 +106,7 @@ const First = () => {
 
         {/* Career Development */}
         <div className="text-center">
-          <img
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs6Urrhzv73fePJZLNyILAoFkCauPg0bw6Nn7JKb-lOkvh4wYT"
             alt="Career Development"
             className="mx-auto mb-4 w-24 h-20"
@@ -123,7 +123,7 @@ const First = () => {
 
         {/* Time & Education Management */}
         <div className="text-center">
-          <img
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIjInYU4bhsdvpMM_eXd5eyZC9gxXI3Dz_8x8aQgnY5HSOQI8E"
             alt="Time & Education Management"
             className="mx-auto mb-4 w-24 h-20"
@@ -188,7 +188,7 @@ const Second = () => {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((step) => (
           <div key={step.id} className="bg-gray-100 rounded-lg p-6 shadow-lg">
-            <img
+            <Image
               src={step.image}
               alt={step.title}
               className="mx-auto mb-4 w-full h-36 object-contain md:object-cover"

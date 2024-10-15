@@ -1,7 +1,9 @@
+'ues client'
+
 import React from "react";
 
 import { FaStar } from "react-icons/fa";
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import AnimatedSection from "../AnimatedSection";
 import Image from "next/image";
@@ -47,36 +49,36 @@ function TestimonialCard() {
   };
   return (
     <div>
-      <div className=" px-3" >
-        <div className="text-center my-8">
-          <h2 className="text-2xl md:text-[34px] font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
-            Reviews
-          </h2>
-        </div>
-        <AnimatedSection>
-        <div className="2xl:mx-28">
-          <Carousel
-            responsive={responsive}
-            className="py-20"
-            infinite={true}
-            autoPlay={true}
-            transitionDuration={500}
-            autoPlaySpeed={2000}
-            draggable={true}
-            arrows={false}
-          >
-            {items.map((item, index) => {
-              return (
-                <>
-                  <ReviewCard name={item.name} image={item.image} text={item.text} key={index}/>
-                </>
-              );
-            })}
-          </Carousel>
-        </div>
-        </AnimatedSection>
-      </div>      
-    </div>
+    <div className=" " >
+      <div className="text-center my-8">
+        <h2 className="text-2xl md:text-[34px] font-bold mb-2 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
+          Reviews
+        </h2>
+      </div>
+      <AnimatedSection>
+      {/* <div className=" ">
+        <Carousel
+          responsive={responsive}
+          className="py-20 px-0 mx-0 justify-between"
+          infinite={true}
+          autoPlay={false}
+          transitionDuration={500}
+          autoPlaySpeed={2000}
+          draggable={true}
+          arrows={false}
+        >
+          {items.map((item, index) => {
+            return (
+              <>
+                <ReviewCard name={item.name} image={item.image} text={item.text} key={index}/>
+              </>
+            );
+          })}
+        </Carousel>
+      </div> */}
+      </AnimatedSection>
+    </div>      
+  </div>
   );
 }
 
@@ -84,7 +86,7 @@ export default TestimonialCard;
 
 const ReviewCard = ({ image, name, text }) => {
   return (
-    <div className="max-w-sm mx-auto bg-blue-800 text-white rounded-3xl shadow-md p-6 h-[22rem]">
+    <div className="max-w-sm bg-blue-800 text-white rounded-3xl shadow-md p-6 h-[22rem]">
       <div className="flex items-center justify-center">
         <div className="rounded-full overflow-hidden w-28 h-28 mb-4 mt-[-80px] border-2 border-black">
           <Image

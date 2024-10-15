@@ -7,7 +7,7 @@ export default function SuitablityBanner() {
 
   return (
     <div>
-      <div className="bg-[#022F46] 2xl:px-44 text-white p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14">
+      <div className="bg-[#022F46]   text-white py-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14 container-pad">
         {/* Left Section */}
         <div className="md:w-1/2">
           <h2 className="lg:text-[34px] font-bold mb-4 heading-font"style={{fontWeight:"700"}}>

@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import AnimatedSection from "../AnimatedSection";
-
+import Image from "next/image";
 const awards = [
   {
     title: "Excellence in Career Counselling",
@@ -28,10 +28,10 @@ const awards = [
 export default function Hero() {
   return (
     <>
-      <div className=" mb-5">
+      <div className=" mb-5 container-mar">
         <div className="">
           <AnimatedSection>
-            <div className="text-center font-bold py-[5%] md:px-[15%] px-7 md:leading-[38px] leading-8">
+            <div className="text-center font-bold py-[5%]  md:leading-[38px] leading-8">
               <h3
                 className="text-[18px] md:text-[22px] text-black"
                 
@@ -59,8 +59,8 @@ export default function Hero() {
 
 const Card = () => {
   return (
-    <div className="w-full overflow-hidden flex flex-col md:flex-row 2xl:px-48">
-      <div className="md:basis-1/2 md:pl-10 p-6 flex flex-col justify-center">
+    <div className="w-full overflow-hidden flex flex-col md:flex-row  ">
+      <div className="md:basis-1/2     flex flex-col justify-center">
         <h2 className="text-2xl lg:text-[34px] font-bold text-[#022F46] heading-font" style={{fontWeight:"700"}}>
           The World's Most Accurate
           <br />
@@ -75,7 +75,7 @@ const Card = () => {
           Read More
         </button>
       </div>
-      <div className="md:basis-1/2 py-6 px-3 md:px-10 md:pl-0 flex flex-col items-center hero-video-container">
+      <div className="md:basis-1/2 py-6       flex flex-col items-center hero-video-container">
         <iframe
           width="560"
           height="315"
@@ -99,39 +99,39 @@ const Card = () => {
 const AwardCard = ({ title, desc }) => {
   return (
     <>
-      <div className="flex justify-center items-center text-center w-72">
-        <img
-          decoding="async"
-          width="60"
-          height="132"
-          src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
-          alt={title}
-        />
+    <div className="flex justify-center items-center text-center w-72">
+      <Image
+        decoding="async"
+        width="60"
+        height="132"
+        src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
+        alt={title}
+      />
+      <div>
         <div>
           <div>
             <div>
-              <div>
-                <h3 className=" text-[18px] heading-font text-black">
-                  {title}
-                </h3>
-              </div>
+              <h3 className=" text-[18px] heading-font text-black">
+                {title}
+              </h3>
             </div>
-            <div>
-              <div className="text-[15px] text-[#7A7A7A]">
-                <p>“{desc}"</p>
-              </div>
+          </div>
+          <div>
+            <div className="text-[15px] text-[#7A7A7A]">
+              <p>“{desc}"</p>
             </div>
           </div>
         </div>
-        <img
-          decoding="async"
-          width="60"
-          height="132"
-          src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"
-          alt={title}
-        />
       </div>
-    </>
+      <Image
+        decoding="async"
+        width="60"
+        height="132"
+        src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"
+        alt={title}
+      />
+    </div>
+  </>
   );
 };
 

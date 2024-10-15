@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from "react"
+import Image from "next/image";
 export default function InterestTestHero() {
   return (
     <div>
@@ -21,7 +21,7 @@ export default function InterestTestHero() {
 
         {/* Right Section */}
         <div className="md:w-[35%] mt-8 md:mt-0 relative">
-          <img
+          <Image
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMyvfHnkL-BKWdqTgNlsXtRj4wRB1a-OD8_ZtfKezq3Jnn5vTr" /* Replace with actual image URL */
             alt="Child holding books"
             className="w-full rounded-md "

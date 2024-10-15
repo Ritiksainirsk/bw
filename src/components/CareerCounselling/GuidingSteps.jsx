@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import "./css/CareerCounselling.css";
 import AnimatedSection from "../AnimatedSection";
+import Image from "next/image";
 
 const GuidingSteps = () => {
   return (
@@ -631,7 +632,7 @@ const GuidingSteps = () => {
 
           {/* image */}
           <div className="w-[25rem] h-full mt-64 hidden 2xl:block">
-            <img
+            <Image
               src="https://www.tcsion.com/per/g01/pub/1016/iDH/instance/1/product/microsite_data/IONCAREERINSIGHT/microsite_1722424800648/image/guide_banner.png?version=142946389"
               alt=""
               className="w-full"

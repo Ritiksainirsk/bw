@@ -110,15 +110,17 @@ export default function Home() {
     <>
       <div className="overflow-hidden">
         <HeroCarousel />
-        <div className="max-w-[1550px] mx-auto overflow-hidden">
+        <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
           <AwardRecognition />
-        </div>
+
+
         <Hero />
         <Services />
-        {/* <TestsCard cardData={benefits}/>
+         <TestsCard cardData={benefits}/>
+        </div>
         <CareerSuitabilitySection />
+        <div className="max-w-[1550px] mx-auto overflow-hidden  container-mar">
         <HowItWorks data={content}/>
-        <div className="max-w-[1550px] mx-auto overflow-hidden">
           <Ebook />
           <Achievment />
           <PartnersVideoCard />
@@ -126,7 +128,7 @@ export default function Home() {
           <TestimonialCard />
           <Blog />
           <Accordion />
-        </div> */}
+        </div>  
       </div>
     </>
   );

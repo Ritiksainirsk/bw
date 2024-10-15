@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Link from 'next/link'
+import Image from "next/image";
 import slugify from "slugify";
 
 const CareerCard = ({ title, date, readTime, image, category }) => {
@@ -13,7 +14,7 @@ const CareerCard = ({ title, date, readTime, image, category }) => {
   return (
     <div className="flex flex-col">
       <Link href={`/blog/${slug}`}>
-        <img
+        <Image
           src={image}
           alt={title}
           className="w-full rounded-lg object-cover mb-4 h-48 md:h-64"

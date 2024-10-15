@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function TestFeatures({data,handleForthCompData,handleFourthCompTitle,handleFourthCompDescription}) {
   
@@ -57,7 +58,7 @@ const DMITFeatureCard = ({ title, description, icon, bgColor, onChange,id }) => 
         onChange={(e) => onChange(id,"description", e.target.value)}
       />
       <div className="absolute left-20 bottom-[-25px]">
-        <img
+        <Image
           src={icon}
           alt={title}
           className="w-20 h-20 rounded-full"

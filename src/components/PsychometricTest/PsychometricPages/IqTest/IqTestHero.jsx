@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function IqTestHero() {
   return (
@@ -20,7 +21,7 @@ export default function IqTestHero() {
 
         {/* Right Section */}
         <div className="md:w-[30%] mt-8 md:mt-0 relative">
-          <img
+          <Image
             src="https://www.pngall.com/wp-content/uploads/5/Scientist-Albert-Einstein-Transparent.png" /* Replace with actual image URL */
             alt="Child holding books"
             className="w-full rounded-md "

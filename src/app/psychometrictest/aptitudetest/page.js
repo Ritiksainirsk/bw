@@ -40,7 +40,7 @@ export default function PsychometricTest() {
       </div>
     <SuitablityBanner />
        <div className="max-w-[1500px] mx-auto overflow-hidden">
-           <Ebook />
+           {/* <Ebook /> */}
         <WhyChooseBrainwonders />
         <TestimonialCard />
         <Accordion />

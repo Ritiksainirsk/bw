@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const CareerCounsellingGuidance = () => {
   const articles = [
@@ -120,7 +121,7 @@ const CareerCounsellingGuidance = () => {
       <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
         {articles.map((article, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg p-4">
-            <img
+            <Image
               src={article.image}
               alt={article.title}
               className="w-full h-64 object-cover rounded-t-lg"

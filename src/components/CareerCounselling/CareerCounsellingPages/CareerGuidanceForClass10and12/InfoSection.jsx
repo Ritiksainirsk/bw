@@ -22,7 +22,7 @@ export default function InfoSection() {
   ];
 
   return (
-    <div className="bg-[#043451] py-8 md:px-14">
+    <div className="bg-[#043451] py-8  container-pad">
       <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-20">
         {items.map((item, index) => (
           <div key={index} className="flex flex-col items-center text-center">

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function Assessment() {
   
@@ -58,7 +59,7 @@ const First = () => {
           </ul>
         </div>
         <div className="md:w-[40%] w-[100%] md:pl-8 mt-6 md:mt-0">
-          <img
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSra2MmFMelNW55iG_fbI9CWr-cbytdi3hT2X4IyucDFMQ5i5Fc"
             alt="Student studying"
             className="w-full"
@@ -81,7 +82,7 @@ const Second = () => {
       <div className="flex flex-col md:flex-row items-center">
 
         <div className="md:w-[40%] w-[100%] md:pr-8 mb-6 md:mt-0">
-          <img
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSra2MmFMelNW55iG_fbI9CWr-cbytdi3hT2X4IyucDFMQ5i5Fc"
             alt="Student studying"
             className="w-full"

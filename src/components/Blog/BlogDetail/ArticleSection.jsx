@@ -1,5 +1,6 @@
 import React from "react";
 import SocialShare from "./SocialShare";
+import Image from "next/image";
 
 const ArticleSection = () => {
   return (
@@ -29,7 +30,7 @@ const ArticleSection = () => {
             <SocialShare />
           </div>
         </div>
-        <img
+        <Image
           src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3vYxL9l5uaANS-qGDsQcnANh9pJDTe1UowXKrd7IJP4V4HgMQ" // Replace with your image URL
           alt="Diploma Courses After 10th"
           className="w-full rounded-lg"

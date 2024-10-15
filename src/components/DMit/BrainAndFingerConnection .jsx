@@ -1,7 +1,7 @@
 // src/components/BrainAndFingerConnection.js
 import React, { useEffect } from 'react';
 import AnimatedSection from '../AnimatedSection';
-
+import Image from 'next/image'
 
 const BrainAndFingerConnection = () => {
   return (
@@ -13,7 +13,7 @@ const BrainAndFingerConnection = () => {
       <AnimatedSection>
       <div className="flex flex-col lg:flex-row items-center">
         <div className="flex-1 mb-4 md:mb-0 md:mr-4">
-          <img 
+          <Image 
             src="https://www.centurymedicaldental.com/wp-content/uploads/2022/01/Left-and-Right-Hemisphere-of-the-Brain.jpg.webp" 
             alt="Brain and Finger Connection" 
             className="w-full h-auto" 

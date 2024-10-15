@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React  from "react";
+import Image from "next/image";
 
 const EditableCard = ({ title, description, imageUrl,link,handleThirdCompData,id }) => {
   
@@ -13,7 +14,7 @@ const EditableCard = ({ title, description, imageUrl,link,handleThirdCompData,id
       {/* Circular Image Section */}
       {imageUrl ? (
         <div className="relative">
-          <img
+          <Image
             className="w-20 h-20 object-cover rounded-full"
             src={imageUrl}
             alt={title}

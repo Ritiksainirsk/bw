@@ -2,6 +2,7 @@ import React  from "react";
 import Marquee from "react-fast-marquee";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 import AnimatedSection from "../AnimatedSection";
 
 const awards = [
@@ -59,7 +60,7 @@ const AwardWinners = () => {
                 className="bg-white shadow-md rounded-lg w-60 md:w-auto p-6 text-center ml-11 border-[1px] border-gray-300 h-72"
               >
                 <div className="flex justify-center">
-                  <img
+                  <Image
                     src={award.image}
                     alt=""
                     className="w-24 md:w-36 "

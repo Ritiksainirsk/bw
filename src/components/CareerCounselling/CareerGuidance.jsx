@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from "next/image";
 import AnimatedSection from "../AnimatedSection";
 
 const CareerGuidance = () => {
@@ -45,7 +46,7 @@ const CareerGuidance = () => {
             key={index}
             className="flex flex-col items-center text-center p-4"
           >
-            <img
+            <Image
               src={item.icon}
               alt={`Icon ${index + 1}`}
               className="mb-4 w-16 h-16"

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function CareerGuidence() {
 
@@ -12,7 +13,7 @@ export default function CareerGuidence() {
   return (
     <div>
       <div>
-        <div className="mx-auto py-8 px-5 lg:px-1" data-aos="fade-up">
+        <div className="mx-auto py-8 " data-aos="fade-up">
           <div className="my-8">
             {/* Section Title */}
             <h2 className="text-2xl lg:text-3xl font-bold text-[#022F46] mb-2 text-center heading-font" style={{fontWeight:"600"}}>
@@ -32,7 +33,7 @@ export default function CareerGuidence() {
             {/* Left Video Section */}
             <div className="lg:w-[50%]">
               <div className="w-full h-full">
-                <img
+                <Image
                   src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrhSzjrTlGlEyAN63Qq9LdcKis2PYQqlcDThJmn433UBau-PBI"
                   alt=""
                   className="w-full h-full object-cover"

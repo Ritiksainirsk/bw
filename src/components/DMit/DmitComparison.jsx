@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function DmitComparison() {
   return (
-    <div className="bg-gray-50 p-10 xl:px-32">
+    <div className="bg-gray-50  ">
       <h2 className="text-2xl lg:text-[34px] text-center mb-4" style={{fontWeight:"700"}}>DMIT vs Other Tests</h2>
       <p className="text-center mb-8 lg:text-[17px]" style={{fontWeight:"500"}}>
         How DMIT Differs from Other Tests? <br />

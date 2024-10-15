@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function PersnalityTestHero() {
   return (
@@ -23,7 +24,7 @@ export default function PersnalityTestHero() {
 
         {/* Right Section */}
         <div className="md:w-[30%] mt-8 md:mt-0 relative">
-          <img
+          <Image
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-LEtCZ_rii0yzax_hsTkz-fmrSEZIybHWqxBcXg315-0CXtXe" /* Replace with actual image URL */
             alt="Child holding books"
             className="w-full rounded-md "

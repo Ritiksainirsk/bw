@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function AptitudeMeddleSection() {
   useEffect(() => {
@@ -145,7 +146,7 @@ const AptitudeTestSampleQuestions = () => {
               <p className="text-black mb-4 text-sm md:text-base">
                 {item.prompt}
               </p>
-              <img
+              <Image
                 src={item.image}
                 alt=""
                 className="w-full max-w-xs md:max-w-sm h-auto my-4 mx-auto"

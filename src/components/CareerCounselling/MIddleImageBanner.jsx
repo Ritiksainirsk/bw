@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import Earth from "@/assets/earth_icon.png";
 import Data from "@/assets/data_analysis.png";
 import Management from "@/assets/management.png";
+import Image from "next/image";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -42,7 +43,7 @@ const FirstBanner = () => {
         <AnimatedSection>
         <div className="flex flex-col md:flex-row items-center mt-8">
           <div className="md:w-1/2 flex justify-center">
-            <img
+            <Image
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6zjQLCOk0WBZO0lFK6U17OkPO9jZUuONZoArz2FNTJcajU0c"
               alt="Career Counseling"
               className="w-3/4 md:w-2/3"
@@ -82,7 +83,7 @@ const SecondBanner = () => {
         <AnimatedSection>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20">
           <div className="md:w-[26%]">
-            <img
+            <Image
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTauSCxFrAo84-YpO4jpScIjwLe6O0qPoyGPMynXGk5JgLyRg5S" // Replace with your image URL
               alt="Career Guidance"
               className="w-full"
@@ -191,7 +192,7 @@ const CareerOptions = () => {
                   : ""
               }`}
             >
-              <img
+              <Image
                 src={card.icon}
                 alt=""
                 className="rounded-full object-cover w-full"
@@ -213,7 +214,7 @@ const CareerOptions = () => {
           </div>
 
           <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
+            <Image
               src={
                 card.title === "Aptitide Test"
                   ? Management

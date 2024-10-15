@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import AnimatedSection from "../../../AnimatedSection";
+import Image from "next/image";
 
 const HowItWorks = ({ data }) => {
   return (
-    <div className="mx-auto py-12">
+    <div className="mx-auto py-12 ">
       <h3
         className="text-2xl md:text-[34px] font-bold text-center mb-2 heading-font"
         style={{ fontWeight: "700" }}
@@ -17,7 +18,7 @@ const HowItWorks = ({ data }) => {
         {data.description}
       </p>
       <AnimatedSection>
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start space-y-12 md:space-y-0 px-5 md:space-x-12">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-12 md:space-y-0  gap-12 ">
           {data.steps.map((step, index) => (
             <div
               key={index}
@@ -28,7 +29,7 @@ const HowItWorks = ({ data }) => {
                   {step.step}
                 </span>
                 <div className="w-64">
-                  <img
+                  <Image
                     src={step.imgSrc}
                     alt={step.imgAlt}
                     className="rounded-full w-full border-2 border-gray-200"

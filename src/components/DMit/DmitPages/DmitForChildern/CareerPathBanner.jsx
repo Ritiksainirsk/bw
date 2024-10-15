@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from "next/image";
 
 export default function CareerPathBanner() {
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function CareerPathBanner() {
             </p>
           </div>
           <div className="flex-1 mb-4 md:mb-0 md:mr-4">
-            <img
+            <Image
               src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1J1Ysgd2WWNH0Qj14IzwAdIhx5as9JoXA1hvir-KXfe8XMzTR"
               alt="Brain and Finger Connection"
               className="w-full h-auto"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const teamMembers = [
   {
@@ -31,7 +32,7 @@ const TeamMembers = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
-              <img src={member.image} alt={member.name} className="w-full h-64 md:h-96 object-cover" />
+              <Image src={member.image} alt={member.name} className="w-full h-64 md:h-96 object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
                 <p className="mt-2 md:text-[16px] text-gray-700">{member.description}</p>

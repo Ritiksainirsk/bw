@@ -8,11 +8,12 @@ import Image from 'next/image';
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import Img1 from '/public/CareerCounsellingAfter12th.webp';
-import Img2 from '/public/CareerCounselling.webp';
-import Img3 from '/public/CareerGuidanceAfter10th.webp';
-import Img4 from '/public/CareerGuidanceForClass8thAnd9thStudents.webp';
-import Img5 from '/public/DMIT.webp';
+// import Img1 from '/public/CareerCounsellingAfter12th.webp';
+import Img1 from '@/assets/slider-images/CareerCounsellingAfter12th.webp';
+import Img2 from '@/assets/slider-images/CareerCounselling.webp';
+import Img3 from '@/assets/slider-images/CareerGuidanceAfter10th.webp';
+import Img4 from '@/assets/slider-images/CareerGuidanceForClass8thAnd9thStudents.webp';
+import Img5 from '@/assets/slider-images/DMIT.webp';
 
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
@@ -83,59 +84,69 @@ export default function HeroCarousel() {
     nextArrow: <CustomNextArrow />,
   };
 
-  return (
-    <div className="relative w-full">
-      <Slider {...settings}>
-        {/* Static Slide */}
-        <div className="relative w-full h-[55vh] lg:h-[70vh]">
-          <Image
-            src={Img4}
-            alt="Static Slide"
-            className="w-full h-full object-cover"
-            width={1200}
-            height={800}
-            priority
-          />
-          <div className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-6 lg:gap-4">
-            <h1 className="text-4xl 2xl:text-[40px] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0" style={{ fontWeight: "700" }}>
-              Class 10th
-            </h1>
-            <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left" style={{ fontWeight: "500" }}>
-              Career Counselling Services for Class 10th students contains
-              Stream Selection, Career option Exploration and everything a
-              class 10th student needs to get Confidence and Career Clarity
-            </p>
-            <button className="bg-[#F23E36] lg:p-2 p-1 text-[14px] lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
-              Explore services for Class 10th
-            </button>
-          </div>
-        </div>
 
-        {/* Dynamic Slides from Array */}
-        {slides.map((slide, index) => (
-          <div key={index} className="relative w-full  h-[55vh] lg:h-[70vh]">
+
+  return (
+    <>
+      <div className="relative w-full">
+        <Slider {...settings}>
+          {/* Static Slide */}
+          <div className="relative w-full h-[55vh] lg:h-[70vh]">
             <Image
-              src={slide.img}
-              alt={`Slide ${index + 1}`}
+              src={Img4}
+              alt="Static Slide"
               className="w-full h-full object-cover"
-              width={1200}
-              height={800}
-              priority
+              width={120}
+              height={120}
             />
-            <div className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5 lg:gap-4">
-              <h2 className="text-3xl 2xl:text-[40px] leading-[60px] heading-font text-shadow text-center lg:text-start" style={{ fontWeight: "700" }}>
-                {slide.title}
-              </h2>
-              <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left" style={{ fontWeight: "500" }}>
-                {slide.description}
+            <div
+              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-6 lg:gap-4"
+            >
+              <h1 className="text-4xl 2xl:text-[40px] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0" style={{fontWeight:"700"}}>
+                Class 10th
+              </h1>
+              <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left"  style={{fontWeight:"500"}}>
+                Career Counselling Services for Class 10th students contains
+                Stream Selection, Career option Exploration and everything a
+                class 10th student needs to get Confidence and Career Clarity
               </p>
-              <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
-                {slide.btntext}
+              <button className="bg-[#F23E36] lg:p-2 p-1 text-[14px] lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
+                Explore services for Class 10th
               </button>
             </div>
           </div>
-        ))}
-      </Slider>
-    </div>
+
+          {/* Dynamic Slides from Array */}
+          {slides.map((slide, index) => (
+            <div key={index} className="relative w-full  h-[55vh] lg:h-[70vh]">
+              <Image
+                src={slide.img}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+                width={120}
+                height={120}
+                key={index}
+              />
+              <div
+                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5 lg:gap-4"
+              
+                key={index}
+              >
+                <h2 className="text-3xl 2xl:text-[40px] leading-[60px] heading-font text-shadow text-center lg:text-start" style={{fontWeight:"700"}}>
+                  {slide.title}
+                </h2>
+                <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left"  style={{fontWeight:"500"}}>
+                  {slide.description}
+                </p>
+                <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
+                  {slide.btntext}
+                </button>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   );
+
 }

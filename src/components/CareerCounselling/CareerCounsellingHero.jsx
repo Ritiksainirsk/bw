@@ -9,6 +9,7 @@ import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
 import { Link } from "react-router-dom";
+import Image from "next/image";
 
 export default function CareerCounsellingHero() {
 
@@ -42,7 +43,7 @@ export default function CareerCounsellingHero() {
 
 const CareerCounsellingVideo = () => (
   <AnimatedSection>
-  <div className="py-8 px-3 md:px-36 flex justify-center items-center bg-[#E0EFFF]">
+  <div className="py-8   flex justify-center items-center bg-[#E0EFFF]">
     <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
       <div className="text-center lg:text-left">
         <h1
@@ -194,7 +195,7 @@ const CareerOptions = () => {
                   : ""
               }`}
             >
-              <img
+              <Image
                 src={card.icon}
                 alt=""
                 className="rounded-full object-cover w-full"

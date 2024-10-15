@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+ 
 
 export default function AptitudeHero() {
   return (
@@ -23,7 +25,7 @@ export default function AptitudeHero() {
 
         {/* Right Section */}
         <div className="md:w-[30%] mt-8 md:mt-0 relative">
-          <img
+          <Image
             src="https://www.eklavvya.com/wp-content/uploads/2022/09/Aptitude-test.png" /* Replace with actual image URL */
             alt="Child holding books"
             className="w-full rounded-md "

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const OurTeam = () => {
   return (
@@ -16,7 +17,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="lg:w-1/2 order-1 lg:order-2">
-            <img
+            <Image
               src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ3TbPXnAwq7EBMKvk3YLK5GXXehRHYV-2S6KMbzH53ySuGSkb"
               alt="Our Vision"
               className="w-full md:h-[21rem] object-cover rounded-lg"
@@ -36,7 +37,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="lg:w-1/2 order-1 lg:order-1">
-            <img
+            <Image
               src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlZVHcyBsEZUsmH_VUChtfi1uoc0EIu1l_BnAgzDnnvaK7GNJC"
               alt="Our Mission"
               className="w-full h-auto md:h-[21rem] object-cover rounded-lg"

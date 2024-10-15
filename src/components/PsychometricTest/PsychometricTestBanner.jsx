@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Image from "next/image";
 
 export default function PsychometricTestBanner() {
   
@@ -26,7 +26,7 @@ export default function PsychometricTestBanner() {
           </button>
         </div>
         <div className="md:w-1/4 mt-8 md:mt-0 flex justify-center md:justify-end ">
-          <img
+          <Image
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT91vdIdPgbz4fG5KA8VRyi5GTzTCdQa_dJxGx-VJsd2zhjlZtH"
             alt="Career Counselling"
             className="w-full h-auto rounded-[7rem]"

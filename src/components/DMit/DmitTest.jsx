@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./css/DmitTest.css";
-
+import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
@@ -38,7 +38,7 @@ export default function DmitTest() {
 }
 
 const DMTITestComponent = () => (
-  <div className="py-8 px-3 md:px-36 flex justify-center items-center bg-[#E0EFFF]">
+  <div className="py-8   flex justify-center items-center bg-[#E0EFFF]">
     <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
       <div className="text-center lg:text-left">
         <h1
@@ -80,7 +80,7 @@ const DMTITestComponent = () => (
 
 const DmttTestDescription = () => {
   return (
-    <div className=" mx-auto p-6 2xl:px-[9rem]">
+    <div className=" mx-auto py-6">
       <h3
         className="text-2xl lg:text-[34px] text-center mb-4 heading-font text-[#022F46]"
         style={{ fontWeight: "700" }}
@@ -150,7 +150,7 @@ const CareerOptions = () => {
     },
   ];
   return (
-    <div className="flex justify-center rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
+    <div className="flex justify-between rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <Link
           href={
@@ -185,7 +185,7 @@ const CareerOptions = () => {
               <div
                 className={`w-[85px] h-[100px] pb-4 rounded-full text-center`}
               >
-                <img
+                <Image
                   src={card.icon}
                   alt=""
                   className=" h-full w-full rounded-full object-cover"
@@ -247,7 +247,7 @@ const CareerOptions2 = () => {
     },
   ];
   return (
-    <div className="flex justify-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-between rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <div
           className={`w-[25rem] h-[25rem] border-2 border-gray containerBox relative p-7 overflow-hidden ${
@@ -273,7 +273,7 @@ const CareerOptions2 = () => {
 
           <div>
             <div className={`w-[80px] h-[100px] pb-4 rounded-full text-center`}>
-              <img
+              <Image
                 src={card.icon}
                 alt=""
                 className=" h-full w-full rounded-full object-cover"

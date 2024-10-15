@@ -6,10 +6,10 @@ const BannerCard = () => {
 
   return (
     <AnimatedSection>
-    <div className="bg-[#022F46] p-8 text-center">
+    <div className="bg-[#022F46] py-8  text-center container-pad">
       <h2 className="text-white text-2xl md:text-[34px] font-bold mb-2 heading-font" style={{fontWeight:"700"}}>Don't Be an Average Student</h2>
       <p className="text-white mb-6" style={{fontWeight:'500'}}>Know your inborn Talent with DMIT Test</p>
-      <div className="flex flex-wrap justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+      <div className="flex flex-wrap justify-between space-x-0 md:space-x-4 space-y-4 md:space-y-0">
         <input
           type="text"
           placeholder="Name"

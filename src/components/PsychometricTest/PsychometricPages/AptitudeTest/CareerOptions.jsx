@@ -6,7 +6,7 @@ import Management from "@/assets/management.png";
 
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -104,7 +104,7 @@ const CareerOptionsCard = () => {
                   : ""
               }`}
             >
-              <img
+              <Image
                 src={card.icon}
                 alt=""
                 className="rounded-full object-cover w-full"
@@ -126,7 +126,7 @@ const CareerOptionsCard = () => {
           </div>
 
           <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
+            <Image
               src={
                 card.title === "Aptitide Test"
                   ? Management
@@ -221,7 +221,7 @@ const CareerOptionsCard2 = () => {
                   : ""
               }`}
             >
-              <img
+              <Image
                 src={card.icon}
                 alt=""
                 className="rounded-full object-cover w-full"
@@ -243,7 +243,7 @@ const CareerOptionsCard2 = () => {
           </div>
 
           <div className=" ml-28 translate-x-[100%] overlay-content-image absolute w-full h-full top-0 ">
-            <img
+            <Image
               src={
                 card.title === "Aptitide Test"
                   ? Management

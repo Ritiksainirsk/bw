@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Image from "next/image";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
@@ -36,7 +36,7 @@ const BrainAndFingerprintPanel = ({ data, handleSixthCompDataChanger }) => {
       <div className="flex flex-col lg:flex-row items-center">
         {/* Editable image */}
         <div className="flex-1 mb-4 md:mb-0 md:mr-4">
-          <img
+          <Image
             src={
               data.imageUrl
                 ? data.imageUrl

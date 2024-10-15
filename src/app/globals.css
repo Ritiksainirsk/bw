@@ -1,7 +1,6 @@
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
- 
-
+   
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -162,7 +161,10 @@ p {
 /* styles.css */
 /* hover  cards css */
 .containerBox {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; 
+  min-height: 400px;
+  border: 2px solid black;
+  display: flex;
 }
 
 .overlay-content-btn,
@@ -245,3 +247,20 @@ p {
 
 
 
+
+
+.container-mar{
+  margin-inline:130px;
+}
+
+.container-pad{
+  padding-inline:130px;
+}
+
+.hello{
+  border:solid 1px black;
+}
+
+.shadow-blue:hover{
+  box-shadow: 5px 6px 2px 1px #043148;
+}

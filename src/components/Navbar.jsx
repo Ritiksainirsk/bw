@@ -10,6 +10,8 @@ import { PiPhoneCallFill } from "react-icons/pi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Link from 'next/link'
+import Image from "next/image";
+
 import "animate.css";
 
 export const NavItem = ({
@@ -71,15 +73,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`bg-white py-[12px] w-full shadow-lg ${
+      className={`bg-white py-[12px]  w-full shadow-lg ${
         isFixed ? "fixed z-50" : ""
       }`}
     >
       {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
-      <nav className="text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px] mx-auto px-4">
+      <nav className=" justify-between text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px]  container-mar">
         <div className=" md:w-[240px] flex flex-col w-full">
           <a href="/">
-            <img
+            <Image
               src="https://www.brainwonders.in/images/logo.webp"
               sizes="(max-width: 570px) 100vw, 570px"
               alt="brainwonders"
@@ -111,14 +113,14 @@ export default function Navbar() {
                   tabIndex={0}
                   className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-white"
                 >
-                 <NavItem
+                  {/* <NavItem
                     to="/"
                     setActivePage={setActivePage}
                     activePage={activePage}
                     handleItemClick={handleItemClick}
                   >
                     Home
-                  </NavItem>
+                  </NavItem> */}
                   <NavItem
                     to="/dmit"
                     setActivePage={setActivePage}
@@ -159,22 +161,22 @@ export default function Navbar() {
                   >
                     Franchise
                   </NavItem>
-                  <NavItem
+                  {/* <NavItem
                     to="/gallery"
                     setActivePage={setActivePage}
                     activePage={activePage}
                     handleItemClick={handleItemClick}
                   >
                     Gallery
-                  </NavItem>
-                  <NavItem
+                  </NavItem> */}
+                  {/* <NavItem
                     to="/aboutus"
                     setActivePage={setActivePage}
                     activePage={activePage}
                     handleItemClick={handleItemClick}
                   >
                     About Us
-                  </NavItem>
+                  </NavItem> */}
                   <NavItem
                     to="/blog"
                     setActivePage={setActivePage}
@@ -183,7 +185,6 @@ export default function Navbar() {
                   >
                     Blog
                   </NavItem>
-                  
                 </ul>
               )}
             </div>
@@ -193,14 +194,13 @@ export default function Navbar() {
 
         <div className="hidden gap-4 text-[16px] lg:flex items-center">
           <ul className="flex ">
-            <NavItem
+            {/* <NavItem
               to="/"
               setActivePage={setActivePage}
               activePage={activePage}
             >
               Home
-            </NavItem>
-          
+            </NavItem> */}
             <NavItem
               to="/dmit"
               setActivePage={setActivePage}
@@ -236,13 +236,13 @@ export default function Navbar() {
             >
               Franchise
             </NavItem>
-            <NavItem
+            {/* <NavItem
               to="/gallery"
               setActivePage={setActivePage}
               activePage={activePage}
             >
               Gallery
-            </NavItem>
+            </NavItem> */}
             <NavItem
               to="/blog"
               setActivePage={setActivePage}
@@ -250,35 +250,47 @@ export default function Navbar() {
             >
               Blog
             </NavItem>
-            <NavItem
+            {/* <NavItem
               to="/aboutus"
               setActivePage={setActivePage}
               activePage={activePage}
             >
               About Us
-            </NavItem>
+            </NavItem> */}
           </ul>
 
           <button className="bg-[#F7CA01] py-[8px] px-[14px] font-semibold rounded-[50px] text-[16px] ">
             Explore
           </button>
         </div>
-      </nav> 
 
-      <div className="absolute top-4 right-10 items-center hidden 2xl:flex gap-1">
+
+        <div className=" items-center  2xl:flex gap-1">
         <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm hidden text-white py-2 px-4 bookanappointmentbtn">
           Book an Appointment
         </button>
-        <PiPhoneCallFill className="text-[40px] bounce ml-8 " /> 
-      </div> 
-      <SignupBanner /> 
+        <PiPhoneCallFill className="text-[40px] bounce ml-8 " />
+        {/*  */}
+      </div>
+      </nav>
+      {/*<<<<<<<<<<---------------------  */}
+
+    
+      {/*  */}
+
+      {/*  */}
+      <SignupBanner />
+      {/*  */}
+      {/*  */}
       <div className="fixed bottom-24 lg:bottom-5 right-5 z-50 cursor-pointer">
         <a href="https://api.whatsapp.com/send?phone=919987422220&text=I%20have%20enquiry%20for%20https://www.brainwonders.in//" target="_blank">
         <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
         </a>
-      </div> 
+      </div>
+      {/*  */}
     </header>
   );
+
 }
 
 function SignupBanner() {

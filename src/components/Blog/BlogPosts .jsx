@@ -152,7 +152,7 @@ const HandpickedPosts = ({ value }) => {
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (
             <div key={post.id} className="flex flex-col">
-              <img
+              <Image
                 src={post.image}
                 alt={post.title}
                 className="w-full h-48 md:h-64 rounded-lg object-cover mb-4"

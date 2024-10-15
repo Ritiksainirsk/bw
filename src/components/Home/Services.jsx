@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 
 import Earth from "@/assets/earth_icon.png";
 import Data from "@/assets/data_analysis.png";
@@ -55,7 +56,7 @@ const items = [
 ];
 const items2 = [
   {
-   title: "Career Counslling",
+    title: "Career Counslling",
     subtitle:
       "clear the confusion and build a career with confidence, based on personal abilities and current trends",
     url: CareerCounselling,
@@ -88,15 +89,14 @@ const items2 = [
   },
 ];
 export default function Services() {
-
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-between flex-col  ">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h2 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]" style={{fontWeight:"700"}}>
-          How does Brainwonders services 
+        <h2 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]" style={{ fontWeight: "700" }}>
+          How does Brainwonders services
           <br />
-        <span> help you to sucess in your career? </span> 
+          <span> help you to sucess in your career? </span>
         </h2>
         <HoverEffectCard />
         <HoverEffectCard2 />
@@ -109,55 +109,52 @@ export default function Services() {
 const HoverEffectCard = () => {
   return (
     <AnimatedSection>
-    <div className="flex justify-center rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
-      {items.map((card, index) => (
-        <div
-        key={index}
-          className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
-            card.title === "DMIT Test"
-              ? "hover:bg-yellow-500"
-              : "" || card.title === "Aptitide Test"
-              ? "hover:bg-blue-500"
-              : "" || card.title === "Ideal Career Test"
-              ? "hover:bg-green-500"
-              : "" || card.title === "Psychometric Test"
-              ? "hover:bg-red-500"
-              : ""
-          }`}
-        >
-          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
-            <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
-              Explore <FaArrowRight />
-            </button>
-          </div>
-
-          <div>
-            <div className={`w-[80px] pb-4 rounded-full text-center`}>
-              <img
-                src={card.url}
-                alt={index}
-                className="rounded-full object-cover"
-                width={120}
-                height={120}
-              />
-            </div>
-
-            <h3 className="text-xl font-semibold heading-font pb-3 text-black">
-              {card.title}
-            </h3>
-            <p className="mb-6 lg:mb-2">{card.subtitle}</p>
-
-            <div className="mt-4 btnn ">
-              <button className="py-2 tracking-wider flex items-center gap-3">
-                {card.buttonText} <FaAngleRight />
+      <div className="flex justify-between w-full rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
+        {items.map((card, index) => (
+          <div
+            key={index}
+            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden   h-fit  ${card.title === "DMIT Test"
+                ? "hover:bg-yellow-500"
+                : card.title === "Aptitide Test"
+                  ? "hover:bg-blue-500"
+                  : card.title === "Ideal Career Test"
+                    ? "hover:bg-green-500"
+                    : card.title === "Psychometric Test"
+                      ? "hover:bg-red-500"
+                      : ""
+              }`}
+          >
+            <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+              <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
+                Explore <FaArrowRight />
               </button>
             </div>
-          </div>
 
-        
-        </div>
-      ))}
-    </div>
+            <div className=" flex flex-col   gap-y-0.5">
+              <div className={`w-[80px] pb-4 rounded-full text-center`}>
+                <Image
+                  src={card.url}
+                  alt={index}
+                  className="rounded-full object-cover"
+                  width={120}
+                  height={120}
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold heading-font pb-3 text-black">
+                  {card.title}
+                </h3>
+                <p className="mb-6 lg:mb-2">{card.subtitle}</p></div>
+
+              <div className="mt-4 btnn ">
+                <button className="py-2 tracking-wider flex items-center gap-3">
+                  {card.buttonText} <FaAngleRight />
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </AnimatedSection>
   );
 };
@@ -165,54 +162,55 @@ const HoverEffectCard = () => {
 const HoverEffectCard2 = () => {
   return (
     <AnimatedSection>
-    <div className="flex justify-center rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
-      {items2.map((card, index) => (
-        <div
-          className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
-            card.title === "Career Counslling"
-              ? "hover:bg-pink-300"
-              : "" || card.title === "Personalit Test"
-              ? "hover:bg-purple-200"
-              : "" || card.title === "IQ Test"
-              ? "hover:bg-orange-500"
-              : "" || card.title === "Interest Test"
-              ? "hover:bg-gray-400"
-              : ""
-          }`}
-          key={index}
-        >
-          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
-            <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
-              Explore <FaArrowRight />
-            </button>
-          </div>
-
-          <div>
-            <div className={`w-[80px] pb-4 rounded-full text-center`}>
-              <img
-                src={card.url}
-                alt={card.title}
-                className="rounded-full object-cover"
-                width={120}
-                height={120}
-              />
-            </div>
-
-            <h3 className="text-lg font-semibold heading-font pb-3 text-black">
-              {card.title}
-            </h3>
-            <p className="mb-6 lg:mb-2">{card.subtitle}</p>
-
-            <div className="mt-4 btnn ">
-              <button className="py-2 tracking-wider flex items-center gap-3">
-                {card.buttonText} <FaAngleRight />
+      <div className="flex  justify-between w-full  rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
+        {items2.map((card, index) => (
+          <div
+            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden  h-fit ${card.title === "Career Counslling"
+                ? "hover:bg-pink-300"
+                : "" || card.title === "Personalit Test"
+                  ? "hover:bg-purple-200"
+                  : "" || card.title === "IQ Test"
+                    ? "hover:bg-orange-500"
+                    : "" || card.title === "Interest Test"
+                      ? "hover:bg-gray-400"
+                      : ""
+              }`}
+            key={index}
+          >
+            <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+              <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
+                Explore <FaArrowRight />
               </button>
             </div>
-          </div>
 
-        </div>
-      ))}
-    </div>
+            <div className=" flex flex-col   gap-y-1">
+              <div className={`w-[80px] pb-4 rounded-full text-center`}>
+                <Image
+                  src={card.url}
+                  alt={card.title}
+                  className="rounded-full object-cover"
+                  width={120}
+                  height={120}
+                />
+              </div>
+              <div>
+
+                <h3 className="text-lg font-semibold heading-font pb-3 text-black">
+                  {card.title}
+                </h3>
+                <p className="mb-6 lg:mb-2">{card.subtitle}</p>
+              </div>
+
+              <div className="mt-4 btnn ">
+                <button className="py-2 tracking-wider flex items-center gap-3">
+                  {card.buttonText} <FaAngleRight />
+                </button>
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
     </AnimatedSection>
   );
 };
@@ -230,7 +228,7 @@ const HoverEffectCard2 = () => {
 //         <p className="text-white font-semibold">Course & College selection</p>
 //       </div>
 //       <div className="absolute bottom-0 right-0 transform translate-x-1/4 ">
-//         <img
+//         <Image
 //           src={Man} // Replace with actual image URL
 //           alt="Excited Student"
 //           className="h-40"

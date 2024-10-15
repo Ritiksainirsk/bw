@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavItem } from "../Navbar";
 import AnimatedSection from "../AnimatedSection";
+import Image from "next/image";
 
 const blogs = [
   {
@@ -34,12 +35,12 @@ export default function Blog() {
   const [activePage, setActivePage] = useState(window.location.pathname);
   return (
     <div>
-      <div className="p-4 ">
+      <div className=" ">
         <h2 className="text-2xl md:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
           OUR BLOGS
         </h2>
         <AnimatedSection>
-        <div className="flex justify-center gap-10 flex-wrap">
+        <div className="flex justify-between gap-10 flex-wrap">
           {blogs.map((blog, index) => (
             <Card
               key={index}
@@ -65,7 +66,7 @@ export default function Blog() {
       </div>
       {/* FAQ */}
       <div className="flex justify-center">
-        <img
+        <Image
           src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
           alt="No image"
           className=" w-[28%]"
@@ -81,7 +82,7 @@ export default function Blog() {
 const Card = ({ imageSrc, title, date, description }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden w-[22rem]">
-      <img
+      <Image
         src={imageSrc}
         alt={title}
         className="w-full h-48 "

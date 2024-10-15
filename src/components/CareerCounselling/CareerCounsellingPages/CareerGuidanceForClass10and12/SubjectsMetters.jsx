@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './Css/CareerCousellingPages.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Image from "next/image";
 export default function SubjectsMetters() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -18,7 +18,7 @@ export default function SubjectsMetters() {
 
 const DescriptionBenner = () => {
   return (
-    <div className=" mx-auto p-6 2xl:px-[6rem] mt-9"  data-aos="fade-up">
+    <div className=" mx-auto py-6  mt-9"  data-aos="fade-up">
       <h3 className="text-3xl lg:text-3xl text-center mb-4 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Why Brainwonders For Career Guidance after 10th?
       </h3>
@@ -88,7 +88,7 @@ function SubjectMattersCompo() {
           
           {/* Image with Responsive Adjustment */}
           <div className="relative z-10 h-20 w-20 flex-shrink-0 rounded-full overflow-hidden group-hover:bg-transparent">
-            <img 
+            <Image 
               src={item.icon} 
               alt="" 
               className="w-full h-full object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-110"

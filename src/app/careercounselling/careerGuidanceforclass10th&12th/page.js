@@ -69,10 +69,10 @@ export default function CareerGuidanceForClass10and12() {
 
   return (
     <div>
-      <CareerCounsellingNavbar />
+      {/* <CareerCounsellingNavbar /> */}
     <HeroSection/>
    <InfoSection />
-         <div className="max-w-[1500px] mx-auto overflow-hidden">
+         <div className="max-w-[1500px] mx-auto overflow-hidden container-pad">
         <AwardRecognition />
        <SubjectsMetters />
          <CareerGuidence />  
@@ -86,7 +86,7 @@ export default function CareerGuidanceForClass10and12() {
       <div className="max-w-[1500px] mx-auto overflow-hidden">
         <PartnersVideoCard />
         <AwardWinners />
-        <TestimonialCard />
+        {/* <TestimonialCard /> */}
         <Benefits />
         <Accordion />
       </div> 

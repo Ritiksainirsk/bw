@@ -2,6 +2,7 @@ import React from 'react';
 import Img1 from '@/assets/careerCouselling/Explore Careers.webp'
 import Img2 from '@/assets/careerCouselling/Discover Yourself.webp'
 import Img3 from '@/assets/careerCouselling/Get Guided.webp'
+import Image from 'next/image';
 import AnimatedSection from '../AnimatedSection';
 
 const CareerCounselingExpectations = () => {
@@ -64,7 +65,7 @@ const CareerCounselingExpectations = () => {
                 </li>
               ))}
             </ul>
-            <img
+            <Image
               src={item.image}
               alt={item.title}
               className="w-48 h-48 rounded-full mt-auto"

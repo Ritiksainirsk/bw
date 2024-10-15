@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#E5EEF8] to-[#A4BFD6] pt-10">
-      <div className="mx-auto px-4 lg:px-28">
+      <div className="mx-auto    container-pad">
         <div className="flex flex-wrap justify-between ">
           {/* Left Column */}
           <div

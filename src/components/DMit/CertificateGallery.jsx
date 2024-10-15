@@ -1,6 +1,7 @@
 // src/components/CertificateGallery.js
 import React, { useEffect } from 'react';
 import AnimatedSection from '../AnimatedSection';
+import Image from 'next/image';
 
 const CertificateGallery = () => {
   return (
@@ -9,7 +10,7 @@ const CertificateGallery = () => {
       <AnimatedSection>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         <div className="flex justify-center">
-          <img 
+          <Image
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf7_ZLZ7Njr8LNJLQYZiQ-RDwQTB9dQysontgYWydA_vzlUSsE" 
             alt="Certificate 1" 
             className="w-auto h-auto max-w-xs shadow-lg" 
@@ -18,7 +19,7 @@ const CertificateGallery = () => {
           />
         </div>
         <div className="flex justify-center">
-          <img 
+          <Image
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEIu_e3emBmmz3Oepl0F1_Fh-wzUT8kFoFQxPOW9WdN0Wezx0p" 
             alt="Certificate 2" 
             className="w-auto h-auto max-w-xs shadow-lg" 
@@ -27,7 +28,7 @@ const CertificateGallery = () => {
           />
         </div>
         <div className="flex justify-center">
-          <img 
+          <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoi_E0echqWEdpoAC1xmuLJdTc70Uvg2UMKXVDZcnnwpNyMVoh" 
             alt="Certificate 3" 
             className="w-auto h-auto max-w-xs shadow-lg" 

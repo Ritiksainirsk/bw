@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from "next/image";
 
 export default function MiddleBanner() {
   useEffect(() => {
@@ -54,7 +55,7 @@ const First = () => {
             key={index}
             className="flex flex-col items-center text-center p-4 md:w-[450px]"
           >
-            <img
+            <Image
               src={item.icon}
               alt={`Icon ${index + 1}`}
               className="mb-4 w-44 h-48"
@@ -115,7 +116,7 @@ const Second = () => {
               key={index}
               className="flex flex-col items-center p-4 w-[450px]"
             >
-              <img
+              <Image
                 src={item.icon}
                 alt={`Icon ${index + 1}`}
                 className="mb-4 w-44 h-48"

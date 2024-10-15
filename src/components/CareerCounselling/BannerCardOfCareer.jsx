@@ -5,10 +5,10 @@ const BannerCardOfCareer = () => {
 
   return (
     <AnimatedSection>
-    <div className="bg-[#022F46] p-8 text-center" >
+    <div className="bg-[#022F46]  text-center container-pad py-8" >
       <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-2 heading-font" style={{fontWeight:"600"}}>Take the first step towards career clarity!</h3>
       <p className="text-white mb-6">Discover your best-fit career with the world’s most-advanced career assessment</p>
-      <div className="flex flex-wrap justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+      <div className="flex flex-wrap justify-between space-x-0 md:space-x-4 space-y-4 md:space-y-0">
         <input
           type="text"
           placeholder="Name"

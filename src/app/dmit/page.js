@@ -24,13 +24,13 @@ import BannerCardOfCareer from "@/components/CareerCounselling/BannerCardOfCaree
 import DmitComparison from "@/components/DMit/DmitComparison";
 
 export default function Dmit() {
-//   const { pathname } = useLocation();
-//   useEffect(() => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   }, [pathname]);
+  //   const { pathname } = useLocation();
+  //   useEffect(() => {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth",
+  //     });
+  //   }, [pathname]);
 
   const benefits = [
     {
@@ -110,28 +110,38 @@ export default function Dmit() {
   };
 
   return (
-    <div>
+    <>
+      <div className="container-mar">
       <DmitTest />
-     <BannerCard />
-       <TestsCard cardData={benefits} />
+        
+      </div>
+      <BannerCard />
+      <div className="container-mar">
+      <TestsCard cardData={benefits} />
       <HowItWorks data={content} />
+      </div>
+      
+        
       <BannerCardOfCareer />
-     <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="container-mar">
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <DmitFeature />
       </div>
-       <InformationSection />
-     <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <InformationSection />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <BrainAndFingerConnection />
       </div>
-           <DmitComparison />
-   <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <DmitComparison />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <PartnersVideoCard />
-           <CertificateGallery />
-     <AwardWinners />
-           <TestimonialCard />
-       <Accordion />
-       
-      </div> 
+        <CertificateGallery />
+        <AwardWinners />
+        <TestimonialCard />
+        <Accordion />
+
+      </div>
     </div>
+    </>
+
   );
 }

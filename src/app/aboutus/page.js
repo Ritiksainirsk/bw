@@ -15,9 +15,17 @@ export default function AboutUs() {
 
   return (
     <div>
-<h1>hello wolrd</h1>
-
-  
+      <AboutUsHero />
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
+        <AboutUsVideoSection />
+        <OurTeam />
+        <TeamMembers />
+       <Achievment />
+       <AwardWinners />
+        <PartnersVideoCard />
+         <TestimonialCard />
+        <Accordion />  
+      </div>
     </div>
   );
 }

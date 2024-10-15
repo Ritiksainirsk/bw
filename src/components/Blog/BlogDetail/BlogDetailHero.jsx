@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function BlogDetailHero() {
   return (
@@ -28,7 +29,7 @@ export default function BlogDetailHero() {
 
         {/* Image Section */}
         <div className="2xl:w-1/3 lg:w-[40%] md:w-[50%] w-full 2xl:h-64">
-          <img
+          <Image
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxKNE5u8MO2MSo4qElUAvBJ3zI_zOFzTSopnURYR_NaMzMINvn" // Replace with your actual image URL
             alt="Diploma Courses After 10th"
             className="w-full h-full object-cover"

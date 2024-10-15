@@ -16,7 +16,7 @@ const AnimatedSection = ({ children, animationProps }) => {
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.4, delay: 0.2 }}
       {...animationProps}
-      className=""
+      className="w-full test"
     >
       {children}
     </motion.div>

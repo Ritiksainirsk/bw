@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 import AnimatedSection from "../AnimatedSection";
 
 export default function DmitFeature() {
@@ -73,7 +74,7 @@ const DMITFeatureCard = ({ title, description, icon, bgColor }) => {
       </h3>
       <p className="text-white mb-10">{description}</p>
       <div className=" absolute left-20 bottom-[-25px]">
-        <img
+        <Image
           src={icon}
           alt={title}
           className="w-20 h-20 rounded-full"

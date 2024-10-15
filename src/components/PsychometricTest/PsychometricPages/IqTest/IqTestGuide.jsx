@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function IqTestGuide() {
   return (
@@ -69,7 +70,7 @@ const FirstComponent = () => {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((step) => (
           <div key={step.id} className="bg-gray-100 rounded-lg p-6 shadow-lg">
-            <img
+            <Image
               src={step.image}
               alt={step.title}
               className="mx-auto mb-4 w-full h-36 object-contain md:object-cover"
