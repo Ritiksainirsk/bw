@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function DmitComparison() {
   return (
-    <div className="bg-gray-50  ">
+    <div className="bg-gray-50 container-pad ">
       <h2 className="text-2xl lg:text-[34px] text-center mb-4" style={{fontWeight:"700"}}>DMIT vs Other Tests</h2>
       <p className="text-center mb-8 lg:text-[17px]" style={{fontWeight:"500"}}>
         How DMIT Differs from Other Tests? <br />
@@ -13,7 +13,7 @@ export default function DmitComparison() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10" style={{textAlign:"justify"}}>
         {/* DMIT Test Section */}
-        <div className="rounded-lg p-6">
+        <div className="rounded-lg  ">
           <h3 className="text-xl font-bold mb-4 text-center">DMIT Test</h3>
           <ul className="space-y-4 text-gray-700">
             <li>
@@ -35,7 +35,7 @@ export default function DmitComparison() {
         </div>
 
         {/* Other Tests Section */}
-        <div className="rounded-lg p-6">
+        <div className="rounded-lg  ">
           <h3 className="text-xl font-bold mb-4 text-center">Other Tests</h3>
           <ul className="space-y-4 text-gray-700">
             <li>

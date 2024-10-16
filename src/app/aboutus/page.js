@@ -16,7 +16,7 @@ export default function AboutUs() {
   return (
     <div>
       <AboutUsHero />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
         <AboutUsVideoSection />
         <OurTeam />
         <TeamMembers />

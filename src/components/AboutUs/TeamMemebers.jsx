@@ -27,12 +27,13 @@ const teamMembers = [
 const TeamMembers = () => {
   return (
     <section className="py-12">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto">
         <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-8">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
-              <Image src={member.image} alt={member.name} className="w-full h-64 md:h-96 object-cover" />
+              <Image src={member.image} alt={member.name} className="w-full h-64 md:h-96 object-cover"  width={80}
+                  height={60}/>
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
                 <p className="mt-2 md:text-[16px] text-gray-700">{member.description}</p>

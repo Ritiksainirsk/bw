@@ -77,7 +77,7 @@ export default function HeroCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3500,
     arrows: true,
     prevArrow: <CustomPrevArrow />,
@@ -100,7 +100,7 @@ export default function HeroCarousel() {
               height={120}
             />
             <div
-              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-6 lg:gap-4"
+              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%]   gap-6 lg:gap-4 container-mar"
             >
               <h1 className="text-4xl 2xl:text-[40px] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0" style={{fontWeight:"700"}}>
                 Class 10th
@@ -128,7 +128,7 @@ export default function HeroCarousel() {
                 key={index}
               />
               <div
-                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5 lg:gap-4"
+                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] container-pad gap-5 lg:gap-4"
               
                 key={index}
               >

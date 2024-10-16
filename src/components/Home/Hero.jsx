@@ -28,10 +28,10 @@ const awards = [
 export default function Hero() {
   return (
     <>
-      <div className=" mb-5 container-mar">
+      <div className=" mb-5  ">
         <div className="">
           <AnimatedSection>
-            <div className="text-center font-bold py-[5%]  md:leading-[38px] leading-8">
+            <div className="text-center font-bold py-[5%]  md:leading-[38px] leading-8 container-pad">
               <h3
                 className="text-[18px] md:text-[22px] text-black"
                 
@@ -47,7 +47,7 @@ export default function Hero() {
         {/*  */}
         <AnimatedSection>
         <div
-          className="flex items-center justify-center w-full bg-[#F7F5FF]  "
+          className="flex items-center justify-center w-full bg-[#F7F5FF]  container-pad"
         >
           <Card />
         </div>
@@ -79,14 +79,14 @@ const Card = () => {
         <iframe
           width="560"
           height="315"
-          className="w-[100%] md:w-[80%] h-52 md:h-72 rounded-xl heroVideo"
+          className="w-[73%] md:w-[73%] h-56 rounded-xl heroVideo "
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <p className="text-center text-sm mt-2">
+        <p className="text-center text-sm mt-2 w-[73%]">
           Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
           <br />
           its DMIT franchise model

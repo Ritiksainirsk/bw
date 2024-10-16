@@ -12,7 +12,7 @@ const PsychometricTestsSection = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 p-8"  data-aos="fade-up">
+    <div className="bg-gray-100 p-8 container-pad"  data-aos="fade-up">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-3/4">
           <h3 className="text-2xl md:text-3xl font-bold text-blue-900 heading-font" style={{fontWeight:"600"}}>What are Psychometric Tests?</h3>

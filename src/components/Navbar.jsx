@@ -26,8 +26,7 @@ export const NavItem = ({
     <Link
     href={to} // Use href instead of to
     onClick={() => {
-      setActivePage(to); // Ensure setActivePage is defined in the parent component
-      handleItemClick(); // Ensure handleItemClick is defined in the parent component
+      setActivePage(to); // Ensure setActivePage is defined in the parent component 
     }}
     className={`py-[8px] px-[6px] 2xl:px-[10px] 2xl:py-[12px] rounded ${
       activePage === to ? "bg-[#022F46] text-white" : "text-[#022F46]"

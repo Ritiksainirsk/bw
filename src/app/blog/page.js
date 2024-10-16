@@ -35,7 +35,7 @@ export default function Blog() {
   return (
     <div>
       <BlogHeader />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
         <CareerGuidanceSection/>
       </div>
     </div>

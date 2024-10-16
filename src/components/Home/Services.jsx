@@ -113,20 +113,20 @@ const HoverEffectCard = () => {
         {items.map((card, index) => (
           <div
             key={index}
-            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden   h-fit  ${card.title === "DMIT Test"
-                ? "hover:bg-yellow-500"
+            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden   h-fit inline-border ${card.title === "DMIT Test"
+                ? "hover:bg-[#9bc9ff]"
                 : card.title === "Aptitide Test"
-                  ? "hover:bg-blue-500"
+                  ? "hover:bg-[#c8bbff]"
                   : card.title === "Ideal Career Test"
-                    ? "hover:bg-green-500"
+                    ? "hover:bg-[#ffb1cc]"
                     : card.title === "Psychometric Test"
-                      ? "hover:bg-red-500"
+                      ? "hover:bg-[#ffd972]"
                       : ""
-              }`}
+              }     ${index ==0 ? "left-radius-border" : ""}    ${index ==items.length -1 ? "right-radius-border" : ""}`}
           >
             <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
               <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
-                Explore <FaArrowRight />
+                Explore<FaArrowRight />
               </button>
             </div>
 
@@ -148,7 +148,7 @@ const HoverEffectCard = () => {
 
               <div className="mt-4 btnn ">
                 <button className="py-2 tracking-wider flex items-center gap-3">
-                  {card.buttonText} <FaAngleRight />
+                  {card.buttonText}  <FaAngleRight />
                 </button>
               </div>
             </div>
@@ -165,7 +165,7 @@ const HoverEffectCard2 = () => {
       <div className="flex  justify-between w-full  rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
         {items2.map((card, index) => (
           <div
-            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden  h-fit ${card.title === "Career Counslling"
+            className={` inline-border w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden  h-fit ${card.title === "Career Counslling"
                 ? "hover:bg-pink-300"
                 : "" || card.title === "Personalit Test"
                   ? "hover:bg-purple-200"
@@ -174,7 +174,7 @@ const HoverEffectCard2 = () => {
                     : "" || card.title === "Interest Test"
                       ? "hover:bg-gray-400"
                       : ""
-              }`}
+              }  ${index ==0 ? "left-radius-border" : ""}    ${index ==items2.length -1 ? "right-radius-border" : ""}`}
             key={index}
           >
             <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">

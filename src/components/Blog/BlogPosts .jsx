@@ -156,6 +156,8 @@ const HandpickedPosts = ({ value }) => {
                 src={post.image}
                 alt={post.title}
                 className="w-full h-48 md:h-64 rounded-lg object-cover mb-4"
+                width={80}
+                  height={60}
               />
               <h3 className="md:text-xl text-lg font-bold">{post.title}</h3>
               <div className="flex justify-between items-center">

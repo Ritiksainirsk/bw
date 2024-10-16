@@ -61,7 +61,7 @@ const AchievementCard = ({ icon, count, label, index }) => {
   });
 
   return (
-    <div className={`bg-white shadow-lg rounded-lg lg:p-6  flex flex-col lg:flex-row justify-center items-center gap-3  p-4  m-4 
+    <div className={`bg-white shadow-lg rounded-lg lg:p-6  flex flex-col lg:flex-row justify-center items-center gap-3  py-3 px-[16px] m-4 
     
       ${
     index === 0 || index === achievements.length - 1 ? "m-0" : ""  
@@ -77,10 +77,10 @@ const AchievementCard = ({ icon, count, label, index }) => {
         />
       </div>
       <div className="flex flex-col items-center lg:items-start lg:text-left">
-        <h3 className="text-3xl lg:text-3xl heading-font text-black" ref={ref}>
+        <h3 className="text-[22px]   heading-font text-black" ref={ref}>
           {count}
         </h3>
-        <p className="text-gray-600 text-lg">{label}</p>
+        <p className="text-gray-600 text-[15px]">{label}</p>
       </div>
     </div>
   );

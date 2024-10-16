@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutUsVideoSection() {
   return (
     <div>
-      <div className="mx-auto py-2 px-5 lg:px-5">
+      <div className="mx-auto py-2  ">
         <div className="my-8">
           {/* Section Title */}
           <h2 className="text-3xl lg:text-4xl font-bold text-[#022F46] mb-6 text-center heading-font">
@@ -13,7 +13,7 @@ export default function AboutUsVideoSection() {
 
         <div className="flex flex-col items-center lg:flex-row gap-5 md:gap-16">
           {/* Left Video Section */}
-          <div className="lg:w-[35%] bg-gray-100 p-4 rounded-xl md:h-[21rem]">
+          <div className="  bg-gray-100 py-4 rounded-xl md:h-[21rem]">
             <div className="w-full h-full">
               <iframe
                 className="rounded-xl h-52 md:h-[80%]"

@@ -12,7 +12,7 @@ export default function PsychometricTestBanner() {
 
   return (
     <div>
-      <div data-aos="fade-up" className="bg-[#070954] text-white p-8 2xl:px-40 flex flex-col lg:gap-20 md:flex-row items-center justify-between my-5">
+      <div data-aos="fade-up" className="bg-[#070954] text-white  flex flex-col lg:gap-20 md:flex-row items-center justify-between my-5 container-pad py-8">
         <div className="md:w-3/4 ">
           <h3 className="text-3xl lg:text-4xl font-bold heading-font">
             Not sure if career counselling is right for you?

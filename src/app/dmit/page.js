@@ -111,36 +111,46 @@ export default function Dmit() {
 
   return (
     <>
-      <div className="container-mar">
       <DmitTest />
-        
-      </div>
-      <BannerCard />
       <div className="container-mar">
-      <TestsCard cardData={benefits} />
-      <HowItWorks data={content} />
-      </div>
-      
-        
-      <BannerCardOfCareer />
-      <div className="container-mar">
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <DmitFeature />
-      </div>
-      <InformationSection />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <BrainAndFingerConnection />
-      </div>
-      <DmitComparison />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
-        <PartnersVideoCard />
-        <CertificateGallery />
-        <AwardWinners />
-        <TestimonialCard />
-        <Accordion />
 
       </div>
-    </div>
+      <BannerCard />
+      <TestsCard cardData={benefits} />
+      <div className="container-mar">
+        <HowItWorks data={content} />
+      </div>
+
+
+      <BannerCardOfCareer />
+      <div className="container-mar">
+        <div className="max-w-[1500px] mx-auto overflow-hidden">
+          <DmitFeature />
+        </div>
+        </div>
+
+        <InformationSection />
+        <div className="container-mar">
+
+        <div className="max-w-[1500px] mx-auto overflow-hidden">
+          <BrainAndFingerConnection />
+        </div>
+        </div>
+
+
+
+        <DmitComparison />
+        <div className="container-mar">
+
+        <div className="max-w-[1500px] mx-auto overflow-hidden">
+          <PartnersVideoCard />
+          <CertificateGallery />
+          <AwardWinners />
+          <TestimonialCard />
+          <Accordion />
+
+        </div>
+      </div>
     </>
 
   );

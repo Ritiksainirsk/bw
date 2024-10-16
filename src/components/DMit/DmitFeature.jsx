@@ -47,7 +47,7 @@ export default function DmitFeature() {
           individual's potential.
         </p>
         <AnimatedSection>
-          <div className="flex flex-wrap justify-between">
+          <div className="flex md:flex-nowrap	 lg:flex-nowrap	 flex-wrap justify-center">
             {features.map((feature, index) => (
               <DMITFeatureCard
                 key={index}
@@ -67,7 +67,7 @@ export default function DmitFeature() {
 const DMITFeatureCard = ({ title, description, icon, bgColor }) => {
   return (
     <div
-      className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center w-[450px]`}
+      className={`relative bg-${bgColor}-500 rounded-lg p-6 m-4 flex flex-col items-center `}
     >
       <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 heading-font">
         {title}

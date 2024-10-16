@@ -13,7 +13,7 @@ export default function HeroCarausel() {
       {/* main Carousel */}
 
       {/* text content */}
-      <div className="px-7 md:px-16 2xl:px-80 my-14">
+      <div className="container-pad my-14 ">
         <h1 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]" style={{fontWeight:'600'}}>
           The World’s Most Powerful Psychometric Career Assessment
         </h1>
@@ -108,7 +108,7 @@ const Carouselll = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3500,
     arrows: true,
     prevArrow: <CustomPrevArrow />,
@@ -128,7 +128,7 @@ const Carouselll = () => {
               height={120}
             />
             <div
-              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] px-8 lg:px-16 gap-5 md:gap-7"
+              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%]   gap-5 md:gap-7 container-pad"
                   style={{
                 background:
                   "linear-gradient(90deg, rgba(5, 69, 137, 1) 0%, rgba(44, 157, 252, 1) 100%)",

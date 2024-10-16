@@ -37,7 +37,7 @@ const WhyChooseBrainwonders = () => {
 
   return (
     <div className="bg-white " data-aos="fade-up">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto container-mar">
         <h3 className="text-2xl lg:text-4xl font-bold text-center heading-font text-[#022F46]">
           Why Choose Brainwonders
         </h3>

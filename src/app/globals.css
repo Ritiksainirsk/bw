@@ -162,8 +162,7 @@ p {
 /* hover  cards css */
 .containerBox {
   transition: all 0.5s ease-in-out; 
-  min-height: 400px;
-  border: 2px solid black;
+  min-height: 400px; 
   display: flex;
 }
 
@@ -243,8 +242,40 @@ p {
 .admin_sidebar{
   height: calc(100vh - 80px);
 }
+ 
 
+@media (max-width: 768px) { /* Mobile view */
 
+  .container-mar{
+    margin-inline:40px !important; 
+  }
+  
+  
+  .container-mar-l{
+    margin-left:40px !important; 
+  }
+  
+  
+  .container-mar-r{
+    margin-right:40px !important; 
+  }
+  .container-pad{
+    padding-inline:40px !important; 
+  }
+  
+  .container-mar{
+    margin-inline:40px !important; 
+  }
+  
+  .container-pad-l{
+    padding-left:40px !important; 
+  }
+  
+  
+  .container-pad-r{
+    padding-right:40px !important; 
+  }
+}
 
 
 
@@ -253,14 +284,54 @@ p {
   margin-inline:130px;
 }
 
+
+.container-mar-l{
+  margin-left:130px;
+}
+
+
+.container-mar-r{
+  margin-right:130px;
+}
 .container-pad{
   padding-inline:130px;
 }
 
+.container-mar{
+  margin-inline:130px;
+}
+
+.container-pad-l{
+  padding-left:130px;
+}
+
+
+.container-pad-r{
+  padding-right:130px;
+}
 .hello{
   border:solid 1px black;
 }
 
 .shadow-blue:hover{
   box-shadow: 5px 6px 2px 1px #043148;
+}
+
+
+.left-radius-border{
+  border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+
+
+
+.right-radius-border{
+  border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+
+}
+
+.inline-border{
+  /* border-left: 1px solid #80808030;   */
+  border-right: 1px solid #80808030; 
 }

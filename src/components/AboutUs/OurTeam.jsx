@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const OurTeam = () => {
   return (
-    <div className="bg-white py-12 px-4 md:px-20">
+    <div className="bg-white py-12  ">
       <div className=" mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-12">
           {/* Vision Section */}
@@ -21,6 +21,8 @@ const OurTeam = () => {
               src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ3TbPXnAwq7EBMKvk3YLK5GXXehRHYV-2S6KMbzH53ySuGSkb"
               alt="Our Vision"
               className="w-full md:h-[21rem] object-cover rounded-lg"
+              width={80}
+              height={60}
             />
           </div>
         </div>
@@ -41,6 +43,8 @@ const OurTeam = () => {
               src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlZVHcyBsEZUsmH_VUChtfi1uoc0EIu1l_BnAgzDnnvaK7GNJC"
               alt="Our Mission"
               className="w-full h-auto md:h-[21rem] object-cover rounded-lg"
+              width={80}
+              height={60}
             />
           </div>
         </div>

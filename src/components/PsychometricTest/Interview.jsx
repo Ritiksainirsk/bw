@@ -18,8 +18,8 @@ export default function Interview() {
   
   return (
     <div>
-      <div className="bg-[#F9F9F9] py-16" data-aos="fade-up">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#F9F9F9] py-16 container-pad" data-aos="fade-up">
+        <div className="max-w-7xl mx-auto     ">
           <h3
             className="text-2xl lg:text-3xl font-bold text-center heading-font mb-4 text-[#022F46]"
             style={{ fontWeight: "600" }}

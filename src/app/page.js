@@ -113,10 +113,13 @@ export default function Home() {
         <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
           <AwardRecognition />
 
-
+</div>
         <Hero />
+          <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
         <Services />
+</div>
          <TestsCard cardData={benefits}/>
+        <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
         </div>
         <CareerSuitabilitySection />
         <div className="max-w-[1550px] mx-auto overflow-hidden  container-mar">

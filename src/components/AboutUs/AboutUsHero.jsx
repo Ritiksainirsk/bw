@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutUsHero = () => {
   return (
-    <div className="bg-[#E0EFFF] py-12 px-4 md:px-20">
-      <div className="max-w-7xl mx-auto text-center">
+    <div className="bg-[#E0EFFF] py-12 container-pad">
+      <div className="   text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-[#022F46] mb-6">  
           ABOUT US
         </h2>

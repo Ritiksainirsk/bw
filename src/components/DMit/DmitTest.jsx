@@ -9,11 +9,14 @@ import Link from 'next/link'
 export default function DmitTest() {
   return (
     <div>
-      <div className="">
+      <div className=" bg-[#E0EFFF] container-pad">
         <DMTITestComponent />
       </div>
       {/*  */}
-      <div>
+
+
+<div className="container-mar">
+<div>
         <DmttTestDescription />
       </div>
       {/*  */}
@@ -32,13 +35,14 @@ export default function DmitTest() {
           <CareerOptions2 />
         </AnimatedSection>
       </div>
+</div>
       {/*  */}
     </div>
   );
 }
 
 const DMTITestComponent = () => (
-  <div className="py-8   flex justify-center items-center bg-[#E0EFFF]">
+  <div className="py-8   flex justify-center items-center ">
     <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
       <div className="text-center lg:text-left">
         <h1

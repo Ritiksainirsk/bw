@@ -41,7 +41,7 @@ const AwardWinners = () => {
     <>
       <div className="py-8">
         <h2
-          className="text-2xl lg:text-[34px] text-center mb-2 heading-font px-5 text-[#022F46]"
+          className="text-2xl lg:text-[34px] text-center mb-2 heading-font   text-[#022F46]"
           style={{ fontWeight: "700" }}
         >
           5+ National Award Winners
@@ -52,23 +52,23 @@ const AwardWinners = () => {
           Counselling.
         </p>
         <AnimatedSection>
-        <div className="px-5">
-          <Marquee className="p-9" speed={50} direction="right">
+        <div className=" ">
+          <Marquee className="p-9 99999" speed={50} direction="right">
             {awards.map((award, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md rounded-lg w-60 md:w-auto p-6 text-center ml-11 border-[1px] border-gray-300 h-72"
+                className="bg-white shadow-md rounded-lg  w-60 h-56 p-6 text-center ml-11 border-[1px] border-gray-300  "
               >
                 <div className="flex justify-center">
                   <Image
                     src={award.image}
                     alt=""
-                    className="w-24 md:w-36 "
-                    width={120}
-                    height={120}
+                    // className="w-24 md:w-36 "
+                    width={60}
+                    height={60}
                   />
                 </div>
-                <div className="text-xl font-bold mb-2">{award.title}</div>
+                <div className="text-l font-bold mb-2">{award.title}</div>
                 <div className="text-gray-600 mb-2">{award.subtitle}</div>
                 <div className="text-gray-800">{award.years}</div>
               </div>

@@ -4,7 +4,7 @@ import AnimatedSection from "../AnimatedSection";
 const TestsCard = ({cardData}) => {
   
   return (
-    <div className="bg-gray-100 py-12 ">
+    <div className="bg-gray-100 py-12 container-pad">
     <div className="w-full mx-auto  ">
       <h2 className="text-2xl lg:text-[34px] font-bold text-center text-gray-900 mb-4">
         Why Choose the DMIT Test?

@@ -50,7 +50,7 @@ const BlogHeader = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
         {/* Check for dynamic route using Next.js router */}
         {pathname.includes('/blog/viewmore/:title') ? (
           ''
