@@ -47,7 +47,7 @@ export default function Hero() {
         {/*  */}
         <AnimatedSection>
         <div
-          className="flex items-center justify-center w-full bg-[#F7F5FF]  container-pad"
+          className="flex items-center justify-center w-full bg-[#F7F5FF]  container-pad py-2 my-4"
         >
           <Card />
         </div>
@@ -59,36 +59,40 @@ export default function Hero() {
 
 const Card = () => {
   return (
-    <div className="w-full overflow-hidden flex flex-col md:flex-row  ">
+    <div className="w-full overflow-hidden flex flex-col md:flex-row text-center md:text-left   ">
       <div className="md:basis-1/2     flex flex-col justify-center">
         <h2 className="text-2xl lg:text-[34px] font-bold text-[#022F46] heading-font" style={{fontWeight:"700"}}>
           The World's Most Accurate
-          <br />
-          <span>Career Test</span>
+           
+          Career Test 
         </h2>
         <p className="mt-4 text-black lg:text-[17px]" style={{fontWeight:"500"}}>
           Take our well researched, accurate DMIT test to
-          <br />
+           
           make the right education, skill and career choice.
         </p>
-        <button className="mt-6 py-2 text-[16px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
+        <div className="flex justify-evenly mt-6 ">
+     `   <button className="p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
           Read More
+        </button>`
+        <button className="  p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
+        Take Test Now
         </button>
+        </div>
       </div>
       <div className="md:basis-1/2 py-6       flex flex-col items-center hero-video-container">
         <iframe
           width="560"
           height="315"
-          className="w-[73%] md:w-[73%] h-56 rounded-xl heroVideo "
+          className="w-full  md:w-[73%] h-56 rounded-xl heroVideo "
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <p className="text-center text-sm mt-2 w-[73%]">
-          Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
-          <br />
+        <p className="text-center text-sm mt-2 w-full md:w-[73%]">
+          Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about 
           its DMIT franchise model
         </p>
       </div>

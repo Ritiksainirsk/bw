@@ -20,20 +20,19 @@ export const NavItem = ({
   setActivePage,
   activePage,
   handleItemClick,
-}) => { 
+}) => {
 
   return (
     <Link
-    href={to} // Use href instead of to
-    onClick={() => {
-      setActivePage(to); // Ensure setActivePage is defined in the parent component 
-    }}
-    className={`py-[8px] px-[6px] 2xl:px-[10px] 2xl:py-[12px] rounded ${
-      activePage === to ? "bg-[#022F46] text-white" : "text-[#022F46]"
-    }`}
-  >
-    {children}
-  </Link>
+      href={to} // Use href instead of to
+      onClick={() => {
+        setActivePage(to); // Ensure setActivePage is defined in the parent component 
+      }}
+      className={`py-[8px] px-[6px] 2xl:px-[10px] 2xl:py-[12px] rounded ${activePage === to ? "bg-[#022F46] text-white" : "text-[#022F46]"
+        }`}
+    >
+      {children}
+    </Link>
   );
 };
 
@@ -72,13 +71,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={`bg-white py-[12px]  w-full shadow-lg ${
-        isFixed ? "fixed z-50" : ""
-      }`}
+      className={`bg-white py-[12px]  w-full shadow-lg ${isFixed ? "fixed z-50" : ""
+        }`}
     >
       {/* ------------------>>>>>>>>>>>>>>>>>>>>> */}
       <nav className=" justify-between text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg  flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px]  container-mar">
-        <div className=" md:w-[240px] flex flex-col w-full">
+        <div className=" md:w-[240px] flex flex-col w-full ">
           <a href="/">
             <Image
               src="https://www.brainwonders.in/images/logo.webp"
@@ -89,16 +87,11 @@ export default function Navbar() {
             />
           </a>
           {/* DropDown Menu */}
-          <div className="flex items-center justify-between">
+          <div className=" ">
             {/* button */}
-            <div className="sm:hidden flex">
-              <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-lg text-white py-1 px-4  ">
-                Book an Appointment
-              </button>
-              <PiPhoneCallFill className="text-[30px] ml-4 " />
-            </div>
+
             {/* button */}
-            <div className="dropdown dropdown-end lg:hidden dropdownMenu sm:absolute sm:right-0 sm:top-0 bg-white">
+            <div className="mt-2 flex flex-row justify-between dropdown dropdown-end lg:hidden dropdownMenu sm:absolute sm:right-0 sm:top-0 bg-white">
               <div
                 tabIndex={0}
                 role="button"
@@ -106,11 +99,33 @@ export default function Navbar() {
                 onClick={toggleDropdown}
               >
                 <IoMenu className="text-3xl" />
+
+
+
+
               </div>
+              {/* this is small menu */}
+
+             <div className="flex flex-row">
+
+             <div className="sm:hidden flex items-center">
+                <button className="bg-[#022F46] text-[10px] rounded-lg h-[22px]  md:text-lg  2xl:text-lg text-white px-2 md:py-1 md:px-4  ">
+<p>                  Book an Appointment
+</p>                </button>
+              </div>
+              <div>
+
+                <PiPhoneCallFill className="text-[30px] ml-4 " />
+              </div>
+
+             </div>
+            </div>
+
+            <div>
               {isOpen && (
                 <ul
                   tabIndex={0}
-                  className="dropdown-content menu rounded-box z-[1] w-52 p-2 shadow bg-white"
+                  className="dropdown-content menu rounded-box z-[1] w-full p-2 shadow bg-white flex flex-wrap justify-center"
                 >
                   {/* <NavItem
                     to="/"
@@ -126,7 +141,7 @@ export default function Navbar() {
                     activePage={activePage}
                     handleItemClick={handleItemClick}
                   >
-                    Dmit
+                    small
                   </NavItem>
                   <NavItem
                     to="/careercounselling"
@@ -186,10 +201,13 @@ export default function Navbar() {
                   </NavItem>
                 </ul>
               )}
+
             </div>
+
           </div>
           {/*  DropDown Menu */}
         </div>
+
 
         <div className="hidden gap-4 text-[16px] lg:flex items-center">
           <ul className="flex ">
@@ -264,17 +282,17 @@ export default function Navbar() {
         </div>
 
 
-        <div className=" items-center  2xl:flex gap-1">
-        <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm hidden text-white py-2 px-4 bookanappointmentbtn">
-          Book an Appointment
-        </button>
-        <PiPhoneCallFill className="text-[40px] bounce ml-8 " />
-        {/*  */}
-      </div>
+        <div className=" hidden  bookanappointmentbtn items-center  2xl:flex gap-1">
+          <button className="bg-[#022F46] text-[12px] rounded-lg 2xl:text-sm hidden text-white py-2 px-4 bookanappointmentbtn">
+            Book an Appointment
+          </button>
+          <PiPhoneCallFill className="text-[40px] bounce ml-8 " />
+          {/*  */}
+        </div>
       </nav>
       {/*<<<<<<<<<<---------------------  */}
 
-    
+
       {/*  */}
 
       {/*  */}
@@ -283,7 +301,7 @@ export default function Navbar() {
       {/*  */}
       <div className="fixed bottom-24 lg:bottom-5 right-5 z-50 cursor-pointer">
         <a href="https://api.whatsapp.com/send?phone=919987422220&text=I%20have%20enquiry%20for%20https://www.brainwonders.in//" target="_blank">
-        <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
+          <IoLogoWhatsapp className="text-5xl text-[#25D366]" />
         </a>
       </div>
       {/*  */}

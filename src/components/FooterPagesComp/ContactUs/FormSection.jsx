@@ -4,28 +4,8 @@ import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaCommentDots } from 'reac
 export default function FormSection() {
   return (
     <div>
-          <div className="flex flex-col md:flex-row justify-between items-center p-10">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-start my-8 gap-8">
       {/* Left Section */}
-      <div className="md:w-1/2 mb-8 md:mb-0">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Take the leap toward a future of endless possibilities.</h2>
-        <div className="text-lg">
-          <div className="mb-6">
-            <h3 className="font-semibold text-xl">HO Address</h3>
-            <p>8th floor, Paras Business Center, Brainwonders 804, Carter Road No. 1, behind kasturba Police station, Asara Colony, Borivali East, Mumbai, Maharashtra 400066</p>
-          </div>
-          <div className="mb-6">
-            <h3 className="font-semibold text-xl">Contact Us</h3>
-            <p>Email id: support@brainwonders.in</p>
-            <p>Phone: +91 9987766531 / +91 998422220</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl">OUR HOURS</h3>
-            <p>MON-SAT 9:00 AM - 7:30PM</p>
-            <p>SUN Closed</p>
-          </div>
-        </div>
-      </div>
-
       {/* Right Section */}
       <div className="md:w-1/2 md:pl-8">
         <form className="space-y-4">
@@ -60,6 +40,31 @@ export default function FormSection() {
           <button type="submit" className="w-full p-3 bg-black text-white font-semibold rounded-2xl hover:bg-[#000000d0]">Submit</button>
         </form>
       </div>
+
+
+
+      <div className="md:w-1/2 mb-8 md:mb-0">
+        {/* <h2 className="text-2xl md:text-3xl font-semibold mb-4">Take the leap toward a future of endless possibilities.</h2> */}
+        <div className="text-base md:text-lg">
+          <div className="mb-6">
+            <h3 className="font-semibold text-lg  md:text-xl">HO Address</h3>
+            <p>8th floor, Paras Business Center, Brainwonders 804, Carter Road No. 1, behind kasturba Police station, Asara Colony, Borivali East, Mumbai, Maharashtra 400066</p>
+          </div>
+          <div className="mb-6">
+            <h3 className="font-semibold text-lg md:text-xl">Contact Us</h3>
+            <p>Email id: support@brainwonders.in</p>
+            <p>Phone: +91 9987766531 / +91 998422220</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg  md:text-xl">OUR HOURS</h3>
+            <p>MON-SAT 9:00 AM - 7:30PM</p>
+            <p>SUN Closed</p>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
     </div>
   )

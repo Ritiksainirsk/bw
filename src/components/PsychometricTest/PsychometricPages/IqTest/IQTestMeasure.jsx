@@ -11,7 +11,7 @@ const IQTestMeasure = () => {
 
 
   return (
-    <div className="py-12 bg-gray-100 text-gray-800 px-6 lg:px-20 2xl:px-52" data-aos="fade-up">
+    <div className="py-12 bg-gray-100 text-gray-800  container-pad" data-aos="fade-up">
       <h2 className="text-3xl md:text-3xl font-bold text-center text-teal-900 mb-6 heading-font" style={{fontWeight:"600"}}>
         What does the IQ test measure?
       </h2>
@@ -29,6 +29,8 @@ const IQTestMeasure = () => {
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTCSFTKa3jxkjo7i8pcmE0JKUfOrW0Q4zLdBKFiTnm93SUpdTh"
             alt="Working Memories"
             className="mx-auto mb-4 w-44 md:w-auto"
+            width={60}
+            height={60}
           />
           <h3 className="text-lg font-bold mb-2">Working Memories</h3>
           <p className="text-[15px] md:text-lg">
@@ -44,6 +46,8 @@ const IQTestMeasure = () => {
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA9AIRdgOprdOJy9gp_vasn9tHltkzvA5xVdB8g3v3NYvAgOYH"
             alt="Reasoning"
             className="mx-auto mb-4  w-44 md:w-auto"
+            width={60}
+            height={60}
           />
           <h3 className="text-lg font-bold mb-2">Reasoning</h3>
           <p className="text-[15px] md:text-lg">
@@ -59,6 +63,8 @@ const IQTestMeasure = () => {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbVGzZ_p4bhVAA1HWgBgJSWg0a8EtDh8bMEFiUr3EE8-aumvJe"
             alt="Processing Speed"
             className="mx-auto mb-4  w-44 md:w-auto"
+            width={60}
+            height={60}
           />
           <h3 className="text-lg font-bold mb-2">Processing Speed</h3>
           <p className="text-[15px] md:text-lg">
@@ -74,6 +80,8 @@ const IQTestMeasure = () => {
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAWJjORMopP1iE4WNveyXUlMj5T7lWKhcz2dXmt_9QVyUm3JIr"
             alt="Accuracy"
             className="mx-auto mb-4  w-44 md:w-auto"
+            width={60}
+            height={60}
           />
           <h3 className="text-lg font-bold mb-2">Accuracy</h3>
           <p className="text-[15px] md:text-lg">

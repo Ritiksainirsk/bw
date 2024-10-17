@@ -12,7 +12,7 @@ export default function IqTestVideoSection() {
 
   return (
     <div>
-      <div className="mx-auto py-2 px-5 lg:px-5" data-aos="fade-up">
+      <div className="mx-auto py-2    " data-aos="fade-up">
         <div className="my-8">
           {/* Section Title */}
           <h2 className="text-3xl lg:text-3xl text-[#022F46] mb-2 text-center heading-font" style={{fontWeight:"600"}}>

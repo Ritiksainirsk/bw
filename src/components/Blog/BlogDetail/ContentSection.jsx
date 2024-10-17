@@ -2,7 +2,7 @@ import React from "react";
 
 const ContentSection = () => {
   return (
-    <div className="p-6 bg-white shadow-md rounded-lg">
+    <div className="py-6 bg-white shadow-md rounded-lg">
       {/* Read Aloud Button */}
       <div className="flex items-center mb-6">
         <button className="flex items-center bg-[#022F46] text-white px-4 py-2 rounded-lg font-semibold text-sm">

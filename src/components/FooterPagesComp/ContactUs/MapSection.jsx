@@ -2,7 +2,7 @@ import React from 'react';
 
 const MapSection = () => {
   return (
-    <div className="py-10 px-4">
+    <div className="py-10  ">
       <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">HEAD OFFICE LOCATION</h2>
       <div className="w-full h-[35rem]">
         <iframe

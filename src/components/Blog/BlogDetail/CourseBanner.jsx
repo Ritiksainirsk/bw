@@ -2,7 +2,7 @@ import React from "react";
 
 const CourseBanner = () => {
   return (
-    <div className="bg-[#07364d] text-white p-6 flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center py-10 2xl:px-48">
+    <div className="bg-[#07364d] text-white py-6 flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center py-10 container-pad">
       <div>
         <h2 className="text-xl lg:text-3xl font-bold text-[#ff7e2d] heading-font">
           Confused about which Course to choose after 10th?

@@ -10,7 +10,7 @@ import Interview from "@/components/PsychometricTest/Interview";
 import SuitablityBanner from "@/components/Home/SuitablityBanner";
 import Ebook from "@/components/Home/Ebook";
 import WhyChooseBrainwonders from "@/components/PsychometricTest/WhyChooseBrainwonders ";
-import Accordion from "@/components/PsychometricTest/Accordion";
+import Accordion from "@/components/home/Accordion";
 import TestimonialCard from "@/components/CareerCounselling/TestimonialCard ";
 import PsychometricNavbar from "@/components/PsychometricTest/PsychometricPages/PsychometricNavbar";
 // import { useLocation } from "react-router-dom";
@@ -27,7 +27,7 @@ export default function PsychometricTest() {
 
   return (
     <>
-      <PsychometricNavbar />
+      {/* <PsychometricNavbar /> */}
       <HeroCarausel />
     <PsychometricTestsSection />
         <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
@@ -43,7 +43,10 @@ export default function PsychometricTest() {
            {/* <Ebook /> */}
         <WhyChooseBrainwonders />
         {/* <TestimonialCard /> */}
+        <div className="container-mar">
+          
         <Accordion />
+        </div>
            
       </div>
     </>

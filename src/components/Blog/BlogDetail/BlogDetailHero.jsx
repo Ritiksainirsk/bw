@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function BlogDetailHero() {
   return (
     <div>
-      <div className="bg-[#E3F2FB] p-5 md:p-8 2xl:p-12 2xl:px-28 rounded-lg flex flex-col xl:flex-row items-center justify-around ">
+      <div className="bg-[#E3F2FB] py-5  2xl:py-12   rounded-lg flex flex-col xl:flex-row items-center justify-around container-pad ">
         {/* Text Section */}
         <div className="md:p-6 flex flex-col gap-2 md:gap-4">
           <h1
@@ -33,6 +33,9 @@ export default function BlogDetailHero() {
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxKNE5u8MO2MSo4qElUAvBJ3zI_zOFzTSopnURYR_NaMzMINvn" // Replace with your actual image URL
             alt="Diploma Courses After 10th"
             className="w-full h-full object-cover"
+            
+            width={60}
+            height={60}
           />
         </div>
       </div>

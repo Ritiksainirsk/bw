@@ -27,7 +27,7 @@ const TagTabs = () => {
   };
 
   return (
-    <div className="p-4 mt-8">
+    <div className="py-4 mt-8">
       <div className="flex flex-wrap gap-3 mb-4">
         <div className="inline-block bg-[#022F46] text-white font-semibold px-4 py-2 pt-[10px] relative mr-6 text-sm">
           TAGS
@@ -40,7 +40,7 @@ const TagTabs = () => {
           <button
             key={index}
             onClick={() => handleTagClick(tag)}
-            className={`px-4 border-2 py-2 rounded-full text-sm font-semibold shadow-sm flex items-center transition-colors duration-200 ${
+            className={` px-2 py-1 md:px-4 md:py-2 border-2  rounded-full text-sm font-semibold shadow-sm flex items-center transition-colors duration-200 ${
               activeTag === tag
                 ? "bg-[#022F46] text-white"
                 : "bg-white text-black hover:bg-[#022F46] hover:text-white"

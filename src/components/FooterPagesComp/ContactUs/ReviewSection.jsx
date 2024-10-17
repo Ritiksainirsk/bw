@@ -9,7 +9,7 @@ export default function ReviewSection() {
       <h3 className="text-center font-bold text-2xl md:text-3xl mt-11 heading-font text-[#022F46]">
         Review
       </h3> 
-      <div className="mx-6 mb-10 mt-3" >
+      <div className="  mb-10 mt-3" >
         <Marquee speed={50}>
           <div className="flex justify-center">
             <Image

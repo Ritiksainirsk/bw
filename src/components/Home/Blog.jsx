@@ -40,7 +40,7 @@ export default function Blog() {
           OUR BLOGS
         </h2>
         <AnimatedSection>
-        <div className="flex justify-between gap-10 flex-wrap">
+        <div className="flex justify-between gap-10 flex-wrap md:flex-nowrap ">
           {blogs.map((blog, index) => (
             <Card
               key={index}
@@ -81,7 +81,7 @@ export default function Blog() {
 
 const Card = ({ imageSrc, title, date, description }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden w-[22rem]">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden w-[22rem] mx-auto">
       <Image
         src={imageSrc}
         alt={title}

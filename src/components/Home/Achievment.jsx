@@ -31,11 +31,11 @@ export default function Achievment() {
     <div>
     {/*  */}
     <div className="pt-5  ">
-      <h2 className=" text-2xl md:text-[34px] mb-2 font-bold text-center heading-font text-[#022F46]" style={{fontWeight:"700"}}>
+      <h2 className=" text-2xl md:text-[34px] mb-2 font-bold text-center heading-font  text-[#022F46]" style={{fontWeight:"700"}}>
         BRAINWONDERS ACHIEVEMENTS
       </h2>
       <AnimatedSection>
-        <div className="flex justify-between flex-col md:flex-row">
+        <div className="flex justify-between flex-row  md:flex-col lg:flex-row flex-wrap">
           {achievements.map((achievement, index) => (
             <AchievementCard
               key={index}
@@ -61,7 +61,7 @@ const AchievementCard = ({ icon, count, label, index }) => {
   });
 
   return (
-    <div className={`bg-white shadow-lg rounded-lg lg:p-6  flex flex-col lg:flex-row justify-center items-center gap-3  py-3 px-[16px] m-4 
+    <div className={`bg-white shadow-lg rounded-lg  w-[10rem] md:w-auto flex flex-col lg:flex-row justify-center items-center gap-3  py-3 px-[16px]   my-4
     
       ${
     index === 0 || index === achievements.length - 1 ? "m-0" : ""  

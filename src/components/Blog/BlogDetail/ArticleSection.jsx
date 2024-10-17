@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ArticleSection = () => {
   return (
-    <div className=" mx-auto p-6 " style={{ textAlign: "justify" }}>
+    <div className=" mx-auto py-6 " style={{ textAlign: "justify" }}>
       {/* Section Heading */}
       <h2 className="text-2xl font-bold mb-4 heading-font">
         B.Tech and BE: Clarity in Terminology
@@ -34,6 +34,9 @@ const ArticleSection = () => {
           src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3vYxL9l5uaANS-qGDsQcnANh9pJDTe1UowXKrd7IJP4V4HgMQ" // Replace with your image URL
           alt="Diploma Courses After 10th"
           className="w-full rounded-lg"
+          
+          width={60}
+          height={60}
         />
         <p className="text-sm text-gray-500 mt-2 text-center">
           This is an image or a video that can be used to enhance the

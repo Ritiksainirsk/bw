@@ -13,11 +13,11 @@ export default function HeroCarausel() {
       {/* main Carousel */}
 
       {/* text content */}
-      <div className="container-pad my-14 ">
-        <h1 className="text-2xl lg:text-3xl heading-font font-semibold text-center mb-7 text-[#022F46]" style={{fontWeight:'600'}}>
+      <div className="container-pad my-14">
+        <h1 className="text-2xl lg:text-3xl heading-font font-semibold  text-center mb-7 text-[#022F46]" style={{fontWeight:'600'}}>
           The World’s Most Powerful Psychometric Career Assessment
         </h1>
-        <p className="text-xl leading-7 text-black text-center">
+        <p className="text-base leading-7 text-black text-justify md:text-center">
           Using advanced machine learning, psychometrics, and career
           satisfaction data, Brainwonders has reimagined what a career test can
           be. Brainwonders brings to you 30+ scientific and meticulously

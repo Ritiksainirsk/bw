@@ -93,9 +93,9 @@ export default function Services() {
     <div className="flex justify-between flex-col  ">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h2 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2 lg:px-80 text-center heading-font text-[#022F46]" style={{ fontWeight: "700" }}>
+        <h2 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2   text-center heading-font text-[#022F46]  " style={{ fontWeight: "700" }}>
           How does Brainwonders services
-          <br />
+          
           <span> help you to sucess in your career? </span>
         </h2>
         <HoverEffectCard />
@@ -108,21 +108,23 @@ export default function Services() {
 
 const HoverEffectCard = () => {
   return (
+    
     <AnimatedSection>
-      <div className="flex justify-between w-full rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
+      <div className="flex justify-between w-full flex-col lg:flex-row rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
         {items.map((card, index) => (
           <div
             key={index}
-            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden   h-fit inline-border ${card.title === "DMIT Test"
+            className={`w-[100%] md:w-[100%] lg:w-[22rem] w-[301px] md:h-[20rem] containerBox relative p-7 overflow-hidden   h-fit inline-border ${
+              index == 0
                 ? "hover:bg-[#9bc9ff]"
-                : card.title === "Aptitide Test"
-                  ? "hover:bg-[#c8bbff]"
-                  : card.title === "Ideal Career Test"
-                    ? "hover:bg-[#ffb1cc]"
-                    : card.title === "Psychometric Test"
-                      ? "hover:bg-[#ffd972]"
-                      : ""
-              }     ${index ==0 ? "left-radius-border" : ""}    ${index ==items.length -1 ? "right-radius-border" : ""}`}
+                : index == 1
+                ? "hover:bg-[#c8bbff]"
+                : index == 2
+                ? "hover:bg-[#ffb1cc]"
+                : index == 3
+                ? "hover:bg-[#ffd972]"
+                : ""
+            }    ${index ==0 ? "left-radius-border" : ""}    ${index ==items.length -1 ? "right-radius-border" : ""}`}
           >
             <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
               <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
@@ -130,7 +132,7 @@ const HoverEffectCard = () => {
               </button>
             </div>
 
-            <div className=" flex flex-col   gap-y-0.5">
+            <div className=" flex flex-col  gap-0 md:gap-y-0.5 w-[100%] md:w-[100%] lg:w-[22rem]">
               <div className={`w-[80px] pb-4 rounded-full text-center`}>
                 <Image
                   src={card.url}
@@ -162,10 +164,10 @@ const HoverEffectCard = () => {
 const HoverEffectCard2 = () => {
   return (
     <AnimatedSection>
-      <div className="flex  justify-between w-full  rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
+      <div className="flex justify-between w-full flex-col lg:flex-row rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
         {items2.map((card, index) => (
           <div
-            className={` inline-border w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden  h-fit ${card.title === "Career Counslling"
+            className={` inline-border w-[100%] md:w-[100%] lg:w-[22rem] w-[301px] md:h-[20rem] containerBox relative p-0 md:p-7 overflow-hidden  h-fit ${card.title === "Career Counslling"
                 ? "hover:bg-pink-300"
                 : "" || card.title === "Personalit Test"
                   ? "hover:bg-purple-200"
@@ -183,7 +185,7 @@ const HoverEffectCard2 = () => {
               </button>
             </div>
 
-            <div className=" flex flex-col   gap-y-1">
+            <div className="flex flex-col  gap-0 md:gap-y-0.5 w-[100%] md:w-[100%] lg:w-[22rem]">
               <div className={`w-[80px] pb-4 rounded-full text-center`}>
                 <Image
                   src={card.url}
@@ -216,27 +218,3 @@ const HoverEffectCard2 = () => {
 };
 
 
-
-// rough beutyfull card with png images --------------------------------------------------------------->>
-
-// const CourseSelectionCard = () => {
-//   return (
-//     <div className="relative bg-purple-200 rounded-xl p-6 w-80 shadow-lg h-56">
-//       <div className=" z-10">
-//         <h2 className="text-white text-xl font-bold">Class 11th & 12th</h2>
-//         <p className="text-white mt-2">Guidance for</p>
-//         <p className="text-white font-semibold">Course & College selection</p>
-//       </div>
-//       <div className="absolute bottom-0 right-0 transform translate-x-1/4 ">
-//         <Image
-//           src={Man} // Replace with actual image URL
-//           alt="Excited Student"
-//           className="h-40"
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-
-//

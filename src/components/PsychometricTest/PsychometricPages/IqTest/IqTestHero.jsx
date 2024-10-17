@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function IqTestHero() {
   return (
-    <div>
-      <div className="bg-[#E3F2FB] p-8 2xl:px-28 rounded-lg flex flex-col md:flex-row items-center justify-around">
+    <div >
+      <div className="bg-[#E3F2FB] container-pad  rounded-lg flex flex-col md:flex-row items-center justify-around">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-[40px] font-bold text-gray-800 leading-tight md:mb-4 2xl:mr-44">
-            Have you wondered
+            Have you wondered<br/>
             <span className="text-[#043E56]"> what your IQ score is?</span>
           </h1>
           <p className="mt-4 text-black text-lg md:text-[16px] md:flex md:flex-col">

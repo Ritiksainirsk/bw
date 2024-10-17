@@ -200,7 +200,7 @@ function CareerServices() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="p-4"  data-aos="fade-up">
+    <div className=""  data-aos="fade-up">
       <h3 className="text-2xl mt-10 lg:text-3xl  text-center mb-3 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Brainwonders Psychometric Career Test
       </h3>

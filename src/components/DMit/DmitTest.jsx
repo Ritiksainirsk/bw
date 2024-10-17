@@ -5,7 +5,76 @@ import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
 import Link from 'next/link'
+import SlideSec from "../common/slideSec";
+import Services from "../Home/Services";
 
+const cards1 = [
+  {
+    title: "DMIT Test for Toddlers (1-4 years)",
+    description:
+      "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+    buttonText: "Explore Now",
+    icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7AMz_3fqjluWADEO6rkKwJVQRm4IJo6d2THmoqnDEOD5Il7hn",
+    iconColor: "#FFD772",
+  },
+  {
+    title: "DMIT Test for Children (4-10 years)",
+    description:
+      "Understanding their learning styles and intelligence profiles to explore their strengths.",
+    buttonText: "Know Yourself Better",
+    icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGY2l14zUv0XW6odm081SYYwR65zTesUruyUDWZAT2Qz3eppf4",
+    iconColor: "#9BC9FF",
+  },
+  {
+    title: "DMIT Test for Students (11 to 17 years)",
+    description:
+      "Highlights the innate primary and secondary learning styles.",
+    buttonText: "Professional Guidance",
+    icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsNMl0KBQhToPa0Ux-hNggAjvKNCyObZ4-T0X0TSGlqvaA-caX",
+    iconColor: "#FFB1CC",
+  },
+  {
+    title: "DMIT Test for Career Guidance (18 years and above)",
+    description: "Boosts professional growth and ensures success on the job.",
+    buttonText: "India or Abroad",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuG7gyuVrX-6QEsKfLznnXQgNxoBvs1zO5UKcabWalDrb_uQKo",
+    iconColor: "#C8BBFF",
+  },
+];
+
+const cards2 = [
+  {
+    title: "DMIT Test for Adult (25 years and above)",
+    description:
+      "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+    buttonText: "Explore Now",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4iiu98uczFUIyiu1k_RK2tZ4GtlGY5OAKaaW12HwXC8xhoKk",
+    iconColor: "#FFD772",
+  },
+  {
+    title: "DMIT Test for institutional (all years)",
+    description:
+      "Understanding their learning styles and intelligence profiles to explore their strengths.",
+    buttonText: "Know Yourself Better",
+    icon: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr32UKvo3htclj5II8XhdMzgbMsoY9u2jG42jOjAaleogqIZmu",
+    iconColor: "#9BC9FF",
+  },
+  {
+    title: "DMIT Test for Students (11 to 17 years)",
+    description:
+      "Highlights the innate primary and secondary learning styles.",
+    buttonText: "Professional Guidance",
+    icon: "https://media.istockphoto.com/id/1369754239/photo/university-student-in-white-background-stock-photo.jpg?s=612x612&w=0&k=20&c=LjFVDfjusWBjYTNliHV9DyXfApPGc8DmgBGEtfVgQ0Q=",
+    iconColor: "#FFB1CC",
+  },
+  {
+    title: "DMIT Test for Career Guidance (18 years and above)",
+    description: "Boosts professional growth and ensures success on the job.",
+    buttonText: "India or Abroad",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTLeD3eeWIg0ceOxjDdQxGHMxBZr27D2XTrA&s",
+    iconColor: "#C8BBFF",
+  },
+];
 export default function DmitTest() {
   return (
     <div>
@@ -21,7 +90,7 @@ export default function DmitTest() {
       </div>
       {/*  */}
       {/*  */}
-      <div className="mb-16">
+      {/* <div className="mb-16">
         <h3
           className="px-2 text-2xl md:text-[34px] text-center my-10 heading-font text-[#022F46]"
           style={{ fontWeight: "700" }}
@@ -34,7 +103,12 @@ export default function DmitTest() {
         <AnimatedSection>
           <CareerOptions2 />
         </AnimatedSection>
-      </div>
+      </div> */}
+
+
+        {/* <SlideSec title='BENEFITS OF DMIT TEST FOR ALL AGES!' data1={cards1} data2={cards2}/> */}
+
+        <Services/>
 </div>
       {/*  */}
     </div>

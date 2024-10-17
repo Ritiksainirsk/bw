@@ -46,11 +46,11 @@ export default function Accordion() {
   ];
   
   return (
-    <div className=" mb-14">
-    <h2 className="text-2xl lg:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46] mt-5" style={{fontWeight:"700"}}>
+    <div className=" mb-14 text-left  ">
+    <h2 className="text-2xl lg:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46] mt-5 " style={{fontWeight:"700"}}>
       Frequently Asked Questions
     </h2> 
-    <div className="join join-vertical w-full px-40">
+    <div className="join join-vertical w-full ">
     <div className="w-full ">
         <div className=" ">
           <div className="mb-6 lg:mb-16">
@@ -67,7 +67,7 @@ export default function Accordion() {
                   className="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <h5>{faq.question}</h5>
+                  <h5 className="text-left md:text-center">{faq.question}</h5>
                   <svg
                     className={`text-gray-900 transition duration-500 group-hover:text-indigo-600 ${
                       activeAccordion === index ? 'rotate-180' : ''
@@ -88,7 +88,7 @@ export default function Accordion() {
                   </svg>
                 </button>
                 <div
-                  className={`accordion-content w-full px-0 overflow-hidden pr-4 transition-all duration-500 ${
+                  className={`accordion-content w-full px-0 overflow-hidden pr-4 transition-all duration-500 mt-4 ${
                     activeAccordion === index ? 'max-h-40' : 'max-h-0'
                   }`}
                 >

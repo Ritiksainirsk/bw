@@ -32,15 +32,18 @@ const CareerFitSection = () => {
         Confused about the best <span className="font-bold">career-fit</span>{" "}
         for you?
       </h2>
-      <p className="text-gray-600 mb-4 text-[17px]" style={{fontWeight:"500"}}>
+      <p className="text-gray-600 mb-4 text-[16px]" style={{fontWeight:"500"}}>
         Too many choices can be daunting! Analyse your aptitude, capabilities,
         personality and interests with our scientific psychometric tool, and
         get advised on the best career options for you. It can also derive
         whether or not you are suitable for a particular career or role type.
       </p>
-      <a href="#" className="text-blue-600 font-bold">
-        Try our CollegeDekho Career Compass Test &rarr;
-      </a>
+      {/* <a href="#" className="text-blue-600 font-bold">
+        Try our Brainwonders Career Compass Test &rarr;
+      </a> */}
+      <button className="p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
+      Try our Brainwonders
+        </button>
     </div>
 
     {/* Right Section */}

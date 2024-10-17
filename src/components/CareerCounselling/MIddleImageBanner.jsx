@@ -30,7 +30,7 @@ const MIddleImageBanner = () => {
 const FirstBanner = () => {
   return (
     <>
-      <div className="bg-white p-6 md:p-16">
+      <div className="bg-white  ">
         <div className="text-center">
           <h3 className="text-2xl md:text-3xl font-semibold heading-font text-[#022F46]" style={{fontWeight:"600"}}>
             CAREER COUNSELLING THROUGH BIOMETRICS
@@ -41,8 +41,8 @@ const FirstBanner = () => {
           </p>
         </div>
         <AnimatedSection>
-        <div className="flex flex-col md:flex-row items-center mt-8">
-          <div className="md:w-1/2 flex justify-center">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-8">
+          <div className="md:w-1/2 flex justify-start">
             <Image
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6zjQLCOk0WBZO0lFK6U17OkPO9jZUuONZoArz2FNTJcajU0c"
               alt="Career Counseling"
@@ -51,7 +51,7 @@ const FirstBanner = () => {
               height={120}
             />
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0 lg:pr-20">
+          <div className="md:w-1/2 mt-8 md:mt-0 ">
             <p className="text-black text-sm md:text-base" style={{textAlign:"justify"}}>
               DMIT Dermatoglyphics Multiple Intelligence test (DMIT) is the
               latest and most trending way of mapping a person's brain. In DMIT,
@@ -81,7 +81,7 @@ const SecondBanner = () => {
           CAREER GUIDANCE BY OUR CAREER COUNSELLORS
         </h3>
         <AnimatedSection>
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-20">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-20">
           <div className="md:w-[26%]">
             <Image
               src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTauSCxFrAo84-YpO4jpScIjwLe6O0qPoyGPMynXGk5JgLyRg5S" // Replace with your image URL
@@ -156,7 +156,7 @@ const CareerOptions = () => {
 
   return (
     <AnimatedSection>
-    <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
+    <div className="flex justify-between w-full flex-col lg:flex-row rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
       {cards.map((card, index) => (
         <div
           className={`w-[22rem] border-2 h-[20rem] containerBox relative p-7 overflow-hidden ${
@@ -172,7 +172,7 @@ const CareerOptions = () => {
           }`}
           key={index}
         >
-          <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
+          <div className="translate-x-[-100%] overlay-content-btn w-[22rem]  h-full absolute">
             <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
               Explore <FaArrowRight />
             </button>

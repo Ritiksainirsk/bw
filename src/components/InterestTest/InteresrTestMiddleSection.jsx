@@ -19,7 +19,7 @@ export default function InteresrTestMiddleSection() {
 
 const First = () => {
   return (
-    <div className="p-8 bg-white py-12"  data-aos="fade-up">
+    <div className="py-8 bg-white py-12"  data-aos="fade-up">
       {/* Heading Section */}
       <h1 className="text-2xl md:text-3xl text-center mb-4 heading-font" style={{fontWeight:"600"}}>
         HOW DOES THE INTEREST TEST BENEFIT CHILDREN'S CAREER?
@@ -42,6 +42,8 @@ const First = () => {
             src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5X9d50XxoR8NQtNUrEyFsDV_0W_JuPsc55M7NCbTHrF0kA_8m"
             alt="School & Board Selection"
             className="mx-auto mb-4 w-24 h-20"
+            width={60}
+            height={60}
           />
           <h3 className="text-xl font-semibold mb-2 heading-font">
             SCHOOL & BOARD SELECTION
@@ -59,6 +61,8 @@ const First = () => {
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL1oXj19Ja25kHWLbEs3a323u7vYyEI-qKHvVPMUtB4ek45mnL"
             alt="Academic Development"
             className="mx-auto mb-4 w-24 h-20"
+            width={60}
+            height={60}
           />
           <h3 className="text-xl font-semibold mb-2 heading-font">
             ACADEMIC DEVELOPMENT
@@ -76,6 +80,8 @@ const First = () => {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxmB2k59UmDGLs7Bh9aVPkHfiRQ4TC7QmxKYxvHiwj97oRVqL"
             alt="Extracurricular Growth"
             className="mx-auto mb-4 w-24 h-20"
+            width={60}
+            height={60}
           />
           <h3 className="text-xl font-semibold mb-2 heading-font">
             EXTRACURRICULAR GROWTH
@@ -92,6 +98,8 @@ const First = () => {
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRndLtsr35q1fXXx_zATvNeUQjp6HYjvUDkzXQCvM2e-B5d6pRS"
             alt="Multidimensional Profile"
             className="mx-auto mb-4 w-24 h-20"
+            width={60}
+            height={60}
           />
           <h3 className="text-xl font-semibold mb-2 heading-font">
             MULTIDIMENSIONAL PROFILE
@@ -110,6 +118,8 @@ const First = () => {
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs6Urrhzv73fePJZLNyILAoFkCauPg0bw6Nn7JKb-lOkvh4wYT"
             alt="Career Development"
             className="mx-auto mb-4 w-24 h-20"
+            width={60}
+            height={60}
           />
           <h3 className="text-xl font-semibold mb-2 heading-font">
             CAREER DEVELOPMENT
@@ -127,6 +137,8 @@ const First = () => {
             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIjInYU4bhsdvpMM_eXd5eyZC9gxXI3Dz_8x8aQgnY5HSOQI8E"
             alt="Time & Education Management"
             className="mx-auto mb-4 w-24 h-20"
+            width={60}
+            height={60}
           />
           <h3 className="text-xl font-semibold mb-2 heading-font">
             TIME & EDUCATION MANAGEMENT
@@ -178,7 +190,7 @@ const Second = () => {
     },
   ];
   return (
-    <div className=" mx-auto p-6 text-center" data-aos="fade-up">
+    <div className=" mx-auto py-6 text-center" data-aos="fade-up">
       <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 mb-2 heading-font" style={{fontWeight:"600"}}>
         HOW TO TAKE AN INTEREST TEST?
       </h2>

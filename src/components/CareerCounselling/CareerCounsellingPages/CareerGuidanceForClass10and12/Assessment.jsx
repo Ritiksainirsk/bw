@@ -22,7 +22,7 @@ export default function Assessment() {
 
 const First = () => {
   return (
-    <div className="p-6 bg-white rounded-lg" data-aos="fade-up">
+    <div className="py-6 bg-white rounded-lg" data-aos="fade-up">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 heading-font" style={{fontWeight:"600"}}>
         Why this assessment?
       </h2>

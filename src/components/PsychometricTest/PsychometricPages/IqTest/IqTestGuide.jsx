@@ -54,11 +54,11 @@ const FirstComponent = () => {
 
 
   return (
-    <div className=" mx-auto p-6 text-center" data-aos="fade-up">
+    <div className=" mx-auto   text-center" data-aos="fade-up">
       <h2 className="text-3xl md:text-3xl font-extrabold text-gray-900 mb-4 heading-font" style={{fontWeight:"600"}}>
         Start the test and Discover where you stand!
       </h2>
-      <p className="text-base text-black mb-10">
+      <p className="text-base text-black mb-10 text-justify md:text-center">
         The IQ score derived gives a reasonable measure of the individual's
         intelligence. The Brainwonders I.Q. Test is a test which purports to
         assess a general level of ability of the person taking it. The
@@ -93,7 +93,7 @@ const FirstComponent = () => {
 
 const WhyIQTests = () => {
   return (
-    <div className="py-8 px-4 md:px-10 bg-white text-gray-800" data-aos="fade-up">
+    <div className="py-8     bg-white text-gray-800" data-aos="fade-up">
       <h2 className="text-2xl md:text-3xl font-semibold text-center text-teal-900 mb-4 heading-font" style={{fontWeight:"600"}}>
         Why Our IQ Tests?
       </h2>

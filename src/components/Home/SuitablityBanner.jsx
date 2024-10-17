@@ -7,7 +7,7 @@ export default function SuitablityBanner() {
 
   return (
     <div>
-      <div className="bg-[#022F46]   text-white py-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14 container-pad">
+      <div className="bg-[#022F46]  mt-[40px] text-white py-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-14 container-pad text-center md:text-left">
         {/* Left Section */}
         <div className="md:w-1/2">
           <h2 className="lg:text-[34px] font-bold mb-4 heading-font"style={{fontWeight:"700"}}>
@@ -75,12 +75,13 @@ export default function SuitablityBanner() {
             ].map((career, index) => (
               <button
                 key={index}
-                className="bg-gray-300 text-black py-1 px-2 rounded-full"
+                className="bg-gray-300 text-black  py-0.5    md:py-1  px-2 rounded-full"
               >
-                {career}
+<p className="text-xs ms:text-base">
+{career}</p>
               </button>
             ))}
-            <div className="text-gray-400 pt-1 cursor-pointer">
+            <div className="text-white pt-1 cursor-pointer">
               View More &raquo;
             </div>
           </div>
@@ -91,7 +92,7 @@ export default function SuitablityBanner() {
           <Image
             src={Img}
             alt="Career Suitability"
-            className="lg:w-72 h-auto mb-4"
+            className="lg:w-72 h-auto mb-4 hidden md:block"
             width={120}
             height={120}
           />

@@ -195,7 +195,7 @@ const CareerGuidanceSection = () => {
   };
 
   return (
-    <div className="py-8 px-4">
+    <div className="py-8 ">
       {/* Filters Section */}
       <h2 className="text-2xl font-semibold mb-2 heading-font">Filters</h2>
       <div className="border-b-2 border-gray-200 mb-4"></div>{" "}

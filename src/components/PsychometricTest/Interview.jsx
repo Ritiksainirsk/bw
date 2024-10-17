@@ -32,8 +32,8 @@ export default function Interview() {
           </p>
 
           <div className="grid gap-7 grid-cols-1 lg:grid-cols-2 items-center">
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 align-center">
+              <div className="flex flex-col items-center justify-center p-4 bg-white shadow-lg rounded-lg w-[75%] md:w-full mx-auto mx-auto">
                 <div className="mb-4">
                   <RiGlassesLine className="text-3xl text-[#039CDE]" />
                 </div>
@@ -41,7 +41,7 @@ export default function Interview() {
                   Mercer Mettl Personality Test
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
+              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg w-[75%] md:w-full mx-auto">
                 <div className="mb-4">
                   <MdPsychology className="text-3xl text-[#039CDE]" />
                 </div>
@@ -49,7 +49,7 @@ export default function Interview() {
                   Critical Thinking Assessment
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
+              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg w-[75%] md:w-full mx-auto">
                 <div className="mb-4">
                   <FaRegFileAlt className="text-3xl text-[#039CDE]" />
                 </div>
@@ -57,7 +57,7 @@ export default function Interview() {
                   Abstract Reasoning Assessment
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
+              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg w-[75%] md:w-full mx-auto">
                 <div className="mb-4">
                   <RiBatteryShareLine className="text-3xl text-[#039CDE]" />
                 </div>
@@ -65,7 +65,7 @@ export default function Interview() {
                   Logical Reasoning Assessment
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
+              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg w-[75%] md:w-full mx-auto">
                 <div className="mb-4">
                   <IoPerson className="text-3xl text-[#039CDE]" />
                 </div>
@@ -73,7 +73,7 @@ export default function Interview() {
                   Managerial Potential Assessment
                 </p>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg">
+              <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg w-[75%] md:w-full mx-auto">
                 <div className="mb-4">
                   <FaShoppingCart className="text-3xl text-[#039CDE]" />
                 </div>

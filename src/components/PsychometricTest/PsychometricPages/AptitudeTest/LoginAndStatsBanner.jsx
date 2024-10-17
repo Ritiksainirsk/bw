@@ -11,13 +11,13 @@ const LoginAndStatsBanner = () => {
 
   return (
     <div className="flex justify-center items-center py-6 bg-gray-300 my-5" data-aos="fade-up">
-    <div className="flex flex-col md:flex-row bg-white w-full h-auto md:h-96 max-w-7xl rounded-lg shadow-lg overflow-hidden">
+    <div className="flex flex-col md:flex-row w-full h-auto md:h-96 gap-6 rounded-lg shadow-lg overflow-hidden justify-between container-mar">
       {/* Left Section - Login Form */}
-      <div className="w-full md:w-1/2 p-8 relative">
+      <div className="w-full bg-white   p-4 relative">
         <h2 className="text-2xl font-bold mb-6 text-center heading-font">
           TAKE YOUR TEST NOW!
         </h2>
-        <div className="md:pr-48">
+        <div className="md:pr-80">
           <input
             type="text"
             placeholder="Username"
@@ -44,21 +44,21 @@ const LoginAndStatsBanner = () => {
       </div>
   
       {/* Right Section - Stats */}
-      <div className="w-full md:w-1/2 bg-gray-200 p-8 grid grid-cols-2 gap-4">
-        <div className="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-bold text-blue-900">93+</h3>
+      <div className="w-full md:w-1/2   grid grid-cols-2 gap-6 ">
+        <div className="flex flex-col items-center justify-center bg-white py-2  rounded-lg shadow-md">
+          <h3 className=" text-2xl md:text-3xl font-bold text-blue-900">93+</h3>
           <p className="mt-2 text-gray-600">Corporates</p>
         </div>
-        <div className="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-bold text-blue-900">1223+</h3>
+        <div className="flex flex-col items-center justify-center bg-white py-2  rounded-lg shadow-md">
+          <h3 className=" text-2xl md:text-3xl font-bold text-blue-900">1223+</h3>
           <p className="mt-2 text-gray-600">Institutes/ Schools</p>
         </div>
-        <div className="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-bold text-blue-900">4,01+</h3>
+        <div className="flex flex-col items-center justify-center bg-white py-2  rounded-lg shadow-md">
+          <h3 className=" text-2xl md:text-3xl font-bold text-blue-900">4,01+</h3>
           <p className="mt-2 text-gray-600">Teachers/ Educators</p>
         </div>
-        <div className="flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md">
-          <h3 className="text-3xl font-bold text-blue-900">9,57,312+</h3>
+        <div className="flex flex-col items-center justify-center bg-white py-2 rounded-lg shadow-md">
+          <h3 className=" text-2xl md:text-3xl font-bold text-blue-900">9,57,312+</h3>
           <p className="mt-2 text-gray-600">Students Tested</p>
         </div>
       </div>

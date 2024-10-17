@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function BlogPosts({ value }) {
   return (
     <div>
@@ -15,6 +15,7 @@ const FirstPostSection = ({ value }) => {
     {
       id: 1,
       title: "Toughest Exams in India 2022: The Hardest Competitions",
+      url: "/blog/toughest-exams-in-india-2022-the-hardest-competitions",
       category: "Medicine",
       date: "15 July, 2022",
       readTime: "4 min read",
@@ -24,15 +25,18 @@ const FirstPostSection = ({ value }) => {
     {
       id: 2,
       title: "Top Highest Salary Jobs After 12th Commerce Courses",
+       "url": "/blog/top-highest-salary-jobs-after-12th-commerce-courses",
       category: "Engineering",
       date: "15 July, 2022",
       readTime: "4 min read",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cpsvMMqkPZNQAfqOvBxEWf_CG4XNrNrM--z9GYpyWBlWyal7",
+
     },
     {
       id: 3,
       title: "Top Highest Salary Jobs After",
+      url: "/blog/top-highest-salary-jobs-after",
       category: "Medicine",
       date: "15 July, 2022",
       readTime: "4 min read",
@@ -41,8 +45,9 @@ const FirstPostSection = ({ value }) => {
     },
     {
       id: 4,
-      title: "Top Highest Salary Jobs After 12th Commerce Courses",
       category: "Engineering",
+      title: "Top Highest Salary Jobs After 12th Commerce Courses",
+      url: "/blog/top-highest-salary-jobs-after-12th-commerce-courses",
       date: "15 July, 2022",
       readTime: "4 min read",
       image:
@@ -60,7 +65,7 @@ const FirstPostSection = ({ value }) => {
   }, [value, posts]);
 
   return (
-    <div className="py-8 px-4">
+    <div className="py-8 ">
       <h2 className="md:text-2xl text-xl font-semibold mb-4 heading-font">
         Latest
       </h2>
@@ -69,6 +74,7 @@ const FirstPostSection = ({ value }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post) => (
+          <Link href={post.url}>
             <div
               key={post.id}
               className="flex justify-between items-center border-b pb-4"
@@ -92,6 +98,7 @@ const FirstPostSection = ({ value }) => {
                 />
               </div>
             </div>
+          </Link>
           ))
         ) : (
           <p>No posts found</p>
@@ -142,7 +149,7 @@ const HandpickedPosts = ({ value }) => {
   }, [value, posts]);
 
   return (
-    <div className="py-8 px-4">
+    <div className="py-8 ">
       <h2 className="md:text-2xl text-xl font-semibold mb-2 heading-font">
         Handpicked
       </h2>

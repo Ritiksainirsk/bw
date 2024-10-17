@@ -38,7 +38,7 @@ export default function AwardRecognition() {
           </h2>
         </div>
         <div className="">
-          <Marquee speed={50} direction="left">
+          <Marquee speed={40} direction="left">
             <div className="flex justify-center">
               {awards.map((award, index) => (
                 <AwardCard
@@ -58,10 +58,11 @@ export default function AwardRecognition() {
 const AwardCard = ({ title, desc }) => {
   return (
     <>
-    <div className="flex justify-center items-center text-center ml-8 w-72">
+    <div className="flex justify-center items-center text-center ml-8 w-52 md:w-72 lg:w-72 ">
       <Image
         decoding="async"
         width="60"
+        style={{marginRight:'-32px'}}
         height="132"
         src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
         alt={title}
@@ -70,11 +71,11 @@ const AwardCard = ({ title, desc }) => {
         <div>
           <div>
             <div>
-              <h2 className=" text-[18px] heading-font">{title}</h2>
+              <h2 className=" text-[13px] md:text-[18px] heading-font award-heading">{title}</h2>
             </div>
           </div>
           <div>
-            <div className="text-[15px] text-[#7A7A7A]">
+            <div className="text-[11px] md:text-[15px] text-[#7A7A7A]">
               <p className="gotham-font">“{desc}"</p>
             </div>
           </div>
@@ -82,6 +83,8 @@ const AwardCard = ({ title, desc }) => {
       </div>
       <Image
         decoding="async"
+        style={{marginLeft:'-32px'}}
+
         width="60"
         height="132"
         src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"

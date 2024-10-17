@@ -431,7 +431,7 @@ function CareerServices() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="p-4"  data-aos="fade-up">
+    <div className="py-4"  data-aos="fade-up">
       <h3 className="text-2xl mt-10 lg:text-3xl font-bold text-center mb-10 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
       Brainwonders Psychometric Test for Counselling Services
       </h3>
@@ -449,10 +449,10 @@ function CareerServices() {
         ))}
       </div>
       <h3
-        className="text-center md:text-xl leading-7 pb-8 2xl:px-72"
+        className=" text-justify text-base md:text-center md:text-xl leading-7 pb-8 2xl:px-72"
         style={{ color: "rgb(102, 102, 102)" }}
       >
-       Brainwonders brings to you scientific and meticulously designed
+       hello Brainwonders brings to you scientific and meticulously designed
        Our Services to discover your true potential and interest ,learning styles and skills
       </h3>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

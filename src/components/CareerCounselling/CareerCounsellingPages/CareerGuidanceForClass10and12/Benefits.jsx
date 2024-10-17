@@ -19,7 +19,7 @@ export default function Benefits() {
 
 const CareerGuidanceBenefits = () => {
   return (
-    <div className=" mx-auto px-6 " data-aos="fade-up">
+    <div className=" mx-auto " data-aos="fade-up">
       <h2
         className="text-3xl md:text-3xl font-bold text-center mb-8 heading-font"
         style={{ fontWeight: "600" }}
@@ -66,7 +66,7 @@ const CareerGuidanceBenefits = () => {
 const WhyBrainwonders = () => {
   return (
     <div
-      className=" mx-auto py-12 px-6 text-"
+      className=" mx-auto py-12  text-"
       style={{ textAlign: "justify" }}
       data-aos="fade-up"
     >
@@ -121,7 +121,7 @@ const ConsultationBooking = () => {
           </p>
         </div>
         <div className="flex items-start flex-col gap-4 space-x-4">
-          <div className="text-right">
+          <div className=" text-center md:text-right flex flex-col md:flex-row justify-center">
             <span className="text-3xl font-bold text-black">₹499.00</span>
             <span className="text-black">+18% GST</span>
             <p className="text-sm text-black">Per Student</p>

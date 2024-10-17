@@ -77,9 +77,9 @@ export default function Ebook() {
     <AnimatedSection>
       <Carousel
         responsive={responsive}
-        // className="p-8"
+        className="flex h-40"
         infinite={true}
-        autoPlay={true}
+        autoPlay={false}
         transitionDuration={500}
         autoPlaySpeed={2000}
         arrows={false}
@@ -106,7 +106,7 @@ export default function Ebook() {
 
 const Card = ({ title, category, downloads, image }) => {
   return (
-    <div className="relative bg-white shadow-lg rounded-lg p-4 w-72 border-2 border-gray-200">
+    <div className="relative bg-white shadow-lg rounded-lg p-4 w-[80%] mx-auto border-2 border-gray-200 md:w-72">
     <span className="absolute top-[-13px] left-4 bg-orange-500 text-white text-xs font-semibold px-2 py-1 rounded-lg">
       {category}
     </span>

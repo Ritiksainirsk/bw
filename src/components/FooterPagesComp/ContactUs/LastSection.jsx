@@ -32,7 +32,7 @@ const RegionalPartners = () => {
     ];
   
     return (
-      <div className="py-10 px-4 bg-white">
+      <div className="py-10  bg-white">
         <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">Regional Partners</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {partners.map((partner, index) => (
@@ -72,7 +72,7 @@ const RegionalPartners = () => {
     ];
   
     return (
-      <div className="py-10 px-4 bg-white">
+      <div className="py-10  bg-white">
         <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">Regional Partners</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {partners.map((partner, index) => (

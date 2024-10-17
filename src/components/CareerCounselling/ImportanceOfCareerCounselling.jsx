@@ -5,9 +5,9 @@ import AnimatedSection from "../AnimatedSection";
 export default function ImportanceOfCareerCounselling() {
   return (
     <div>
-      <div className="py-3 lg:px-16" >
+      <div className="py-3 " >
         <div className=" mx-auto ">
-          <div className="bg-white p-8">
+          <div className="bg-white  ">
             <h3 className="text-2xl lg:text-3xl font-semibold mb-6 text-center heading-font text-[#022F46]" style={{fontWeight:"600"}}>
               IMPORTANCE OF CAREER COUNSELLING
             </h3>

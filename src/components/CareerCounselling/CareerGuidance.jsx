@@ -32,7 +32,7 @@ const CareerGuidance = () => {
 
   return (
     <AnimatedSection>
-    <div className="p-6 bg-white" >
+    <div className="py-6 bg-white" >
       <h3 className="text-2xl lg:text-3xl font-bold text-center mb-2 heading-font text-[#022F46]" style={{fontWeight:"600"}}>
         Shaping the Career Guidance Landscape
       </h3>

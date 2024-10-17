@@ -10,7 +10,7 @@ import Interview from "@/components/PsychometricTest/Interview";
 import SuitablityBanner from "@/components/Home/SuitablityBanner";
 import Ebook from "@/components/Home/Ebook";
 import WhyChooseBrainwonders from "@/components/PsychometricTest/WhyChooseBrainwonders ";
-import Accordion from "@/components/PsychometricTest/Accordion";
+import Accordion from "@/components/home/Accordion";
 import TestimonialCard from "@/components/CareerCounselling/TestimonialCard ";
 import PsychometricNavbar from "@/components/PsychometricTest/PsychometricPages/PsychometricNavbar";
 // import { useLocation } from "react-router-dom";
@@ -27,20 +27,22 @@ export default function PsychometricTest() {
 
   return (
     <>
-      <PsychometricNavbar />
+      {/* <PsychometricNavbar />   */}
       <HeroCarausel />
       <PsychometricTestsSection />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
         <PsychometricAssessments />
       </div>
       <PsychometricTestBanner />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
         <OurService />
         <Interview />
       </div>
       <SuitablityBanner />
-      <div className="max-w-[1500px] mx-auto overflow-hidden">
+      <div className="max-w-[1500px] mx-auto overflow-hidden container-mar">
         <Ebook />
+        </div>
+      <div className="max-w-[1500px] mx-auto overflow-hidden">
         <WhyChooseBrainwonders />
         <TestimonialCard />
         <Accordion />

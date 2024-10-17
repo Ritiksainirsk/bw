@@ -20,7 +20,7 @@ const GuidingSteps = () => {
       <div className="w-full h-1 bg-gray-500 absolute top-[54%] guiding-line"></div>
       {/* medial line */}
 
-      <div className="relative px-5">
+      <div className="relative">
         <div className="flex justify-center items-center lg:justify-around lg:items-start GuidingStepsContainer">
           {/* first */}
           <div className="text-center p-5 lg:w-[30%]">

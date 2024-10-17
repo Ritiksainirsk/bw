@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function InterestTestHero() {
   return (
     <div>
-      <div className="bg-[#E3F2FB] md:py-10 2xl:px-32 p-8 rounded-lg flex flex-col md:flex-row items-center justify-around">
+      <div className="bg-[#E3F2FB] md:py-10  container-pad rounded-lg flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-[40px] font-bold text-gray-800 leading-tight md:mr-20">
-            Find a Career that
+            Find a Career that <br/>
             <span className="text-[#043E56]"> Suits your Interests</span>
           </h1>
           <p className="mt-4 text-black text-lg md:text-[16px] md:mr-40">

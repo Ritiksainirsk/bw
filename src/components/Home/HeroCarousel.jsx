@@ -46,28 +46,28 @@ export default function HeroCarousel() {
       title: "CLASS 11th & 12th",
       description:
         "Career Counselling Services for 11th & 12th students contain exploration of career options, colleges, competitive exams and admission assistance",
-      btntext: "Explore services for Class 11th & 12th",
+      btntext: "Ask our Experts",
     },
     {
       img: Img1,
       title: "College Students",
       description:
         "Career guidance with a certified career counsellor will give College Students a stronger understanding of what they need to do to pursue the right career in the future",
-      btntext: "Explore services for College Students",
+      btntext: "Ask our Experts",
     },
     {
       img: Img5,
       title: "Study Abroad",
       description:
         "We Fulfill Your Dreams to Study Abroad. Choose from 1000s of universities in 100s of countries for a smart education",
-      btntext: "Explore services for Study Abroad",
+      btntext: "Ask our Experts ",
     },
     {
       img: Img2,
       title: "Working Professional",
       description:
         "A career session with a certified career counsellor will give working professionals a strong understanding of job roles & clarity to prosper in their career",
-      btntext: "Explore services for Working Professional",
+      btntext: "Ask our Experts ",
     },
   ];
 
@@ -91,34 +91,10 @@ export default function HeroCarousel() {
       <div className="relative w-full">
         <Slider {...settings}>
           {/* Static Slide */}
-          <div className="relative w-full h-[55vh] lg:h-[70vh]">
-            <Image
-              src={Img4}
-              alt="Static Slide"
-              className="w-full h-full object-cover"
-              width={120}
-              height={120}
-            />
-            <div
-              className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%]   gap-6 lg:gap-4 container-mar"
-            >
-              <h1 className="text-4xl 2xl:text-[40px] font-bold leading-[60px] heading-font text-shadow text-center mt-10 md:mt-0" style={{fontWeight:"700"}}>
-                Class 10th
-              </h1>
-              <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left"  style={{fontWeight:"500"}}>
-                Career Counselling Services for Class 10th students contains
-                Stream Selection, Career option Exploration and everything a
-                class 10th student needs to get Confidence and Career Clarity
-              </p>
-              <button className="bg-[#F23E36] lg:p-2 p-1 text-[14px] lg:text-lg leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
-                Explore services for Class 10th
-              </button>
-            </div>
-          </div>
-
+          
           {/* Dynamic Slides from Array */}
           {slides.map((slide, index) => (
-            <div key={index} className="relative w-full  h-[55vh] lg:h-[70vh]">
+            <div key={index} className="relative w-full   h-[324px] md:h-[55vh] lg:h-[70vh]">
               <Image
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
@@ -128,7 +104,7 @@ export default function HeroCarousel() {
                 key={index}
               />
               <div
-                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] container-pad gap-5 lg:gap-4"
+                className="absolute top-0 text-white h-full   flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] container-pad gap-5 lg:gap-4h-full"
               
                 key={index}
               >
@@ -138,7 +114,7 @@ export default function HeroCarousel() {
                 <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left"  style={{fontWeight:"500"}}>
                   {slide.description}
                 </p>
-                <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg w-full lg:w-[23rem] font-bold">
+                <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg w-auto md:w-full lg:w-[23rem] font-medium px-2">
                   {slide.btntext}
                 </button>
               </div>

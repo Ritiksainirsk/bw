@@ -41,7 +41,7 @@ const CareerCounselingExpectations = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className=" mx-auto  py-12">
       <h2 className="text-center text-[24px] lg:text-[34px] mb-4" style={{fontWeight:"700"}}>
         What to Expect from Our Career Counselling
       </h2>
