@@ -34,7 +34,7 @@ const DescriptionBenner = () => {
         We offer personalized counselling sessions designed to address their
         specific needs. Our comprehensive services include DMIT test,
         Psychometric testing, individual counselling, and tailored career
-        recommendations based on each student' s strengths, interests, and
+        recommendations based on each students strengths, interests, and
         goals.
       </p>
     </div>
@@ -68,7 +68,7 @@ function SubjectMattersCompo() {
   return (
     <div className="bg-white py-12"  data-aos="fade-up">
     <div className="text-center">
-      <h2 className="text-xl font-semibold text-black">LET'S OVERCOME IT</h2>
+      <h2 className="text-xl font-semibold text-black">LETS OVERCOME IT</h2>
       <h2 className="text-3xl font-bold text-gray-800 mt-2 heading-font" style={{fontWeight:"600"}}>Right subject Matters</h2>
       <div className="flex justify-center mt-2">
         <div className="w-60 h-[6px] bg-[#032F42] relative overflow-hidden rounded-lg">

@@ -37,7 +37,7 @@ export default function AwardRecognition() {
             Awards and Recognition
           </h2>
         </div>
-        <div className="">
+        <div>
           <Marquee speed={40} direction="left">
             <div className="flex justify-center">
               {awards.map((award, index) => (
@@ -76,7 +76,7 @@ const AwardCard = ({ title, desc }) => {
           </div>
           <div>
             <div className="text-[11px] md:text-[15px] text-[#7A7A7A]">
-              <p className="gotham-font">“{desc}"</p>
+              <p className="gotham-font">{desc}</p>
             </div>
           </div>
         </div>

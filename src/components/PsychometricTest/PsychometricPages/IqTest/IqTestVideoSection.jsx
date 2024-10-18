@@ -24,7 +24,7 @@ export default function IqTestVideoSection() {
           </p>
 
           <p className="text-black text-[15px] md:text-[16px] leading-relaxed">
-            An IQ test is a set of questions designed to measure an individual'
+            An IQ test is a set of questions designed to measure an individual
             s intellectual abilities. It can assess the capacity for
             problem-solving, logical reasoning, and abstract thought. These
             tests are standardised Psychometric tests to measure the
@@ -59,7 +59,7 @@ export default function IqTestVideoSection() {
             <ul className=" space-y-6">
               <li className="text-[15px] md:text-[18px] text-black leading-relaxed" style={{textAlign:"justify"}}>
                 An IQ test is a set of questions designed to measure an
-                individual' s intellectual abilities. It can assess the capacity
+                individuals intellectual abilities. It can assess the capacity
                 for problem-solving, logical reasoning, and abstract thought.
                 These tests are standardised Psychometric tests to measure the
                 ‘Intelligence Quotient’ , which is a psychological indicator of

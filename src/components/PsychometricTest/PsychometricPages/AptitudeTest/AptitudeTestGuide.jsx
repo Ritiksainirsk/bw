@@ -59,7 +59,7 @@ const FirstComponent = () => {
         HOW TO TAKE AN APTITUDE TEST?
       </h2>
       <p className="text-base text-black mb-10">
-        It's very simple. Just follow these steps!
+        Its very simple. Just follow these steps!
       </p>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((step) => (

@@ -14,17 +14,17 @@ function TestimonialCard() {
     {
       name: "Archna Gupta",
       image: "https://www.shutterstock.com/image-photo/pretty-smiling-joyfully-female-fair-260nw-776697943.jpg",
-      text: " Being a homemaker for 18 years, I felt incomplete despite my passion for baking and crafting. Seeking guidance, I turned to SetMyCareer.They helped me identify my strengths and areas for growth, offeringvaluable insights. Dr. Rathi's advice clarified my path forward. I          commend SetMyCareer for their dedication and the hope they provided           for my professional journey",
+      text: " Being a homemaker for 18 years, I felt incomplete despite my passion for baking and crafting. Seeking guidance, I turned to SetMyCareer.They helped me identify my strengths and areas for growth, offeringvaluable insights. Dr. Rathis advice clarified my path forward. I commend SetMyCareer for their dedication and the hope they provided for my professional journey",
     },
     {
       name: "Sara shiju",
       image: "https://img.freepik.com/premium-photo/beautiful-south-indian-female-college-student-without-anyone-else-blurred-background_878783-7184.jpg",
-      text: " In my testimonial i shere my jaurney, I felt incomplete despite my passion for baking, I turned to SetMyCareer.They helped me identify my strengths and areas for growth, offeringvaluable insights. Dr. Rathi's advice clarified my path forward. I          commend SetMyCareer for their dedication and the hope they provided           for my professional journey",
+      text: " In my testimonial i shere my jaurney, I felt incomplete despite my passion for baking, I turned to SetMyCareer.They helped me identify my strengths and areas for growth, offeringvaluable insights. Dr. Rathis advice clarified my path forward. I          commend SetMyCareer for their dedication and the hope they provided           for my professional journey",
     },
     {
       name: "Uchawal",
       image: "https://www.shutterstock.com/image-photo/headshot-portrait-happy-millennial-man-260nw-1548802709.jpg",
-      text: " My jaurney with Shere my career, I felt incomplete despite my passion for baking. I turned to SetMyCareer.They helped me identify my strengths and areas for growth, offeringvaluable insights. Dr. Rathi's advice clarified my path forward. I          commend SetMyCareer for their dedication and the hope they provided           for my professional journey",
+      text: " My jaurney with Shere my career, I felt incomplete despite my passion for baking. I turned to SetMyCareer.They helped me identify my strengths and areas for growth, offeringvaluable insights. Dr. Rathis advice clarified my path forward. I          commend SetMyCareer for their dedication and the hope they provided           for my professional journey",
     },
   ];
 
@@ -107,7 +107,7 @@ const ReviewCard = ({ image, name, text }) => {
           <FaStar className="text-orange-200 text-2xl" />
           <FaStar className="text-orange-200 text-2xl" />
         </div>
-        <p className="text-sm">"{text}"</p>
+        <p className="text-sm">{text}</p>
       </div>
     </div>
   );

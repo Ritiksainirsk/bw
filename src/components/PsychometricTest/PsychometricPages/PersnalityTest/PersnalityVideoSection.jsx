@@ -30,9 +30,9 @@ export default function PersnalityVideoSection() {
             fundamental characteristics; these tests are used across all
             generations. The results of a personality test remain unchanged
             regardless of the context or situation, providing a reliable
-            understanding of one ' s baseline personality. By utilising such
+            understanding of ones baseline personality. By utilising such
             tests, individuals can gain deeper insights into their inherent
-            qualities to better navigate life ' s challenges.
+            qualities to better navigate lifes challenges.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function PersnalityVideoSection() {
                 This test can help us to know ourselves better and understand
                 the people around us. It can let us dive into areas such as our
                 strengths and weaknesses and give us an idea of what to focus on
-                in our daily lives. It' s also useful for creating a SWOT
+                in our daily lives. Its also useful for creating a SWOT
                 (Strengths, Weaknesses, Opportunities and Threats) analysis
               </li>
             </ul>

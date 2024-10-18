@@ -52,7 +52,7 @@ const PersonalityAssessments = () => {
           <FaCheckCircle className="absolute top-[-22px] z-10 left-8 h-10 w-10 text-green-600 bg-white" />
           <h2 className="text-2xl font-semibold mb-4">Critical Thinking</h2>
           <p>
-            A Critical Thinking Test designed to assess an individual's ability
+            A Critical Thinking Test designed to assess an individuals ability
             to digest & understand situations and information.
           </p>
         </div>

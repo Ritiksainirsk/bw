@@ -14,7 +14,7 @@ export default function PersnalityTestHero() {
             </span>
           </h1>
           <p className=" text-black text-base md:flex md:flex-col">
-            Take the world's most-advanced personality
+            Take the worlds most-advanced personality
             test online and be the best you can be!
           </p>
           <button className="mt-6 bg-[#043E56] text-white px-6 py-3 rounded-md shadow-lg hover:bg-[#032F42] transition">

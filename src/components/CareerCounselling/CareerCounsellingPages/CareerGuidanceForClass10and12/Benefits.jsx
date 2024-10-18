@@ -56,7 +56,7 @@ const CareerGuidanceBenefits = () => {
           <a href="#" className="text-blue-600 underline">
             Career guidance
           </a>{" "}
-          boosts students' confidence in their abilities and future prospects.
+          boosts students confidence in their abilities and future prospects.
         </li>
       </ul>
     </div>
@@ -95,7 +95,7 @@ const WhyBrainwonders = () => {
           Psychometric Career Test
         </a>
         , one-on-one counseling, and customized career recommendations tailored
-        to the individual's strengths, interests, and aspirations.
+        to the individuals strengths, interests, and aspirations.
       </p>
     </div>
   );

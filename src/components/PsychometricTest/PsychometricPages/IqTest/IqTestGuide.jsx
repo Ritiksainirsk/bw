@@ -59,10 +59,10 @@ const FirstComponent = () => {
         Start the test and Discover where you stand!
       </h2>
       <p className="text-base text-black mb-10 text-justify md:text-center">
-        The IQ score derived gives a reasonable measure of the individual's
+        The IQ score derived gives a reasonable measure of the individuals
         intelligence. The Brainwonders I.Q. Test is a test which purports to
         assess a general level of ability of the person taking it. The
-        intelligent quotient of the person is mapped by measuring the person's
+        intelligent quotient of the person is mapped by measuring the persons
         shown abilities against the general level of expected performance of
         people belonging to the same age and gender. The IQ test can be taken
         online or offline by anyone in three very simple steps:
@@ -99,15 +99,15 @@ const WhyIQTests = () => {
       </h2>
       <ul className="list-disc list-inside space-y-2 text-[15px] md:text-[16px]">
         <li>
-          It's the easiest way to learn your IQ score and which average IQ class
-          you're in.
+          Its the easiest way to learn your IQ score and which average IQ class
+          youre in.
         </li>
         <li>
           You can discover your true cognitive potential and uncover your hidden
           talents.
         </li>
         <li>
-          Unlike traditional IQ tests, it's quick, and you can learn your
+          Unlike traditional IQ tests, its quick, and you can learn your
           results instantly.
         </li>
         <li>

@@ -17,9 +17,9 @@ const IQTestMeasure = () => {
       </h2>
       <p className="text-center mx-auto text-base mb-12">
         IQ tests are intended to measure the intelligence of a person. Thus, the
-        purpose of the test is to assess a person's general intellectual
+        purpose of the test is to assess a persons general intellectual
         abilities and to identify their attributes. As a result, the IQ test
-        measures a person's wide range of mental, verbal, and nonverbal
+        measures a persons wide range of mental, verbal, and nonverbal
         abilities. Here are the four most important areas that IQ tests measure:
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 text-center">
@@ -51,7 +51,7 @@ const IQTestMeasure = () => {
           />
           <h3 className="text-lg font-bold mb-2">Reasoning</h3>
           <p className="text-[15px] md:text-lg">
-            The test analyses one's reasoning ability in order to figure out
+            The test analyses ones reasoning ability in order to figure out
             whether the person is good at logical reasoning as well as critical
             reasoning.
           </p>

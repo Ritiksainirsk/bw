@@ -20,7 +20,7 @@ const First = () => {
   const items = [
     {
       icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZgqy3xeOjNiW2FUhqw1-bbrwKeyDt3O-ebO7xMjYC48KNqShS", // replace with actual icon paths
-      text: "The inborn personality traits and characteristics shape any child's relationships- whether it is with the friend or a teacher",
+      text: "The inborn personality traits and characteristics shape any childs relationships- whether it is with the friend or a teacher",
     },
     {
       icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCNrh4jCPzGxWEb1bUORLQ94gaS5-cAQJkB6tQ1rqxUR3nB9U6", // replace with actual icon paths
@@ -32,7 +32,7 @@ const First = () => {
     },
     {
       icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZgqy3xeOjNiW2FUhqw1-bbrwKeyDt3O-ebO7xMjYC48KNqShS", // replace with actual icon paths
-      text: "Identifying the student's best qualities using their SWOT profile will foster multidirectional growth.",
+      text: "Identifying the students best qualities using their SWOT profile will foster multidirectional growth.",
     },
     {
       icon: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCNrh4jCPzGxWEb1bUORLQ94gaS5-cAQJkB6tQ1rqxUR3nB9U6", // replace with actual icon paths
@@ -46,7 +46,7 @@ const First = () => {
         HOW TO USE THE RESULTS OF DMIT TEST
       </h3>
       <p className="text-center mb-8">
-        With Our DMIT Test, Understand your Child's capabilities & plan her
+        With Our DMIT Test, Understand your Childs capabilities & plan her
         future accordingly
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}} >

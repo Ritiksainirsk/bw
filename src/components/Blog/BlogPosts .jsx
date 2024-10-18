@@ -73,8 +73,8 @@ const FirstPostSection = ({ value }) => {
       {/* Line below heading */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {filteredPosts.length > 0 ? (
-          filteredPosts.map((post) => (
-          <Link href={post.url}>
+          filteredPosts.map((post,index) => (
+          <Link href={post.url} key={index}>
             <div
               key={post.id}
               className="flex justify-between items-center border-b pb-4"

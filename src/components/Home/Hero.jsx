@@ -36,10 +36,10 @@ export default function Hero() {
                 className="text-[18px] md:text-[22px] text-black"
                 
               >
-                We at Brainwonders, India's Largest Career Counselling and DMIT
+                We at Brainwonders, Indias Largest Career Counselling and DMIT
                 Company, strive to help you make an informed decision about your
                 career. Based on the analysis you opt for, we assist you in
-                understanding your or your child's capabilities better.{" "}
+                understanding your or your childs capabilities better.
               </h3>
             </div>
           </AnimatedSection>
@@ -62,8 +62,7 @@ const Card = () => {
     <div className="w-full overflow-hidden flex flex-col md:flex-row text-center md:text-left   ">
       <div className="md:basis-1/2     flex flex-col justify-center">
         <h2 className="text-2xl lg:text-[34px] font-bold text-[#022F46] heading-font" style={{fontWeight:"700"}}>
-          The World's Most Accurate
-           
+          The Worlds Most Accurate
           Career Test 
         </h2>
         <p className="mt-4 text-black lg:text-[17px]" style={{fontWeight:"500"}}>
@@ -72,15 +71,15 @@ const Card = () => {
           make the right education, skill and career choice.
         </p>
         <div className="flex justify-evenly mt-6 ">
-     `   <button className="p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
+       <button className="p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
           Read More
-        </button>`
+        </button>
         <button className="  p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
         Take Test Now
         </button>
         </div>
       </div>
-      <div className="md:basis-1/2 py-6       flex flex-col items-center hero-video-container">
+      <div className="md:basis-1/2 py-6 flex flex-col items-center hero-video-container">
         <iframe
           width="560"
           height="315"
@@ -122,7 +121,7 @@ const AwardCard = ({ title, desc }) => {
           </div>
           <div>
             <div className="text-[15px] text-[#7A7A7A]">
-              <p>“{desc}"</p>
+              <p>{desc}</p>
             </div>
           </div>
         </div>

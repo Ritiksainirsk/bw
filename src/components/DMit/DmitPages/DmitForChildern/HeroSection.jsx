@@ -10,10 +10,10 @@ export default function HeroSection() {
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl 2xl:text-[40px] text-gray-800  mb-4 md:flex md:flex-col md:gap-2" style={{fontWeight:"700"}}>
             Are you ready for
-            <span className="text-[#043E56]">your child's success story?</span>
+            <span className="text-[#043E56]">your childs success story?</span>
           </h1>
           <p className="md:mt-4 text-black text-lg md:text-[16px] md:flex md:flex-col">
-            With Our DMIT Test, Understand your Child's
+            With Our DMIT Test, Understand your Childs
             capabilities & plan her future accordingly
           </p>
           <button className="mt-4 bg-[#043E56] text-white px-6 py-3 rounded-md shadow-lg hover:bg-[#032F42] transition">

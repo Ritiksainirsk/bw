@@ -22,13 +22,13 @@ const First = () => {
     <div className="py-8 bg-white py-12"  data-aos="fade-up">
       {/* Heading Section */}
       <h1 className="text-2xl md:text-3xl text-center mb-4 heading-font" style={{fontWeight:"600"}}>
-        HOW DOES THE INTEREST TEST BENEFIT CHILDREN'S CAREER?
+        HOW DOES THE INTEREST TEST BENEFIT CHILDRENS CAREER?
       </h1>
       <p className="text-center md:text-[16px] mb-8" style={{ textAlign: "justify" }}>
         The Interest-Aptitude Test draws its foundations in psychology and human
         development. As per the theories of intellectual development,
         intelligence is crystallized by the age of 18—and thus early exploration
-        and analysis of one's talents help in shaping and molding it positively
+        and analysis of ones talents help in shaping and molding it positively
         with better impact. Thus the Interest-Aptitude Test has the following
         advantages for toddlers, preschoolers, and school students and also
         helps parents along the way:
@@ -68,7 +68,7 @@ const First = () => {
             ACADEMIC DEVELOPMENT
           </h3>
           <p style={{ textAlign: "justify" }}>
-            One can not only understand but also focus on the child's
+            One can not only understand but also focus on the childs
             development in subjects that are best suited to improve the progress
             of the child.
           </p>
@@ -105,7 +105,7 @@ const First = () => {
             MULTIDIMENSIONAL PROFILE
           </h3>
           <p style={{ textAlign: "justify" }}>
-            It is crucial to understand the child's profile. The test allows the
+            It is crucial to understand the childs profile. The test allows the
             parents to understand the more in-depth profile of the child. This
             helps in assisting the child to map their interests, skills and
             understand where they are struggling.

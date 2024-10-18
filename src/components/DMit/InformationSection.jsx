@@ -14,7 +14,7 @@ const InformationSection = () => {
           Dermatoglyphics is the scientific study of the patterns of ridges on
           the skin of human fingers, palms, toes, and soles. These patterns,
           including loops, whorls, and arches, are formed during fetal
-          development and remain unique and consistent throughout a person's
+          development and remain unique and consistent throughout a persons
           life. The primary focus is on analyzing fingerprint patterns, which
           are categorized into these three main types, each with various
           subtypes. Dermatoglyphics is influenced by genetic and environmental
@@ -34,16 +34,16 @@ const InformationSection = () => {
         </h2>
         <p style={{textAlign:"justify",fontWeight:"500"}}  className=" lg:text-[17px]">
           A Multiple Intelligence Test is an assessment tool designed to measure
-          an individual's strengths and abilities across various intelligence
+          an individuals strengths and abilities across various intelligence
           domains. Several researchers and theorists developed this concept, and
           a prominent psychologist, Howard Gardner, proposed that intelligence
           is not limited to a single factor but encompasses multiple distinct
           types of intelligence. These intelligences include linguistic,
           logical-mathematical, spatial, bodily-kinesthetic, musical,
           interpersonal, intrapersonal, and naturalistic intelligence. The
-          Multiple Intelligence Test evaluates a person's proficiency and
+          Multiple Intelligence Test evaluates a persons proficiency and
           preferences in these different areas. This assessment can provide
-          valuable insights into an individual's unique strengths and learning
+          valuable insights into an individuals unique strengths and learning
           styles, helping them better understand themselves and tailor their
           educational or career paths accordingly at any age.
         </p>

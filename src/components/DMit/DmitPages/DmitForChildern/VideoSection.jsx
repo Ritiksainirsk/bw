@@ -52,7 +52,7 @@ export default function VideoSection() {
           {/* right Text Section */}
           <div className="lg:w-[55%] space-y-6">
             <p className="text-[15px] md:text-[16px] text-black leading-relaxed">
-              When a baby is born - a parent's joy knows no bounds. There are
+              When a baby is born - a parents joy knows no bounds. There are
               several ways in which any parent can always recount how they are
               always putting the best interests of their baby forward. But when
               a child can barely even understand the parents’ speech - how can

@@ -54,9 +54,9 @@ const FirstBanner = () => {
           <div className="md:w-1/2 mt-8 md:mt-0 ">
             <p className="text-black text-sm md:text-base" style={{textAlign:"justify"}}>
               DMIT Dermatoglyphics Multiple Intelligence test (DMIT) is the
-              latest and most trending way of mapping a person's brain. In DMIT,
+              latest and most trending way of mapping a persons brain. In DMIT,
               the fingerprints of the client are taken using a scanner, and then
-              a report is generated that gives complete details of the client's
+              a report is generated that gives complete details of the clients
               personality, strengths, weaknesses, and potential. Research
               suggests 85% accuracy for this approach. It is considered more
               effective than any psychometric test. Counselling done on the
@@ -97,7 +97,7 @@ const SecondBanner = () => {
               understanding their abilities, capacities and potential that is
               significant for picking the right career way. Career guidance
               after tenth and career guidance after twelfth are vital as these
-              are the significant defining moments in an understudies' life.
+              are the significant defining moments in an understudies life.
             </p>
             <p className="text-black mt-4">
               Career guidance and advising given by proficient career guidance
@@ -123,7 +123,7 @@ const CareerOptions = () => {
   const cards = [
     {
       title: "Career Guidance for class 8th and 9th",
-      description: "Find the perfect career pathway that's just right for you",
+      description: "Find the perfect career pathway thats just right for you",
       buttonText: "Explore Now",
       icon: "https://d8zm9ei35njj5.cloudfront.net/uploads/2024/01/straight.webp",
       iconColor: "#FFD772",

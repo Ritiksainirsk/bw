@@ -1,46 +1,43 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { NavItem } from "../Navbar";
+import React, { useState } from "react";
+import Link from "next/link"; // Use Link for navigation in Next.js
 import AnimatedSection from "../AnimatedSection";
 import Image from "next/image";
 
 const blogs = [
   {
     imageSrc:
-      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9TI26JlcbeqOlyyE5ni-n95u4Q8XYBnWzAVqXcQkMU-wbhtzg", // Replace with actual image path
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9TI26JlcbeqOlyyE5ni-n95u4Q8XYBnWzAVqXcQkMU-wbhtzg",
     title: "List of Courses after 10th Standard",
     date: "2023-02-06",
     description:
-      "Are you feeling anxious and confused about the next steps to take after completing your Class 10th boards? It’s only natural to experience these types of feelings as a young person in India. If that’s why you’re readin...",
+      "Are you feeling anxious and confused about the next steps to take after completing your Class 10th boards? It’s only natural to experience these types of feelings as a young person in India...",
   },
   {
     imageSrc:
-      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTBzcGDrOYWGKQIPeWWRCap30BflKZkGOfzxi0b85Pne8qjwFq", // Replace with actual image path
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTBzcGDrOYWGKQIPeWWRCap30BflKZkGOfzxi0b85Pne8qjwFq",
     title: "Top Diploma Courses after 10th in Science",
     date: "2023-05-13",
     description:
-      "Just done with the class 10th and confused about selecting the right career path? Generally, it’s a turning point in every student’s life. As a result, taking the right career decision is very essential. If...",
+      "Just done with the class 10th and confused about selecting the right career path? Generally, it’s a turning point in every student’s life. As a result, taking the right career decision is essential...",
   },
   {
     imageSrc:
-      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2FmFJSVmDYtgrAFypO3Nx3k2bcsnwNGAW4VLU9o4tQ1j1Y_2l", // Replace with actual image path
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2FmFJSVmDYtgrAFypO3Nx3k2bcsnwNGAW4VLU9o4tQ1j1Y_2l",
     title: "CBSE Schools Near Me, List of Top 10 CBSE Schools of India",
     date: "2023-05-09",
     description:
-      "Every parent wishes that their child must grow up in an environment that helps him or her to become a better person in the world. This dream can only be fulfilled if they get the best educational environment in their c...",
+      "Every parent wishes that their child must grow up in an environment that helps them become a better person in the world. This dream can be fulfilled if they get the best educational environment...",
   },
 ];
 
 export default function Blog() {
-  const [activePage, setActivePage] = useState(window.location.pathname);
   return (
     <div>
-      <div className=" ">
-        <h2 className="text-2xl md:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46]" style={{fontWeight:"700"}}>
-          OUR BLOGS
-        </h2>
-        <AnimatedSection>
-        <div className="flex justify-between gap-10 flex-wrap md:flex-nowrap ">
+      <h2 className="text-2xl md:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46]" style={{ fontWeight: "700" }}>
+        OUR BLOGS
+      </h2>
+      <AnimatedSection>
+        <div className="flex justify-between gap-10 flex-wrap md:flex-nowrap">
           {blogs.map((blog, index) => (
             <Card
               key={index}
@@ -51,30 +48,28 @@ export default function Blog() {
             />
           ))}
         </div>
-        </AnimatedSection>
-        <div className="text-center my-8">
-          <NavItem
-            to="/blog"
-            setActivePage={setActivePage}
-            activePage={activePage}
-          >
-            <button className="bg-[#022F46] px-4 py-2 text-white rounded-lg">
-              View All Blogs
-            </button>
-          </NavItem>
-        </div>
+      </AnimatedSection>
+
+      <div className="text-center my-8">
+        {/* Use Next.js Link for client-side navigation */}
+        <Link href="/blog">
+          <button className="bg-[#022F46] px-4 py-2 text-white rounded-lg">
+            View All Blogs
+          </button>
+        </Link>
       </div>
-      {/* FAQ */}
+
+      {/* FAQ Section */}
       <div className="flex justify-center">
         <Image
           src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8LZpzbHv6LBMf5zbpg4n43DygbeSYn9Gcj00Jg1VE-cG-FVMx"
-          alt="No image"
-          className=" w-[28%]"
+          alt="FAQ"
+          className="w-[28%]"
           width={120}
           height={120}
+          priority={true} // Important images load faster
         />
       </div>
-      {/* FAQ */}
     </div>
   );
 }
@@ -85,9 +80,10 @@ const Card = ({ imageSrc, title, date, description }) => {
       <Image
         src={imageSrc}
         alt={title}
-        className="w-full h-48 "
+        className="w-full h-48"
         width={120}
         height={120}
+        loading="lazy" // Lazy load images
       />
       <div className="p-4">
         <h4 className="text-xl font-bold mb-2 heading-font text-black">

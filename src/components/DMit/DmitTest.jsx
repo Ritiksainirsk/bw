@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
-import Link from 'next/link'
+import Link from "next/link";
 import SlideSec from "../common/slideSec";
 import Services from "../Home/Services";
 
@@ -12,7 +12,7 @@ const cards1 = [
   {
     title: "DMIT Test for Toddlers (1-4 years)",
     description:
-      "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+      "Helps parents make decisions on understanding the childs behavior, parenting styles, and apt teaching methods.",
     buttonText: "Explore Now",
     icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7AMz_3fqjluWADEO6rkKwJVQRm4IJo6d2THmoqnDEOD5Il7hn",
     iconColor: "#FFD772",
@@ -27,8 +27,7 @@ const cards1 = [
   },
   {
     title: "DMIT Test for Students (11 to 17 years)",
-    description:
-      "Highlights the innate primary and secondary learning styles.",
+    description: "Highlights the innate primary and secondary learning styles.",
     buttonText: "Professional Guidance",
     icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsNMl0KBQhToPa0Ux-hNggAjvKNCyObZ4-T0X0TSGlqvaA-caX",
     iconColor: "#FFB1CC",
@@ -46,7 +45,7 @@ const cards2 = [
   {
     title: "DMIT Test for Adult (25 years and above)",
     description:
-      "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+      "Helps parents make decisions on understanding the childs behavior, parenting styles, and apt teaching methods.",
     buttonText: "Explore Now",
     icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4iiu98uczFUIyiu1k_RK2tZ4GtlGY5OAKaaW12HwXC8xhoKk",
     iconColor: "#FFD772",
@@ -61,8 +60,7 @@ const cards2 = [
   },
   {
     title: "DMIT Test for Students (11 to 17 years)",
-    description:
-      "Highlights the innate primary and secondary learning styles.",
+    description: "Highlights the innate primary and secondary learning styles.",
     buttonText: "Professional Guidance",
     icon: "https://media.istockphoto.com/id/1369754239/photo/university-student-in-white-background-stock-photo.jpg?s=612x612&w=0&k=20&c=LjFVDfjusWBjYTNliHV9DyXfApPGc8DmgBGEtfVgQ0Q=",
     iconColor: "#FFB1CC",
@@ -83,14 +81,13 @@ export default function DmitTest() {
       </div>
       {/*  */}
 
-
-<div className="container-mar">
-<div>
-        <DmttTestDescription />
-      </div>
-      {/*  */}
-      {/*  */}
-      {/* <div className="mb-16">
+      <div className="container-mar">
+        <div>
+          <DmttTestDescription />
+        </div>
+        {/*  */}
+        {/*  */}
+        {/* <div className="mb-16">
         <h3
           className="px-2 text-2xl md:text-[34px] text-center my-10 heading-font text-[#022F46]"
           style={{ fontWeight: "700" }}
@@ -105,11 +102,10 @@ export default function DmitTest() {
         </AnimatedSection>
       </div> */}
 
-
         {/* <SlideSec title='BENEFITS OF DMIT TEST FOR ALL AGES!' data1={cards1} data2={cards2}/> */}
 
-        <Services/>
-</div>
+        <Services />
+      </div>
       {/*  */}
     </div>
   );
@@ -167,15 +163,15 @@ const DmttTestDescription = () => {
       </h3>
       <p
         className="mb-4 md:text-[17px] leading-7"
-        style={{ fontWeight: "500",textAlign:"justify" }}
+        style={{ fontWeight: "500", textAlign: "justify" }}
       >
         The full form of DMIT is the Dermatoglyphics Multiple Intelligence Test
         (DMIT) is a biometric analysis based on the scientific study of
         fingerprints. It is useful for all age groups and helps understand an
         individual’s potential, personality type, SWOT analysis, learning style,
         career introspection, and more. DMIT is particularly beneficial for
-        parents and teachers, providing insights into a child's innate strengths
-        and areas that need development. Using information from the child's
+        parents and teachers, providing insights into a childs innate strengths
+        and areas that need development. Using information from the childs
         biometrics, the DMIT assessment offers actionable insights and
         appropriate career recommendations. Dermatoglyphics is the study of the
         patterns of skin ridges on human fingers, toes, and soles. It reveals
@@ -185,7 +181,7 @@ const DmttTestDescription = () => {
         between the 13th and 21st weeks. Medical experts and scientists have
         discovered that the distribution of brain cells in different parts of
         the brain can be understood through the DMIT test. This helps reveal a
-        person's multiple intelligences, innate potential capabilities, and
+        persons multiple intelligences, innate potential capabilities, and
         personality. Our fingerprints reveal what we need and how we learn,
         transforming our lives through a holistic education approach.
       </p>
@@ -198,7 +194,7 @@ const CareerOptions = () => {
     {
       title: "DMIT Test for Toddlers (1-4 years)",
       description:
-        "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+        "Helps parents make decisions on understanding the childs behavior, parenting styles, and apt teaching methods.",
       buttonText: "Explore Now",
       icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7AMz_3fqjluWADEO6rkKwJVQRm4IJo6d2THmoqnDEOD5Il7hn",
       iconColor: "#FFD772",
@@ -231,6 +227,7 @@ const CareerOptions = () => {
     <div className="flex justify-between rounded-2xl border-gray-200 md:mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
         <Link
+        key={index}
           href={
             card.title === "DMIT Test for Children (4-10 years)"
               ? "/dmit/dmitforchildern"
@@ -284,7 +281,7 @@ const CareerOptions = () => {
               </div>
             </div>
           </div>
-         </Link>
+        </Link>
       ))}
     </div>
   );
@@ -295,7 +292,7 @@ const CareerOptions2 = () => {
     {
       title: "DMIT Test for Adult (25 years and above)",
       description:
-        "Helps parents make decisions on understanding the child's behavior, parenting styles, and apt teaching methods.",
+        "Helps parents make decisions on understanding the childs behavior, parenting styles, and apt teaching methods.",
       buttonText: "Explore Now",
       icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4iiu98uczFUIyiu1k_RK2tZ4GtlGY5OAKaaW12HwXC8xhoKk",
       iconColor: "#FFD772",

@@ -162,7 +162,7 @@ const CareerOptions = () => {
     <AnimatedSection>
     <div className="flex justify-center items-center rounded-2xl border-gray-200 mb-14 main-hoverbox-container">
       {cards.map((card, index) => (
-       <Link href={card.title === "Career Guidance After 10th" ? "/careercounselling/careerGuidanceforclass10th&12th":""}>
+       <Link key={index} href={card.title === "Career Guidance After 10th" ? "/careercounselling/careerGuidanceforclass10th&12th":""}>
        <div
           className={`w-[25rem] border-2 h-[21rem] containerBox relative p-7 overflow-hidden ${
             card.title === "Career Guidance for class 8th and 9th"

@@ -12,7 +12,7 @@ const AboutUsHero = () => {
           occupational growth, psychosocial grooming, and talent maximisation.
           It was established in 2011 with a firm belief in providing personal
           and career guidance from the best career counsellors and
-          psychologists in India. The idea was conceived in Prof Lin Ruei Bin's
+          psychologists in India. The idea was conceived in Prof Lin Ruei Bins
           Well Gene Science Lab in Malaysia. Brainwonders operates with their
           U.S. Patented DMIT, IQ Test, Psychometric Test and Aptitude Test. Our
           belief is in the Happy Child Concept and we cater to the age range of

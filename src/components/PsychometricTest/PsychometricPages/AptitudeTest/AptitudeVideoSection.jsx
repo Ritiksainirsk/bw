@@ -21,7 +21,7 @@ export default function AptitudeVideoSection() {
           <p className="text-center text-black text-xl md:text-[16px] mb-8">It basically refers to one’s ability to do certain kinds of work</p>
 
           <p className="text-black text-[15px] md:text-[16px] leading-relaxed">
-            An aptitude test is an exam used to determine an individual' s skill
+            An aptitude test is an exam used to determine an individuals skill
             or propensity to succeed in a given activity. Aptitude tests assume
             that individuals have inherent strengths and weaknesses and a
             natural inclination toward success or failure in certain areas as a
@@ -57,7 +57,7 @@ export default function AptitudeVideoSection() {
 
             <ul className=" list-disc space-y-6">
               <li className="text-[15px] md:text-[16px] text-black leading-relaxed">
-                An aptitude test is used to determine an individual' s
+                An aptitude test is used to determine an individuals
                 abilities, assessing how they are likely to perform in an area
                 in which they may have no prior training or knowledge.
               </li>
@@ -68,7 +68,7 @@ export default function AptitudeVideoSection() {
               </li>
               <li className="text-[15px] md:text-[16px] text-black leading-relaxed">
                 Human resources departments at some companies will use
-                assessment tests to learn about a potential candidate ' s
+                assessment tests to learn about a potential candidates
                 strengths and weaknesses
               </li>
             </ul>

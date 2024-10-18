@@ -9,7 +9,7 @@ export default function DmitFeature() {
     {
       title: "UNIQUENESS",
       description:
-        "There are no two identical fingerprints. One's 10 fingers are not the same. Dermatoglyphics style, striae height, density, quantity, and location of the point is not the same for everyone. No individual has ever displayed the same fingerprint from another digit even if taken from the same hand.",
+        "There are no two identical fingerprints. Ones 10 fingers are not the same. Dermatoglyphics style, striae height, density, quantity, and location of the point is not the same for everyone. No individual has ever displayed the same fingerprint from another digit even if taken from the same hand.",
       icon: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqDfY1WflTArk8wsPNzn3l4kWZUMFwEC-PGZF6P-n9S93wOFFP", // replace with your icon path
       bgColor: "gray",
     },
@@ -44,7 +44,7 @@ export default function DmitFeature() {
         </h3>
         <p className="text-center mb-8 px-2 md:text-[17px]" style={{fontWeight:"500"}}>
           Implementing the study of fingerprints to help discover & expand an
-          individual's potential.
+          individuals potential.
         </p>
         <AnimatedSection>
           <div className="flex md:flex-nowrap	 lg:flex-nowrap	 flex-wrap justify-center">
