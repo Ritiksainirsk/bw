@@ -437,27 +437,27 @@ const Footer = () => {
                 <ul className="text-[#4D5B6B] space-y-2">
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQ's for DMIT
+                      FAQs for DMIT
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQ's for IQ Test
+                      FAQs for IQ Test
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQ's for Aptitude Test
+                      FAQs for Aptitude Test
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQ's for Interest-Aptitude Test
+                      FAQs for Interest-Aptitude Test
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQ's for Personality Test
+                      FAQs for Personality Test
                     </a>
                   </li>
                   <li>
