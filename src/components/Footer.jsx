@@ -7,48 +7,47 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa"; 
 import Link from 'next/link';
 import Image from 'next/image';
-import "aos/dist/aos.css";
  
  
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#E5EEF8] to-[#A4BFD6] pt-10">
-      <div className="mx-auto    container-pad">
-        <div className="flex flex-wrap justify-between ">
+      <div className="mx-auto px-4 lg:px-28">
+        <div className="flex flex-wrap justify-between">
           {/* Left Column */}
           <div
-            className="w-full md:w-1/4 mb-8 md:mb-0"
+            className="w-full mb-8 md:mb-0"
           >
-               <Image
+            <img
               src="https://www.brainwonders.in/images/logo.webp"
               alt="Brainwonders Logo"
-              className="w-full md:w-[260px]"
+              className="w-full md:w-[260px] "
               width={120}
               height={120}
             />
             <ul className="text-[#4D5B6B] my-3">
               <li className="mb-2">
-              <Link href="/aboutus" className="hover:text-[#022F46]">
+                <Link href={'/aboutus'} className="hover:text-[#022F46]">
                   About Us
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/" className="hover:text-[#022F46]">
+                <Link href={"/"} className="hover:text-[#022F46]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/contactus" className="hover:text-[#022F46]">
+                <Link href={"/contactus"} className="hover:text-[#022F46]">
                   Contact Us
                 </Link>
               </li>
             </ul>
             <div className="mt-6 md:mr-3 2xl:mr-10">
-              <div className="bg-blue-900 text-white p-4 rounded-lg w-full">
+              <div className="bg-blue-900 text-white p-4 rounded-lg">
                 <p className="font-bold">Contact Us</p>
                 <p>📞 9987422220</p>
                 <p>✉️ info@brainwonders.in</p>
-                <p className="mt-3">
+                <p className="mt-3 w-72">
                   Brainwonders 804, 8th floor, Paras Business Center, Kasturba
                   Carter Road No. 1, Gokul Nagar, near Kasturba Police station,
                   Asara Colony, Thane West, Mumbai, Maharashtra 404601
@@ -85,7 +84,7 @@ const Footer = () => {
 
           {/* Right Column */}
           <div className="w-full md:w-3/4">
-            <div className="flex flex-wrap justify-between">
+            <div className="flex flex-wrap md:gap-28">
               {/* Column 1 */}
               <div
                 className="w-1/2 md:w-1/4 mb-8 md:mb-0"
@@ -95,8 +94,8 @@ const Footer = () => {
                 </h3>
                 <ul className="text-[#4D5B6B] space-y-2">
                   <li>
-                  <Link href="/marks2career" className="hover:text-[#022F46]">
-                      Marks 2 Career
+                    <Link href={"/marks2career"}  className="hover:text-[#022F46]">
+                        Marks 2 Career
                     </Link>
                   </li>
                   <li>
@@ -438,27 +437,27 @@ const Footer = () => {
                 <ul className="text-[#4D5B6B] space-y-2">
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQs for DMIT
+                      FAQ's for DMIT
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQs for IQ Test
+                      FAQ's for IQ Test
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQs for Aptitude Test
+                      FAQ's for Aptitude Test
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQs for Interest-Aptitude Test
+                      FAQ's for Interest-Aptitude Test
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-[#022F46]">
-                      FAQs for Personality Test
+                      FAQ's for Personality Test
                     </a>
                   </li>
                   <li>
@@ -478,7 +477,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-[#4D5B6B] text-sm mt-8 pb-4">
+        <div className="text-center text-[#4D5B6B] text-sm  mt-8 pb-4">
           <p>
             Copyright - Medhavi Professional Services Pvt Ltd. All Rights
             Reserved

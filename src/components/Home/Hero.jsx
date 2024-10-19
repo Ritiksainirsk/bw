@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useEffect } from "react";
 import AnimatedSection from "../AnimatedSection";
 import Image from "next/image";
@@ -31,11 +31,8 @@ export default function Hero() {
       <div className=" mb-5  ">
         <div className="">
           <AnimatedSection>
-            <div className="text-center font-bold py-[5%]  md:leading-[38px] leading-8 container-pad">
-              <h3
-                className="text-[18px] md:text-[22px] text-black"
-                
-              >
+            <div className="text-center font-bold py-[5%] md:leading-[38px] leading-8 container-pad">
+              <h3 className="text-[18px] md:text-[22px] text-black">
                 We at Brainwonders, Indias Largest Career Counselling and DMIT
                 Company, strive to help you make an informed decision about your
                 career. Based on the analysis you opt for, we assist you in
@@ -46,11 +43,10 @@ export default function Hero() {
         </div>
         {/*  */}
         <AnimatedSection>
-        <div
-          className="flex items-center justify-center w-full bg-[#F7F5FF]  container-pad py-2 my-4"
-        >
-          <Card />
-        </div>
+          <div className="flex items-center justify-center w-full bg-[#F7F5FF] px-5 lg:px-28 xl:px-40 2xl:px-60 py-2">
+            <div></div>
+            <Card />
+          </div>
         </AnimatedSection>
       </div>
     </>
@@ -59,39 +55,40 @@ export default function Hero() {
 
 const Card = () => {
   return (
-    <div className="w-full overflow-hidden flex flex-col md:flex-row text-center md:text-left   ">
-      <div className="md:basis-1/2     flex flex-col justify-center">
-        <h2 className="text-2xl lg:text-[34px] font-bold text-[#022F46] heading-font" style={{fontWeight:"700"}}>
-          The Worlds Most Accurate
-          Career Test 
+    <div className="w-full overflow-hidden flex flex-col lg:flex-row text-center lg:text-left lg:gap-10">
+      <div className="md:basis-1/2 flex flex-col justify-center">
+        <h2
+          className="text-2xl lg:text-[34px] font-bold text-[#022F46] heading-font"
+          style={{ fontWeight: "700" }}
+        >
+          The Worlds Most Accurate Career Test
         </h2>
-        <p className="mt-4 text-black lg:text-[17px]" style={{fontWeight:"500"}}>
-          Take our well researched, accurate DMIT test to
-           
-          make the right education, skill and career choice.
+        <p
+          className="mt-4 text-black lg:text-[17px]"
+          style={{ fontWeight: "500" }}
+        >
+          Take our well researched, accurate DMIT test to make the right
+          education, skill and career choice.
         </p>
-        <div className="flex justify-evenly mt-6 ">
-       <button className="p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
-          Read More
-        </button>
-        <button className="  p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
-        Take Test Now
-        </button>
+        <div className="mt-6">
+          <button className="p-2 text-[13px] bg-[#022F46] text-white rounded-2xl hover:bg-[#022f469d] lg:w-32">
+            Read More
+          </button>
         </div>
       </div>
       <div className="md:basis-1/2 py-6 flex flex-col items-center hero-video-container">
         <iframe
           width="560"
           height="315"
-          className="w-full  md:w-[73%] h-56 rounded-xl heroVideo "
+          className="h-auto w-auto md:w-[490px] md:h-56 rounded-xl heroVideo"
           src="https://www.youtube.com/embed/ISv2-cLrtnY"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         <p className="text-center text-sm mt-2 w-full md:w-[73%]">
-          Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about 
+          Watch the Founder & CEO of Brainwonders, Mr Manish Naidu, talk about
           its DMIT franchise model
         </p>
       </div>
@@ -102,39 +99,39 @@ const Card = () => {
 const AwardCard = ({ title, desc }) => {
   return (
     <>
-    <div className="flex justify-center items-center text-center w-72">
-      <Image
-        decoding="async"
-        width="60"
-        height="132"
-        src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
-        alt={title}
-      />
-      <div>
+      <div className="flex justify-center items-center text-center w-72">
+        <Image
+          decoding="async"
+          width="60"
+          height="132"
+          src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElementLeft.svg"
+          alt={title}
+        />
         <div>
           <div>
             <div>
-              <h3 className=" text-[18px] heading-font text-black">
-                {title}
-              </h3>
+              <div>
+                <h3 className=" text-[18px] heading-font text-black">
+                  {title}
+                </h3>
+              </div>
             </div>
-          </div>
-          <div>
-            <div className="text-[15px] text-[#7A7A7A]">
-              <p>{desc}</p>
+            <div>
+              <div className="text-[15px] text-[#7A7A7A]">
+                <p>{desc}</p>
+              </div>
             </div>
           </div>
         </div>
+        <Image
+          decoding="async"
+          width="60"
+          height="132"
+          src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"
+          alt={title}
+        />
       </div>
-      <Image
-        decoding="async"
-        width="60"
-        height="132"
-        src="https://www.parmsingh.ca/wp-content/uploads/2023/11/VectorElement1.svg"
-        alt={title}
-      />
-    </div>
-  </>
+    </>
   );
 };
 

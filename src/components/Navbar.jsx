@@ -65,7 +65,7 @@ export default function Navbar() {
         isFixed ? "fixed z-50" : ""
       }`}
     >
-      <nav className="justify-between text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 max-w-[1400px] lg:min-h-[50px] container-mar">
+      <nav className="justify-between text-[12px] 2xl:px-24 lg:text-[13px] xl:text-[14px] 2xl:text-lg flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 lg:min-h-[50px] container-mar">
         <div className="md:w-[240px] flex flex-col w-full">
           <a href="/">
             <Image
@@ -107,7 +107,7 @@ export default function Navbar() {
                 setActivePage={setActivePage}
                 activePage={activePage}
               >
-                small
+                DMIT
               </NavItem>
               <NavItem
                 to="/careercounselling"
@@ -151,6 +151,13 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden gap-4 text-[16px] lg:flex items-center">
           <ul className="flex">
+          <NavItem
+              to="/"
+              setActivePage={setActivePage}
+              activePage={activePage}
+            >
+              Home
+            </NavItem>
             <NavItem
               to="/dmit"
               setActivePage={setActivePage}

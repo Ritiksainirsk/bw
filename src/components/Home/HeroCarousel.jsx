@@ -1,19 +1,19 @@
-'use client'
+"use client";
 
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
+import Image from "next/image";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // import Img1 from '/public/CareerCounsellingAfter12th.webp';
-import Img1 from '@/assets/slider-images/CareerCounsellingAfter12th.webp';
-import Img2 from '@/assets/slider-images/CareerCounselling.webp';
-import Img3 from '@/assets/slider-images/CareerGuidanceAfter10th.webp';
+import Img1 from "@/assets/slider-images/CareerCounsellingAfter12th.webp";
+import Img2 from "@/assets/slider-images/CareerCounselling.webp";
+import Img3 from "@/assets/slider-images/CareerGuidanceAfter10th.webp";
 // import Img4 from '@/assets/slider-images/CareerGuidanceForClass8thAnd9thStudents.webp';
-import Img5 from '@/assets/slider-images/DMIT.webp';
+import Img5 from "@/assets/slider-images/DMIT.webp";
 
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
@@ -84,17 +84,18 @@ export default function HeroCarousel() {
     nextArrow: <CustomNextArrow />,
   };
 
-
-
   return (
     <>
       <div className="relative w-full">
         <Slider {...settings}>
           {/* Static Slide */}
-          
+
           {/* Dynamic Slides from Array */}
           {slides.map((slide, index) => (
-            <div key={index} className="relative w-full   h-[324px] md:h-[55vh] lg:h-[70vh]">
+            <div
+              key={index}
+              className="relative w-full h-[324px] md:h-[40vh] lg:h-[60vh]"
+            >
               <Image
                 src={slide.img}
                 alt={`Slide ${index + 1}`}
@@ -105,13 +106,18 @@ export default function HeroCarousel() {
               />
               <div
                 className="absolute top-0 text-white h-full   flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] container-pad gap-5 lg:gap-4h-full"
-              
                 key={index}
               >
-                <h2 className="text-3xl 2xl:text-[40px] leading-[60px] heading-font text-shadow text-center lg:text-start" style={{fontWeight:"700"}}>
+                <h2
+                  className="text-3xl 2xl:text-[40px] leading-[60px] heading-font text-shadow text-center lg:text-start"
+                  style={{ fontWeight: "700" }}
+                >
                   {slide.title}
                 </h2>
-                <p className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left"  style={{fontWeight:"500"}}>
+                <p
+                  className="lg:mt-2 2xl:text-[17px] text-sm leading-7 text-center lg:text-left"
+                  style={{ fontWeight: "500" }}
+                >
                   {slide.description}
                 </p>
                 <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg w-auto md:w-full lg:w-[23rem] font-medium px-2">
@@ -124,5 +130,4 @@ export default function HeroCarousel() {
       </div>
     </>
   );
-
 }

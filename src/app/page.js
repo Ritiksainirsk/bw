@@ -106,19 +106,19 @@ export default function Home() {
 
   return (
     <>
-      <div className="overflow-hidden">
+      <div className=" overflow-hidden">
         <HeroCarousel />
-        <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
+        <div className="max-w-[1550px] mx-auto overflow-hidden ">
           <AwardRecognition />
         </div>
         <Hero />
-        <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
+        <div className="max-w-[1550px] mx-auto overflow-hidden ">
           <Services />
         </div>
         <TestsCard cardData={benefits} />
-        <div className="max-w-[1550px] mx-auto overflow-hidden container-mar"></div>
+        <div className="max-w-[1550px] mx-auto overflow-hidden "></div>
         <CareerSuitabilitySection />
-        <div className="max-w-[1550px] mx-auto overflow-hidden  container-mar">
+        <div className="max-w-[1550px] mx-auto overflow-hidden  ">
           <HowItWorks data={content} />
           <Ebook />
           <Achievment />

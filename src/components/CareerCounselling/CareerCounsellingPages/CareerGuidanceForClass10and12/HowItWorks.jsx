@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HowItWorks = ({ data }) => {
   return (
-    <div className="mx-auto py-12 ">
+    <div className="mx-auto py-12 px-5">
       <h3
         className="text-2xl md:text-[34px] font-bold text-center mb-2 heading-font"
         style={{ fontWeight: "700" }}

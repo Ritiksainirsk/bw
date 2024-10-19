@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useEffect } from "react";
 import Image from "next/image";
@@ -11,14 +11,14 @@ import { FaAngleRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedSection from "../AnimatedSection";
 // images
-import Dmit from '@/assets/services/DMIT.webp'
-import AptitudeTest from '@/assets/services/Aptitude test.webp'
-import IdealCareerTest from '@/assets/services/Ideal Career Test.webp'
-import PsychometricTest from '@/assets/services/Psychometric Test.webp'
-import CareerCounselling from '@/assets/services/Career Counselling (1).webp'
-import PersonalityTest from '@/assets/services/Personality test.webp'
-import IQTest from '@/assets/services/IQ Test.webp'
-import InterestTest from '@/assets/services/Interest Test.webp'
+import Dmit from "@/assets/services/DMIT.webp";
+import AptitudeTest from "@/assets/services/Aptitude test.webp";
+import IdealCareerTest from "@/assets/services/Ideal Career Test.webp";
+import PsychometricTest from "@/assets/services/Psychometric Test.webp";
+import CareerCounselling from "@/assets/services/Career Counselling (1).webp";
+import PersonalityTest from "@/assets/services/Personality test.webp";
+import IQTest from "@/assets/services/IQ Test.webp";
+import InterestTest from "@/assets/services/Interest Test.webp";
 
 const items = [
   {
@@ -93,9 +93,11 @@ export default function Services() {
     <div className="flex justify-between flex-col  ">
       {/* Carousel */}
       <div className="flex flex-col items-center">
-        <h2 className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2   text-center heading-font text-[#022F46]  " style={{ fontWeight: "700" }}>
+        <h2
+          className="text-xl md:text-3xl font-semibold my-6 lg:my-14 px-2  text-center heading-font text-[#022F46]  "
+          style={{ fontWeight: "700" }}
+        >
           How does Brainwonders services
-          
           <span> help you to sucess in your career? </span>
         </h2>
         <HoverEffectCard />
@@ -108,31 +110,30 @@ export default function Services() {
 
 const HoverEffectCard = () => {
   return (
-    
     <AnimatedSection>
-      <div className="flex justify-between w-full flex-col lg:flex-row rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
+      <div className="flex justify-center rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
         {items.map((card, index) => (
           <div
             key={index}
-            className={`w-[100%] md:w-[100%] lg:w-[22rem] w-[301px] md:h-[20rem] containerBox relative p-7 overflow-hidden   h-fit inline-border ${
-              index == 0
-                ? "hover:bg-[#9bc9ff]"
-                : index == 1
-                ? "hover:bg-[#c8bbff]"
-                : index == 2
-                ? "hover:bg-[#ffb1cc]"
-                : index == 3
-                ? "hover:bg-[#ffd972]"
+            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
+              card.title === "DMIT Test"
+                ? "hover:bg-yellow-500"
+                : "" || card.title === "Aptitide Test"
+                ? "hover:bg-blue-500"
+                : "" || card.title === "Ideal Career Test"
+                ? "hover:bg-green-500"
+                : "" || card.title === "Psychometric Test"
+                ? "hover:bg-red-500"
                 : ""
-            }    ${index ==0 ? "left-radius-border" : ""}    ${index ==items.length -1 ? "right-radius-border" : ""}`}
+            }`}
           >
             <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
               <button className="bg-[#1C4980] text-white py-1 px-5 rounded-lg bottom-10 absolute flex items-center gap-3">
-                Explore<FaArrowRight />
+                Explore <FaArrowRight />
               </button>
             </div>
 
-            <div className=" flex flex-col  gap-0 md:gap-y-0.5 w-[100%] md:w-[100%] lg:w-[22rem]">
+            <div>
               <div className={`w-[80px] pb-4 rounded-full text-center`}>
                 <Image
                   src={card.url}
@@ -142,15 +143,15 @@ const HoverEffectCard = () => {
                   height={120}
                 />
               </div>
-              <div>
-                <h3 className="text-xl font-semibold heading-font pb-3 text-black">
-                  {card.title}
-                </h3>
-                <p className="mb-6 lg:mb-2">{card.subtitle}</p></div>
+
+              <h3 className="text-xl font-semibold heading-font pb-3 text-black">
+                {card.title}
+              </h3>
+              <p className="mb-6 lg:mb-2">{card.subtitle}</p>
 
               <div className="mt-4 btnn ">
                 <button className="py-2 tracking-wider flex items-center gap-3">
-                  {card.buttonText}  <FaAngleRight />
+                  {card.buttonText} <FaAngleRight />
                 </button>
               </div>
             </div>
@@ -164,19 +165,20 @@ const HoverEffectCard = () => {
 const HoverEffectCard2 = () => {
   return (
     <AnimatedSection>
-      <div className="flex justify-between w-full flex-col lg:flex-row rounded-2xl border-gray-200 border-2 md:mb-14 shadow-md main-hoverbox-container">
+      <div className="flex justify-center rounded-2xl border-gray-200 border-2 mb-14 shadow-md main-hoverbox-container">
         {items2.map((card, index) => (
           <div
-            className={` inline-border w-[100%] md:w-[100%] lg:w-[22rem] w-[301px] md:h-[20rem] containerBox relative p-0 md:p-7 overflow-hidden  h-fit ${card.title === "Career Counslling"
+            className={`w-[22rem] h-[20rem] containerBox relative p-7 overflow-hidden ${
+              card.title === "Career Counslling"
                 ? "hover:bg-pink-300"
                 : "" || card.title === "Personalit Test"
-                  ? "hover:bg-purple-200"
-                  : "" || card.title === "IQ Test"
-                    ? "hover:bg-orange-500"
-                    : "" || card.title === "Interest Test"
-                      ? "hover:bg-gray-400"
-                      : ""
-              }  ${index ==0 ? "left-radius-border" : ""}    ${index ==items2.length -1 ? "right-radius-border" : ""}`}
+                ? "hover:bg-purple-200"
+                : "" || card.title === "IQ Test"
+                ? "hover:bg-orange-500"
+                : "" || card.title === "Interest Test"
+                ? "hover:bg-gray-400"
+                : ""
+            }`}
             key={index}
           >
             <div className="translate-x-[-100%] overlay-content-btn w-full h-full absolute">
@@ -185,7 +187,7 @@ const HoverEffectCard2 = () => {
               </button>
             </div>
 
-            <div className="flex flex-col  gap-0 md:gap-y-0.5 w-[100%] md:w-[100%] lg:w-[22rem]">
+            <div>
               <div className={`w-[80px] pb-4 rounded-full text-center`}>
                 <Image
                   src={card.url}
@@ -195,13 +197,11 @@ const HoverEffectCard2 = () => {
                   height={120}
                 />
               </div>
-              <div>
 
-                <h3 className="text-lg font-semibold heading-font pb-3 text-black">
-                  {card.title}
-                </h3>
-                <p className="mb-6 lg:mb-2">{card.subtitle}</p>
-              </div>
+              <h3 className="text-lg font-semibold heading-font pb-3 text-black">
+                {card.title}
+              </h3>
+              <p className="mb-6 lg:mb-2">{card.subtitle}</p>
 
               <div className="mt-4 btnn ">
                 <button className="py-2 tracking-wider flex items-center gap-3">
@@ -209,12 +209,9 @@ const HoverEffectCard2 = () => {
                 </button>
               </div>
             </div>
-
           </div>
         ))}
       </div>
     </AnimatedSection>
   );
 };
-
-
