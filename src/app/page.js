@@ -1,27 +1,41 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Hero from "../Components/Home/Hero";
-import Services from "../Components/Home/Services";
-import MediaMentions from "../Components/Home/MediaMentions";
-import Blog from "../Components/Home/Blog";
-import Accordion from "../Components/Home/Accordion";
-import Ebook from "../Components/Home/Ebook";
-import PartnersVideoCard from "../Components/Home/PartnersVideoCard";
-import Achievment from "../Components/Home/Achievment";
-import CareerSuitabilitySection from "../Components/Home/CareerSuitabilitySection ";
-import HeroCarousel from "../Components/Home/HeroCarousel";
-import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
-import AwardRecognition from "../Components/Home/AwardRecognition";
-import { useLocation } from "react-router-dom";
-import TestsCard from "../Components/Home/TestsCard";
-import HowItWorks from "../Components/CareerCounselling/CareerCounsellingPages/CareerGuidanceForClass10and12/HowItWorks";
+// import Hero from "../Components/Home/Hero";
+// import Services from "../Components/Home/Services";
+// import MediaMentions from "../Components/Home/MediaMentions";
+// import Blog from "../Components/Home/Blog";
+// import Accordion from "../Components/Home/Accordion";
+// import Ebook from "../Components/Home/Ebook";
+// import PartnersVideoCard from "../Components/Home/PartnersVideoCard";
+// import Achievment from "../Components/Home/Achievment";
+// import CareerSuitabilitySection from "../Components/Home/CareerSuitabilitySection ";
+// import HeroCarousel from "../Components/Home/HeroCarousel";
+// import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
+// import AwardRecognition from "../Components/Home/AwardRecognition";
+// import { useLocation } from "react-router-dom";
+// import TestsCard from "../Components/Home/TestsCard";
+// import HowItWorks from "../Components/CareerCounselling/CareerCounsellingPages/CareerGuidanceForClass10and12/HowItWorks";
 
 // images
 import Img1 from "@/assets/Curious about how it works/Assessment.webp";
 import Img2 from "@/assets/Curious about how it works/Guidance.webp";
 import Img3 from "@/assets/Curious about how it works/Strategizing.webp";
 import { useRouter } from "next/router";
+import HeroCarousel from "@/components/Home/HeroCarousel";
+import AwardRecognition from "@/components/Home/AwardRecognition";
+import Hero from "@/components/Home/Hero";
+import Services from "@/components/Home/Services";
+import TestsCard from "@/components/Home/TestsCard";
+import CareerSuitabilitySection from "@/components/Home/CareerSuitabilitySection ";
+import HowItWorks from "@/components/CareerCounselling/CareerCounsellingPages/CareerGuidanceForClass10and12/HowItWorks";
+import Ebook from "@/components/Home/Ebook";
+import Achievment from "@/components/Home/Achievment";
+import PartnersVideoCard from "@/components/Home/PartnersVideoCard";
+import MediaMentions from "@/components/Home/MediaMentions";
+import TestimonialCard from "@/components/CareerCounselling/TestimonialCard ";
+import Blog from "@/components/Home/Blog";
+import Accordion from "@/components/Home/Accordion";
 
 export default function Home() {
   // const router = useRouter();
