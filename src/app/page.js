@@ -1,27 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-// import Hero from "../Components/Home/Hero";
-// import Services from "../Components/Home/Services";
-// import MediaMentions from "../Components/Home/MediaMentions";
-// import Blog from "../Components/Home/Blog";
-// import Accordion from "../Components/Home/Accordion";
-// import Ebook from "../Components/Home/Ebook";
-// import PartnersVideoCard from "../Components/Home/PartnersVideoCard";
-// import Achievment from "../Components/Home/Achievment";
-// import CareerSuitabilitySection from "../Components/Home/CareerSuitabilitySection ";
-// import HeroCarousel from "../Components/Home/HeroCarousel";
-// import TestimonialCard from "../Components/CareerCounselling/TestimonialCard ";
-// import AwardRecognition from "../Components/Home/AwardRecognition";
-// import { useLocation } from "react-router-dom";
-// import TestsCard from "../Components/Home/TestsCard";
-// import HowItWorks from "../Components/CareerCounselling/CareerCounsellingPages/CareerGuidanceForClass10and12/HowItWorks";
-
 // images
 import Img1 from "@/assets/Curious about how it works/Assessment.webp";
 import Img2 from "@/assets/Curious about how it works/Guidance.webp";
 import Img3 from "@/assets/Curious about how it works/Strategizing.webp";
-import { useRouter } from "next/router";
 import HeroCarousel from "@/components/Home/HeroCarousel";
 import AwardRecognition from "@/components/Home/AwardRecognition";
 import Hero from "@/components/Home/Hero";
@@ -125,7 +108,7 @@ export default function Home() {
     <>
       <div className="overflow-hidden">
         <HeroCarousel />
-        <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
+        {/* <div className="max-w-[1550px] mx-auto overflow-hidden container-mar">
           <AwardRecognition />
         </div>
         <Hero />
@@ -144,7 +127,7 @@ export default function Home() {
           <TestimonialCard />
           <Blog />
           <Accordion />
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -12,7 +12,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Img1 from '@/assets/slider-images/CareerCounsellingAfter12th.webp';
 import Img2 from '@/assets/slider-images/CareerCounselling.webp';
 import Img3 from '@/assets/slider-images/CareerGuidanceAfter10th.webp';
-import Img4 from '@/assets/slider-images/CareerGuidanceForClass8thAnd9thStudents.webp';
+// import Img4 from '@/assets/slider-images/CareerGuidanceForClass8thAnd9thStudents.webp';
 import Img5 from '@/assets/slider-images/DMIT.webp';
 
 const CustomPrevArrow = (props) => {
