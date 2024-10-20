@@ -61,11 +61,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`bg-white py-[12px] w-full shadow-lg ${
+      className={`bg-white py-[12px] w-full shadow-lg flex lg:justify-center ${
         isFixed ? "fixed z-50" : ""
       }`}
     >
-      <nav className="justify-between text-[12px] 2xl:px-24 lg:text-[13px] xl:text-[14px] 2xl:text-lg flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 lg:min-h-[50px] container-mar">
+      <nav className="justify-between text-[12px] 2xl:px-24 lg:text-[13px] xl:text-[14px] 2xl:text-lg flex items-center gap-x-20 md:gap-x-10 xl:gap-x-8 lg:min-h-[50px] max-w-[1600px]">
         <div className="md:w-[240px] flex flex-col w-full">
           <a href="/">
             <Image

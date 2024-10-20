@@ -105,7 +105,7 @@ export default function HeroCarousel() {
                 key={index}
               />
               <div
-                className="absolute top-0 text-white h-full   flex flex-col justify-center items-center lg:items-start w-full lg:w-[40%] container-pad gap-5 lg:gap-4h-full"
+                className="absolute top-0 text-white h-full flex flex-col justify-center items-center lg:items-start w-full lg:w-[60%] xl:w-[50%] container-pad gap-5 lg:gap-4h-full"
                 key={index}
               >
                 <h2
@@ -120,7 +120,7 @@ export default function HeroCarousel() {
                 >
                   {slide.description}
                 </p>
-                <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg w-auto md:w-full lg:w-[23rem] font-medium px-2">
+                <button className="bg-[#F23E36] lg:p-2 leading-7 rounded-lg lg:w-[23rem] font-medium px-2 w-52">
                   {slide.btntext}
                 </button>
               </div>

@@ -40,7 +40,7 @@ export default function AwardRecognition() {
             Awards and Recognition
           </h2>
         </div>
-        <div>
+        <div className="md:px-20 2xl:px-1">
           <Marquee speed={40} direction="left">
             <div className="flex justify-center">
               {awards.map((award, index) => (

@@ -13,11 +13,11 @@ const TestsCard = ({cardData}) => {
         Shape Your Career for Boundless Success and Growth
       </p>
       <AnimatedSection>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6  ">
         {cardData.map((benefit, index) => (
           <div
             key={index}
-            className=" shadow-blue bg-white rounded-3xl cursor-pointer shadow-md p-6   duration-300 hello "
+            className="bg-white rounded-3xl cursor-pointer shadow-md hover:shadow-xl p-6 duration-300 "
           >
             <h3 className="text-xl font-semibold text-gray-900 mb-3">
               {benefit.title}
