@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <Hero />
         <div className="max-w-[1550px] mx-auto overflow-hidden ">
-          {/* <Services /> */}
+          <Services />
         </div>
         <TestsCard cardData={benefits} />
         <div className="max-w-[1550px] mx-auto overflow-hidden "></div>

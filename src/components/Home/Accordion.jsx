@@ -54,14 +54,14 @@ export default function Accordion() {
   ];
 
   return (
-    <div className=" mb-14 text-left  ">
+    <div className=" mb-14 text-left">
       <h2
         className="text-2xl lg:text-[34px] font-semibold text-center mb-6 heading-font text-[#022F46] mt-5 "
         style={{ fontWeight: "700" }}
       >
         Frequently Asked Questions
       </h2>
-      <div className="join join-vertical w-full ">
+      <div className="join join-vertical w-full xl:px-16">
         <div className="w-full ">
           <div className=" ">
             <div className="mb-6 lg:mb-16"></div>
